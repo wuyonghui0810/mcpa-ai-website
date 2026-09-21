@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "AI tools",
     "MCP directory",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
