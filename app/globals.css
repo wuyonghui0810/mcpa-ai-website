@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* MCPA.ai brand palette */
+:root {
+  --mi-orange: #ff6900;
+  --mi-orange-hover: #e55f00;
+  --mi-black: #1a1a1a;
+  --mi-text: #5c5c5c;
+  --mi-muted: #8c8c8c;
+  --mi-border: #e5e5e5;
+  --mi-gray: #f7f7f7;
+}
+
+.text-mi-black { color: var(--mi-black); }
+.text-mi-text { color: var(--mi-text); }
+.text-mi-muted { color: var(--mi-muted); }
+.border-mi-border { border-color: var(--mi-border); }
+.bg-mi-gray { background-color: var(--mi-gray); }
+.bg-mi-black { background-color: var(--mi-black); }
+.bg-mi-orange { background-color: var(--mi-orange); }
+.hover\:bg-mi-orange-hover:hover { background-color: var(--mi-orange-hover); }
+.ring-mi-orange\/20 { --tw-ring-color: rgba(255, 105, 0, 0.2); }
+.border-mi-orange { border-color: var(--mi-orange); }
+.hover\:border-mi-orange\/50:hover { border-color: rgba(255, 105, 0, 0.5); }
+.focus\:ring-mi-orange\/30:focus { --tw-ring-color: rgba(255, 105, 0, 0.3); }
+.focus\:border-mi-orange:focus { border-color: var(--mi-orange); }
+.group:hover .group-hover\:text-mi-black { color: var(--mi-black); }
+.group:hover .group-hover\:bg-mi-orange { background-color: var(--mi-orange); }
+.group:hover .group-hover\:border-mi-orange\/50 { border-color: rgba(255, 105, 0, 0.5); }
