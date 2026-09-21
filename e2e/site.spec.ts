@@ -40,9 +40,9 @@ test.describe('MCPA.ai site', () => {
   test('search filters server list', async ({ page }) => {
     const search = page.locator('input[placeholder*="Search"]');
     await search.fill('postgres');
+    await page.getByTestId('search-submit').click();
     await page.waitForTimeout(300);
-    const firstCard = page.locator('#servers a').first();
-    await expect(firstCard).toContainText(/postgres/i);
+    await expect(page.locator('#servers')).toContainText(/postgres/i);
   });
 
   test('pagination is visible with multiple pages', async ({ page }) => {

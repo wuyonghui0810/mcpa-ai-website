@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { ExternalLink, Star, ArrowUpDown, TrendingUp, Clock } from "lucide-react";
+import { ExternalLink, Star, ArrowUpDown, TrendingUp, Clock, ArrowDown, ArrowUp, TypeOutline } from "lucide-react";
 import { Server } from "@/lib/servers";
 import { Pagination } from "@/components/pagination";
 
@@ -12,12 +12,19 @@ interface ServerListProps {
 
 const PAGE_SIZE = 18;
 
-type SortKey = "stars-desc" | "stars-asc" | "updated-desc" | "name-asc";
+type SortBase = "stars" | "updated" | "name";
+type SortKey = `${SortBase}-desc` | `${SortBase}-asc`;
 
 function formatStars(n: number): string {
   if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
   return n.toString();
 }
+
+const SORT_CONFIG: { key: SortBase; label: string; icon: React.ReactNode; default: SortKey }[] = [
+  { key: "stars", label: "Stars", icon: <TrendingUp className="w-3.5 h-3.5" />, default: "stars-desc" },
+  { key: "updated", label: "Updated", icon: <Clock className="w-3.5 h-3.5" />, default: "updated-desc" },
+  { key: "name", label: "A–Z", icon: <TypeOutline className="w-3.5 h-3.5" />, default: "name-asc" },
+];
 
 export function ServerList({ servers, activeQuery = "" }: ServerListProps) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,18 +34,17 @@ export function ServerList({ servers, activeQuery = "" }: ServerListProps) {
     const list = [...servers];
     // Preserve Fuse relevance order when the user is actively searching.
     if (activeQuery.trim()) return list;
-    switch (sort) {
-      case "stars-desc":
-        list.sort((a, b) => b.stars - a.stars);
+    const [base, direction] = sort.split("-") as [SortBase, "desc" | "asc"];
+    const dir = direction === "asc" ? 1 : -1;
+    switch (base) {
+      case "stars":
+        list.sort((a, b) => dir * (a.stars - b.stars));
         break;
-      case "stars-asc":
-        list.sort((a, b) => a.stars - b.stars);
+      case "updated":
+        list.sort((a, b) => dir * (new Date(a.updated_at).getTime() - new Date(b.updated_at).getTime()));
         break;
-      case "updated-desc":
-        list.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
-        break;
-      case "name-asc":
-        list.sort((a, b) => a.name.localeCompare(b.name));
+      case "name":
+        list.sort((a, b) => dir * a.name.localeCompare(b.name));
         break;
     }
     return list;
@@ -55,6 +61,20 @@ export function ServerList({ servers, activeQuery = "" }: ServerListProps) {
     setCurrentPage(1);
   }, [servers, sort, activeQuery]);
 
+  const handleSortClick = (base: SortBase) => {
+    setSort((current) => {
+      const currentBase = current.split("-")[0] as SortBase;
+      if (currentBase === base) {
+        const currentDir = current.split("-")[1] as "desc" | "asc";
+        return `${base}-${currentDir === "desc" ? "asc" : "desc"}` as SortKey;
+      }
+      return SORT_CONFIG.find((s) => s.key === base)!.default;
+    });
+  };
+
+  const isActive = (base: SortBase) => sort.startsWith(base);
+  const getDirection = (base: SortBase) => (sort === `${base}-asc` ? "asc" : "desc");
+
   return (
     <div>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
@@ -62,35 +82,31 @@ export function ServerList({ servers, activeQuery = "" }: ServerListProps) {
           <ArrowUpDown className="w-4 h-4" />
           <span>Sort by:</span>
           <div className="flex items-center bg-white border border-mi-border rounded-lg p-1">
-            <button
-              type="button"
-              onClick={() => setSort("stars-desc")}
-              className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
-                sort === "stars-desc" ? "bg-mi-orange text-white" : "text-mi-text hover:bg-mi-gray"
-              }`}
-            >
-              <TrendingUp className="w-3.5 h-3.5" />
-              Stars
-            </button>
-            <button
-              type="button"
-              onClick={() => setSort("updated-desc")}
-              className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
-                sort === "updated-desc" ? "bg-mi-orange text-white" : "text-mi-text hover:bg-mi-gray"
-              }`}
-            >
-              <Clock className="w-3.5 h-3.5" />
-              Updated
-            </button>
-            <button
-              type="button"
-              onClick={() => setSort("name-asc")}
-              className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
-                sort === "name-asc" ? "bg-mi-orange text-white" : "text-mi-text hover:bg-mi-gray"
-              }`}
-            >
-              A–Z
-            </button>
+            {SORT_CONFIG.map((cfg) => {
+              const active = isActive(cfg.key);
+              const direction = getDirection(cfg.key);
+              return (
+                <button
+                  key={cfg.key}
+                  type="button"
+                  onClick={() => handleSortClick(cfg.key)}
+                  className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                    active ? "bg-mi-orange text-white" : "text-mi-text hover:bg-mi-gray"
+                  }`}
+                  aria-pressed={active}
+                >
+                  {cfg.icon}
+                  {cfg.label}
+                  {active && (
+                    direction === "asc" ? (
+                      <ArrowUp className="w-3 h-3" />
+                    ) : (
+                      <ArrowDown className="w-3 h-3" />
+                    )
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
         <span className="text-sm text-mi-muted">

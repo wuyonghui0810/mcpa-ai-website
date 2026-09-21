@@ -145,16 +145,29 @@ export default function HomePage() {
 
           {/* Hero Search */}
           <div className="max-w-2xl mx-auto mb-8">
-            <div className="relative">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                document.getElementById("servers")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="relative flex items-center"
+            >
               <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-mi-muted" />
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search servers, tools, or categories..."
-                className="w-full pl-14 pr-6 py-4 text-lg bg-white border border-mi-border rounded-full outline-none transition-shadow focus:ring-2 focus:ring-mi-orange/30 focus:border-mi-orange shadow-sm"
+                className="w-full pl-14 pr-28 py-4 text-lg bg-white border border-mi-border rounded-full outline-none transition-shadow focus:ring-2 focus:ring-mi-orange/30 focus:border-mi-orange shadow-sm"
               />
-            </div>
+              <button
+                type="submit"
+                data-testid="search-submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-mi-orange hover:bg-mi-orange-hover text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors"
+              >
+                Search
+              </button>
+            </form>
           </div>
 
           <p className="text-sm text-mi-muted">
