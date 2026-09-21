@@ -13,8 +13,21 @@ test.describe('MCPA.ai site', () => {
   });
 
   test('favicon is present', async ({ page }) => {
-    const response = await page.request.get('/favicon.ico');
-    expect(response.status()).toBe(200);
+    const favicon = await page.request.get('/favicon.ico');
+    expect(favicon.status()).toBe(200);
+
+    const png32 = await page.request.get('/favicon-32x32.png');
+    expect(png32.status()).toBe(200);
+
+    const apple = await page.request.get('/apple-touch-icon.png');
+    expect(apple.status()).toBe(200);
+
+    const manifest = await page.request.get('/site.webmanifest');
+    expect(manifest.status()).toBe(200);
+
+    // Check HTML head contains icon links
+    await expect(page.locator('link[rel="icon"][href*="favicon.ico"]')).toHaveAttribute('href', '/favicon.ico');
+    await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute('href', '/apple-touch-icon.png');
   });
 
   test('category cards are visible and clickable', async ({ page }) => {
