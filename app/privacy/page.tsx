@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import { SiteHeader } from "@/components/site-header";
 
 export const metadata = {
   title: "Privacy Policy | MCPA.ai",
@@ -9,23 +9,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-mi-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-mi-orange rounded-lg flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-mi-black">MCPA.ai</span>
-            </Link>
-            <nav className="flex items-center gap-6 text-sm font-medium text-mi-text">
-              <Link href="/" className="hover:text-mi-black transition-colors">Servers</Link>
-              <Link href="/about" className="hover:text-mi-black transition-colors">About</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h1 className="text-4xl font-bold text-mi-black mb-8">Privacy Policy</h1>
