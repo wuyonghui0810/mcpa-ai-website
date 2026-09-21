@@ -71,9 +71,10 @@ export function CategoryCards({ activeCategory, onSelect, counts }: CategoryCard
         return (
           <button
             key={cat.key}
+            type="button"
             onClick={() => onSelect(isActive ? "All" : cat.key)}
             aria-pressed={isActive}
-            className={`group relative overflow-hidden rounded-3xl bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-mi-orange/30 focus:ring-offset-2 ${
+            className={`group relative overflow-hidden rounded-3xl bg-white text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-mi-orange/30 focus:ring-offset-2 cursor-pointer ${
               isActive
                 ? "border border-mi-orange shadow-md ring-1 ring-mi-orange/20"
                 : "border border-transparent shadow-sm hover:border-mi-border"

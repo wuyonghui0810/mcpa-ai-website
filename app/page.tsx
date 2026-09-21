@@ -176,7 +176,10 @@ export default function HomePage() {
         </div>
         <CategoryCards
           activeCategory={activeCategory}
-          onSelect={setActiveCategory}
+          onSelect={(cat) => {
+            setActiveCategory(cat);
+            document.getElementById("servers")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
           counts={categoryCounts}
         />
       </section>
@@ -191,7 +194,7 @@ export default function HomePage() {
             {filtered.length} {filtered.length === 1 ? "server" : "servers"}
           </span>
         </div>
-        <ServerList servers={filtered} />
+        <ServerList servers={filtered} activeQuery={query} />
       </section>
 
       {/* CTA */}
