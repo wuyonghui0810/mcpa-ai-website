@@ -178,7 +178,7 @@ export default function AboutPage() {
               <div className="w-9 h-9 rounded-lg bg-mi-gray flex items-center justify-center text-mi-orange mb-4">
                 <Scale className="w-5 h-5" />
               </div>
-              <h3 className="text-lg font-bold text-mi-black mb-2.5">Legal & Trademark Notice</h3>
+              <h3 className="text-lg font-bold text-mi-black mb-2.5">Legal Disclaimer & Trademark Notice</h3>
               <p className="text-sm text-mi-muted leading-relaxed mb-3">
                 MCPA.ai does not offer, administer, or claim any rights to the Model Context Protocol Associate (MCPA) certification.
               </p>
