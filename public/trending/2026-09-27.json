@@ -1,0 +1,316 @@
+{
+ "period_date": "2026-09-27",
+ "fetch_note": "抓取于 2026-09-27 16:31（北京 2026-09-28 07:31）",
+ "foot_note": "功能摘要基于各仓库 README / GitHub API 实抓整理（2026-09-27 实抓）",
+ "sections": [
+  {
+   "key": "today",
+   "label": "今日榜",
+   "sub": "过去 24 小时",
+   "rows": [
+    {
+     "repo": "vectorize-io/hindsight",
+     "lang": "Python",
+     "delta": 4463,
+     "tag": "Agent 记忆",
+     "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩。",
+     "facts": [
+      "Vectorize 出品，MIT 协议，官网 hindsight.vectorize.io，配套论文 arXiv:2512.12818；2025-10 创建，GitHub API 实测 3.72 万 star，今日榜与本周榜双第一",
+      "README 称其 benchmark 数据由弗吉尼亚理工 Sanghani 人工智能与数据分析中心及《华盛顿邮报》独立复现（其他厂商成绩为自报），并在 benchmarks.hindsight.vectorize.io 持续公开准确率/延迟/成本",
+      "部署：Docker 一条命令起服务（API 8888 / UI 9999，数据持久在卷里），另有 pip/npm 客户端与 Python 嵌入式模式（不用起服务）；支持 25+ 家 LLM provider，含 ollama/lmstudio/llamacpp 本地推理、任意 OpenAI 兼容端点，甚至可直连 ChatGPT Plus/Pro、Claude Pro/Max、Cursor、GitHub Copilot 订阅",
+      "核心概念是 retain / recall / reflect 三个操作加 memory bank；既能两行代码包一层 LLM Wrapper 塞进现有 agent，也提供 MCP Server 与 Claude Code / Cursor 等编码代理集成（含 npx skills add 装文档技能）"
+     ]
+    },
+    {
+     "repo": "debpalash/VoiceStudio",
+     "lang": "Python",
+     "delta": 3060,
+     "tag": "AIGC",
+     "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费",
+     "facts": [
+      "16 个 TTS 引擎 + 11 个 ASR 引擎，语言目录 646 种（实际覆盖与质量取决于所选引擎）；可在模型目录或 Ctrl/Cmd+E 里热切换引擎",
+      "平台覆盖 macOS 13.3+（Apple Silicon）、Windows 10/11 x64、Linux x86_64（需 glibc 2.39+），另有 Docker 镜像（linux/amd64）与 Colab 免安装试跑；算力可选 CUDA / Apple MPS·MLX / Linux ROCm / 纯 CPU，并支持远端 worker 卸载",
+      "除桌面应用外还暴露本地 REST/SSE/WebSocket、OpenAI 兼容音频 API 与 MCP Server；语音、项目、设置与产物默认全部留在本机",
+      "现名 VoiceStudio（原 OmniVoice-Studio），AGPL-3.0；README 顶部标注 Electron 重写进行中、当前为 active beta，建议用最新 Release 做正式工作；2026-04 创建，GitHub API 实测 2.67 万 star"
+     ]
+    },
+    {
+     "repo": "paperclipai/paperclip",
+     "lang": "TypeScript",
+     "delta": 2527,
+     "tag": "Agent 框架",
+     "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」。",
+     "facts": [
+      "形态是 Node.js 服务 + React UI，流程固定三步：写目标（如「把某产品做到 100 万美元 MRR」）→ 组队（CEO/CTO/工程/设计/市场，任意 bot、任意厂商）→ 审批并开跑，随时从面板插话或调整预算",
+      "接入面覆盖 OpenClaw、Claude Code、Codex、Cursor、Bash、HTTP（README 原话：只要能被 heartbeat 唤醒就能「入职」）",
+      "「四大支柱」= 组织架构、预算与治理、目标对齐、Agent 协调；明确面向同时开 20 个终端跑 agent、想无人值守 24/7 又要能审计的场景，支持拿手机管理",
+      "MIT 协议，官网 paperclip.ing、文档 docs.paperclip.ing；2026-03 创建，GitHub API 实测 8.97 万 star，今日榜第三、本周榜第五"
+     ]
+    },
+    {
+     "repo": "dream-num/univer",
+     "lang": "TypeScript",
+     "delta": 920,
+     "tag": "Office SDK",
+     "intro": "国产开源的 Office SDK：一套运行时把表格、文档、演示、多维表格、看板装进你自己的产品（PDF 标注为即将支持），定位不是文件查看器，而是「让人类和 AI Agent 在同一份文件里干活」的生产力底座。",
+     "facts": [
+      "核心是插件架构 + Canvas 渲染 + 公式引擎 + 一套浏览器/Node 通用的 Facade API，可嵌入 SaaS、内部工具、BI 流程或 AI 应用，也可在服务端做无 UI 的工作簿处理",
+      "三种接入姿势：Preset 模式（最少配置直接跑 Sheets/Docs）、Plugin 模式（严格按需组包与懒加载）、Headless 模式（服务端算公式，Node ≥ 18.17）；同一条 Univer 发布线内 @univerjs/* 包需版本对齐",
+      "兼容性明确：Chrome/Edge ≥88、Firefox ≥90、Safari ≥14.1、Electron ≥12，视图层 React 18 并兼容 React 19；依赖 Intl.Segmenter，老运行时需 polyfill",
+      "Apache-2.0，官网 univer.ai、文档 docs.univer.ai；2022-09 创建，GitHub API 实测 2.01 万 star"
+     ]
+    },
+    {
+     "repo": "rohitg00/ai-engineering-from-scratch",
+     "lang": "Python",
+     "delta": 848,
+     "tag": "学习笔记",
+     "intro": "从零到能交付的 AI 工程自学课程仓库：523 节课、20 个阶段、约 342 小时，主张「不只是学 AI，而是亲手把它造出来」，每节课都要交付一个可复用产物（prompt / skill / agent / MCP server）。",
+     "facts": [
+      "规模与语言：523 节课 / 20 个阶段 / 约 342 小时（README badge 实标），示例代码覆盖 Python、TypeScript、Rust、Julia；内容含数学基础、机器学习、计算机视觉、NLP、强化学习、LLM 工程、MCP 等",
+      "动机写在 README 首屏：84% 的学生已经在用 AI 工具，但只有 18% 觉得自己能专业地用它——课程就是补这条缝",
+      "站点自报近 30 天 114,584 位读者、181,995 次页面浏览（截至 2026-08-29）；GitHub 与官网 aiengineeringfromscratch.com 使用同一份课程代码",
+      "MIT 协议，提供含简体中文在内 12 种语言的着陆页；作者 rohitg00 也是 Agent Memory 项目的作者；2026-03 创建，GitHub API 实测 5.92 万 star"
+     ]
+    },
+    {
+     "repo": "InfinityLoop1308/PipePipe",
+     "lang": "Shell",
+     "delta": 274,
+     "tag": "Android",
+     "intro": "2022 年初从 NewPipe 分叉出来的独立 Android 客户端，目标是「更快、更稳、功能更多」地浏览 YouTube 与 B 站等服务：跳赞助、恢复踩数、弹幕、后台听歌与整批下载。",
+     "facts": [
+      "Media 增强：接 SponsorBlock 跳过赞助片段（YouTube 与 B 站都支持）、ReturnYouTubeDislike 恢复踩数、显示未本地化的原版标题、登录看受限/会员内容，直播聊天以弹幕样式叠加",
+      "播放体验：支持 AV1/VP9 编码、音乐播放模式与后台播放、滑动快进与全屏手势、长按倍速、睡眠定时器；可过滤关键词/频道、屏蔽 Shorts 与付费视频",
+      "下载与列表：整张播放列表一次下载，本地播放列表与历史支持搜索排序",
+      "GPL-3.0，官网 pipepipe.dev，发布渠道走 F-Droid 与 IzzyOnDroid（包名 InfinityLoop1309.NewPipeEnhanced）；README 明确它与 NewPipe 已互不同步；2022-05 创建，GitHub API 实测 6,554 star"
+     ]
+    },
+    {
+     "repo": "vercel-labs/scriptc",
+     "lang": "TypeScript",
+     "delta": 186,
+     "tag": "编译器",
+     "intro": "Vercel Labs 的实验性编译器：把 TypeScript/JavaScript 直接编译成类型化 IR、可读 C、文本 LLVM IR、汇编与目标文件、原生可执行文件和 WebAssembly 模块，产物跑起来不需要 Node。",
+     "facts": [
+      "解析与类型检查复用 TypeScript 编译器本体；静态构建自带小型原生运行时，但不含 Node 或 JS 引擎，编译不了的代码会被当作诊断报出",
+      "安装：npm install -g scriptc（需 Node.js 24+）；scriptc run hello.ts 一步编译并运行，scriptc build hello.ts -o hello 输出独立可执行文件；npm 包与 any 类型代码可用 --dynamic 显式内嵌 quickjs-ng",
+      "分层产物：--emit=ir|c|llvm 只需 Node；--emit=asm|obj 用随包安装的平台 helper（macOS 15+ arm64 已支持），无需编译器/链接器/SDK；普通可执行文件构建需平台链接器驱动（可用 SCRIPTC_LINKER 指定）",
+      "目标平台 macOS / Linux / Windows 与 WASI Preview 1，官方自标 experimental；Apache-2.0，官网 scriptc.dev；2026-07 创建，GitHub API 实测 5,381 star"
+     ]
+    },
+    {
+     "repo": "willfaust/Madeira",
+     "lang": "C",
+     "delta": 117,
+     "tag": "iOS",
+     "intro": "把 x86-64 的 Windows PC 游戏搬到非越狱 iPhone 上跑的研究项目：Wine（ARM64EC）+ FEX-Emu（x86-64→ARM64 翻译）+ DXMT（D3D11→Metal）合成单个 Mach 进程，wineserver 以线程形式存在。",
+     "facts": [
+      "进度（README 自述）：Thumper 与 ULTRAKILL 已可玩；Marvel Cosmic Invasion 能进入游戏但出现过不明终止、操控还不可靠；其他游戏可达低帧可玩。作者明确定位为研究项目而非产品",
+      "硬件与系统门槛：非越狱 iPhone（开发机为 A15 / iPhone 13 Pro），必须 JIT——iOS 上靠调试器附加（项目用 StikDebug）；需要 Apple ID 签名，免费账号描述文件 7 天过期需每周重装（容器保留，存档与前缀不丢）",
+      "因 JIT 限制无法上架 App Store，只能侧载；构建链路拆成 Unix 侧 Wine 库、ARM64EC PE 模块、FEX、DXMT 与 iOS App 多段脚本（build/*/build.sh + xcodebuild）",
+      "GPL-3.0-or-later；wine / dxmt / rpmalloc 用的是带 iOS 改造的 fork，许可与上游不完全一致（README 有逐项说明）；作者特别提醒不要把 AI 生成改动回推 FEX 上游；2026-03 创建，GitHub API 实测 797 star"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "week",
+   "label": "本周榜",
+   "sub": "近 7 天",
+   "rows": [
+    {
+     "repo": "vectorize-io/hindsight",
+     "lang": "Python",
+     "delta": 7282,
+     "tag": "Agent 记忆",
+     "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩（今日榜 #1，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "stablyai/orca",
+     "lang": "TypeScript",
+     "delta": 6503,
+     "tag": "Agent IDE",
+     "intro": "给「同时跑一堆 agent」的人用的 ADE（Agent 开发环境）：Codex、Claude Code、OpenCode、Pi 可以并排跑，每个 agent 独占一个 git worktree，结果在同一个界面里对比。",
+     "facts": [
+      "并行 worktree：一条 prompt 扇给五个 agent 各自隔离执行，比完再合并胜者；终端是 Ghostty 级 WebGL 渲染、支持无限分屏、重启后保留 scrollback",
+      "移动端伴侣 App：agent 干完推通知、可在手机上继续下指令（iOS 走 App Store / TestFlight，Android 提供 APK 0.0.50）",
+      "Design Mode：在真实 Chromium 窗口里点任意 UI 元素，把它的 HTML、CSS 与裁剪截图直接送进 agent 的 prompt",
+      "MIT 协议，支持 macOS / Windows / Linux，官网 onOrca.dev，提供中文等多语言 README；2026-03 创建，GitHub API 实测 7.95 万 star，本周榜第二"
+     ]
+    },
+    {
+     "repo": "cloudflare/security-audit-skill",
+     "lang": "JavaScript",
+     "delta": 6474,
+     "tag": "Agent Skill",
+     "intro": "Cloudflare 官方开源的编码代理安全审计技能：把 agent 变成安全审计员，用一群隔离 agent 走完侦察、覆盖率驱动狩猎、候选验证、结构化输出、独立复核与报告六个阶段，产出机器可读、可独立验证的发现。",
+     "facts": [
+      "出身可考：它是 Cloudflare 自家漏洞发现 harness 的起点（对应官方博客《Build your own vulnerability harness》），harness 后来长成全公司多阶段系统，本仓库保留单仓库形态",
+      "六阶段流水线：侦察产出 architecture.md 与 coverage-ledger.json → 按 ledger 单元派隔离 hunter、由 coverage critic 找缺口 → 每个候选交给全新 verifier 专门证伪 → findings.json 按 report-schema.json 校验 → 全新 agent 独立复核源码结论 → 生成 REPORT.md / FINDINGS-DETAIL.md / NEEDS-VALIDATION.md",
+      "结论分三档且定义严格：confirmed（有完整源码链路 + 有界观测结果）、needs_validation（有明确未决事实、不给严重级别）、rejected（已证伪）；同一仓库多次审计是增量叠加，用历史 ledger 定位新缺口",
+      "攻击面知识按主题拆文件：内存安全与二进制、AI/LLM（提示注入/工具滥用）、Web 协议与认证、客户端、供应链与发布、云与部署、RPC 与消息、资源耗尽、数据隔离与生命周期、桌面移动与本地 IPC；MIT 协议；2026-06 创建，GitHub API 实测 2.23 万 star"
+     ]
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 5522,
+     "tag": "Agent 框架",
+     "intro": "面向编码代理的「harness 性能优化系统」：用 skills、instincts、记忆、安全与研究先行开发的组合，让 Claude Code / Codex / OpenCode / Cursor 等干得更快更稳",
+     "facts": [
+      "主页 ecc.tools，README 自称 agent harness 操作系统，核心覆盖 skills/instincts/memory/security/research-first 五大维度",
+      "明确支持 Claude Code、Codex、OpenCode、Cursor 等主流编码代理（官方描述原文）",
+      "文档提供中英日韩葡俄等多语言版本，MIT 协议，2026-01 创建",
+      "GitHub API 实测 25.7 万+ star"
+     ]
+    },
+    {
+     "repo": "paperclipai/paperclip",
+     "lang": "TypeScript",
+     "delta": 5376,
+     "tag": "Agent 框架",
+     "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」（今日榜 #3，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "alibaba/open-code-review",
+     "lang": "Go",
+     "delta": 4310,
+     "tag": "大厂开源",
+     "intro": "阿里把内部用了两年的 AI 代码评审助手开源了：确定性流水线 + 带工具能力的 LLM Agent 混合架构，读 Git diff 后给出精确到行的评审意见，官方称内部已服务数万开发者、识别数百万缺陷。",
+     "facts": [
+      "Agent 不只看 diff：能读完整文件、检索整个代码库、交叉查看同批其他改动文件，因此意见有上下文深度；内置多语言规则集覆盖 NPE、线程安全、XSS、SQL 注入，模型端兼容 OpenAI 与 Anthropic",
+      "安装 npm install -g @alibaba-group/open-code-review 后得到 ocr 命令；先 ocr config provider / ocr config model 配模型（交互式测连通性），再 ocr review 评审工作区改动、--from --to 评审分支区间、--commit 评审单提交、ocr scan 整仓全文件扫描；支持 --format json 落盘与 session 续跑",
+      "另有 delegation 模式：OCR 只负责选文件与解析规则，让宿主编码代理自己完成评审，无需配置 LLM；提供 Claude Code / Codex / Cursor / Kimi Code 插件与 MCP Server",
+      "要求 Git ≥ 2.41；Go 编写，Apache-2.0，OpenSSF Best Practices 金标，官网 open-codereview.ai；2026-05 创建，GitHub API 实测 4.19 万 star，本周第六、本月第五"
+     ]
+    },
+    {
+     "repo": "rohitg00/ai-engineering-from-scratch",
+     "lang": "Python",
+     "delta": 3207,
+     "tag": "学习笔记",
+     "intro": "从零到能交付的 AI 工程自学课程仓库：523 节课、20 个阶段、约 342 小时，主张「不只是学 AI，而是亲手把它造出来」，每节课都要交付一个可复用产物（prompt / skill / agent / MCP server）（今日榜 #5，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "Tencent/WeKnora",
+     "lang": "Go",
+     "delta": 3015,
+     "tag": "大厂开源",
+     "intro": "腾讯开源的企业级 LLM 知识平台：把团队散落的文档汇成可检索、可推理、能自己维护的知识库，在同一批知识上同时提供 RAG 问答、多步 Agent 与 Wiki 三种形态。",
+     "facts": [
+      "三种用法共用一套知识库：RAG 走混合检索 + 多模态解析 + 可核对引用；Agent 做多步任务，带技能、沙箱、本地浏览器、MCP 工具与记忆；Wiki 把文档组织成带知识图谱与回滚的知识库",
+      "Agent 的工具箱：从 ClawHub / SkillHub / Git / ZIP 装的技能跑在会话持久的 Docker / E2B / Cube 沙箱里，聊天旁边就是交互终端与图形桌面；BrowserSkill 可驱动你自己的 Chrome/Edge，外部 MCP 服务（含 OAuth）可逐工具启用",
+      "数据接入很宽：飞书 wiki/云盘、Confluence、GitLab、腾讯 IMA、Notion、语雀、钉钉文档、RSS 自动同步，支持 PDF/Word/图片/Excel/XMind 等 10+ 格式；问答可接到企业微信、飞书、Slack、Telegram 等 IM，另有网站嵌入组件与内置 MCP Server",
+      "模型侧内置 27 家厂商目录（OpenAI、DeepSeek、Qwen、智谱、混元、Gemini、MiniMax、NVIDIA、LiteLLM、Ollama 等）；多工作区 RBAC（四种角色、按资源归属、按工作区审计日志）；当前 v0.8.2，官网 weknora.weixin.qq.com；2025-07 创建，GitHub API 实测 3.06 万 star"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "month",
+   "label": "本月榜",
+   "sub": "近 30 天",
+   "rows": [
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 55722,
+     "tag": "图表生成",
+     "intro": "编码代理用的「架构即代码」技能：把代码库或系统描述直接在对话里变成可交互的架构图/流程图/时序图——自包含 HTML+SVG、带动效、可干净导出，还能做合并前架构评审",
+     "facts": [
+      "五类图 + 四种预设 + 深/浅主题 + 品牌标识 + 有限动效；输出自包含 HTML，可另导出 PNG/SVG/WebM 与 1200×630 分享卡（README 实述）",
+      "支持评审：两份已校验快照对比 Before/Delta/After，精确列出新增/删除/变更/迁移/改道事实",
+      "代理产出类型化 JSON IR，Archify 确定性编译成 HTML/SVG，拓扑可溯源不臆造；支持 Cursor、Claude Code、Codex CLI、OpenCode",
+      "MIT，2026-04 创建；GitHub API 实测 6.07 万+ star——本期本月 +48.0k 居月榜第一、本周 +10.4k 居周榜第三"
+     ]
+    },
+    {
+     "repo": "bilawalsidhu/gods-eye-view",
+     "lang": "JavaScript",
+     "delta": 38582,
+     "tag": "地理空间",
+     "intro": "浏览器里的「间谍卫星模拟器」——但数据全是真的：把航班应答机、船舶航标、在轨卫星、地震台站与公共摄像头汇到同一个写实 3D 地球仪上，本地运行、代码可审计可扩展",
+     "facts": [
+      "作者 bilawalsidhu 来自 YouTube 热门系列 God's Eye View（原 WorldView，YouTube 播放 500 万+、社媒 2,500 万+），2026-08 曾登 GitHub Trending 日榜与周榜第一，Product Hunt 当日 #8（README 实述）",
+      "两条安装路径：Pinokio 桌面端一键装（Windows/macOS/Linux，需 Pinokio 8.2+），或终端/编码代理本地跑；无需账号与 API Key 即可用航班、军用与卫星、地震、公共摄像头、无线电、火箭发射等图层",
+      "写实 3D 地形需自备 Cesium ion token（个人非商用）或 Google Maps key，在应用内 POWER UP 面板添加；交通数据是沿真实道路的模拟，摄像头位姿与火箭轨迹为粗略估计",
+      "功能面：驾驶舱视角、250km 目标名册、点击追踪任意目标、语音白板、GLSL 传感器滤镜（CRT/NVG/FLIR/Noir）、军事 HUD、场景导演与可分享的追踪链接；每个图层都是独立模块，可自行替换数据源；2026-06 建，GitHub API 实测 3.18 万 star"
+     ]
+    },
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 27092,
+     "tag": "Agent Skill",
+     "intro": "给编程 AI 助手用的技能包：强制它把答案直接放最前面——先行动、步骤编号、删掉寒暄废话，输出对 ADHD 用户（也即所有人）更友好",
+     "facts": [
+      "以 skill/plugin 形式装进 Claude Code 等 CLI 编码助手（README 提供 INSTALL.md 指引），官方说明无需任何 ADHD 诊断即可受益",
+      "核心规则是 Action first + 编号步骤：README 用改造前后对比示例展示如何不把结论埋在长篇分析里",
+      "README 提供中/英/日/葡/越/韩/泰等 7 种语言说明，MIT 协议，2026-05 创建",
+      "GitHub API 实测已 4.4 万+ star；本期本周榜第一、本月榜第三"
+     ]
+    },
+    {
+     "repo": "debpalash/VoiceStudio",
+     "lang": "Python",
+     "delta": 24241,
+     "tag": "AIGC",
+     "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费（今日榜 #2，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "alibaba/open-code-review",
+     "lang": "Go",
+     "delta": 20421,
+     "tag": "大厂开源",
+     "intro": "阿里把内部用了两年的 AI 代码评审助手开源了：确定性流水线 + 带工具能力的 LLM Agent 混合架构，读 Git diff 后给出精确到行的评审意见，官方称内部已服务数万开发者、识别数百万缺陷（本周榜 #6，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "cloudflare/security-audit-skill",
+     "lang": "JavaScript",
+     "delta": 19124,
+     "tag": "Agent Skill",
+     "intro": "Cloudflare 官方开源的编码代理安全审计技能：把 agent 变成安全审计员，用一群隔离 agent 走完侦察、覆盖率驱动狩猎、候选验证、结构化输出、独立复核与报告六个阶段，产出机器可读、可独立验证的发现（本周榜 #3，见上）。",
+     "facts": []
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 18374,
+     "tag": "高校开源",
+     "intro": "清华大学 THU-MAIC 团队开源的「多智能体交互课堂」：让多个 AI 角色同台互动的沉浸式学习体验，一键启动，适合把复杂主题变成可对话的课堂",
+     "facts": [
+      "开放在线 Demo（open.maic.chat），也支持 Vercel 一键部署：配好任一 LLM provider key 即可（.env.example 说明各 key 均可选）",
+      "对应论文发表于 JCST'26（DOI 10.1007/s11390-025-6000-0，jcst.ict.ac.cn）",
+      "提供中英文体验指南（飞书 wiki 链接）；MIT 协议，2026-03 创建",
+      "GitHub API 实测 3.65 万+ star"
+     ]
+    },
+    {
+     "repo": "miuuyy/codex-chatgpt-web",
+     "lang": "TypeScript",
+     "delta": 10457,
+     "tag": "AI 工具",
+     "intro": "把 ChatGPT Web（含 Pro）当成 Codex 里的原生模型来用：走 ChatGPT Web 自己的用量额度，不花 Codex/Work 配额，界面、任务、图片与流式输出保持不变。",
+     "facts": [
+      "三种模式：Browser-only（只发消息、不碰本地工具）、Full harness（经 MCP 把 ChatGPT 接到当前任务的文件、终端、工具与审批，对话跟着 Codex 任务走）、Zero Risk（手动粘贴发送）",
+      "模型按账号能力自动探测：Free/Go 档为 Luna / Think；有推理控制档位的账号为 Instant–High，另按情况提供 Extra High 与 Pro，模型名以 (Web) 结尾标注来源",
+      "开箱即用的安装包：Windows x64、macOS Apple Silicon 与 Intel、Linux AppImage，另有 install-launcher.sh / .ps1 一键脚本（校验 checksum、保留 ChatGPT profile 与设置）；应用自带浏览器与运行时，无需另装 Chrome/Node/Bun",
+      "MIT 协议，提供简体中文等 4 种语言 README 与架构文档（docs/architecture.md）、TROUBLESHOOTING.md；2026-07 创建，GitHub API 实测 1.21 万 star"
+     ]
+    }
+   ]
+  }
+ ],
+ "insight": [
+  "**Agent 从「记得住」走向「管得动」**：hindsight 今日+本周双榜第一（LongMemEval 长期记忆 SOTA，README 称数据由弗吉尼亚理工与《华盛顿邮报》独立复现），paperclip 把 agent 当员工管（组织架构/预算/治理/目标对齐），orca 把并行 agent 编排成 IDE——三个项目都在解同一个新痛点：agent 变多之后怎么管。",
+  "**大厂内部工具继续开源化**：阿里 open-code-review（内部两年、数万开发者、数百万缺陷）、Cloudflare security-audit-skill（自家漏洞 harness 的起点）、腾讯 WeKnora（企业知识平台）、Vercel Labs scriptc（TypeScript→原生编译器）与清华 OpenMAIC 同现三榜；从代码评审、安全审计到知识库和编译器，巨头把内部基建直接搬上台面。",
+  "**本地优先仍是硬卖点**：VoiceStudio 主打完全本地的 ElevenLabs 替代（今日 +3,060），Madeira 让非越狱 iPhone 跑 Windows 游戏，hindsight 支持 ollama/lmstudio 本地推理甚至直连 ChatGPT Plus / Claude Pro 订阅，WeKnora 内置 27 家模型厂商可选本地 Ollama——「不租 API、能力握在自己手里」已经写进产品叙事。",
+  "**本期最值得看的两个**：hindsight（今日 +4,463 / 本周 +7,282，双榜第一）是目前热度最高的 agent 记忆系统，值得拿它的 retain/recall/reflect 模型对照自己的记忆方案；paperclip（+2,527 / +5,376）给出「多 agent 团队怎么治理」的产品化答案（目标对齐、预算、审批、审计），对带团队做 AI 交付的人参考价值更大。"
+ ]
+}

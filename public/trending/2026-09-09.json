@@ -1,0 +1,316 @@
+{
+ "period_date": "2026-09-09",
+ "fetch_note": "抓取于 2026-09-09 08:45（北京 2026-09-09 23:45）",
+ "foot_note": "功能摘要基于各仓库 README / GitHub API 实抓整理（2026-09-09 实抓）",
+ "sections": [
+  {
+   "key": "today",
+   "label": "今日榜",
+   "sub": "过去 24 小时",
+   "rows": [
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 4624,
+     "intro": "给编程 AI 助手用的技能包：强制它把答案直接放最前面——先行动、步骤编号、删掉寒暄废话，输出对 ADHD 用户（也即所有人）更友好。",
+     "facts": [
+      "以 skill/plugin 形式装进 Claude Code 等 CLI 编码助手（README 提供 INSTALL.md 指引），官方说明无需任何 ADHD 诊断即可受益",
+      "核心规则是 Action first + 编号步骤：README 用改造前后对比示例展示如何不把结论埋在长篇分析里",
+      "README 提供中/英/日/葡/越/韩/泰等 7 种语言说明，MIT 协议，2026-05 创建",
+      "GitHub API 实测已 3.3 万+ star（2026-09-09）"
+     ],
+     "tag": "Agent Skill"
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 2286,
+     "intro": "给 Claude Code / Codex / Pi 等编码代理用的「编辑部级」图表技能库：直接产出自包含 HTML+SVG 的 38+ 种图表，不产 Mermaid「辣鸡图」、不要阴影装饰。",
+     "facts": [
+      "官方自称覆盖 38/39 种图表类型：Sankey、鱼骨图、Wardley map、看板、用户旅程、部署图、依赖图、UML 类图、数据库 schema 等（README v2.5.10 更新说明）",
+      "语义模式与布局分离：队列、策略追踪、信任边界等行为可复用既有类型表达，避免类型无限膨胀",
+      "能读取 draw.io / Mermaid 源文件，按指定格式、尺寸与细节级别重绘；静态 HTML 为默认，可选无障碍动效",
+      "MIT 协议，2026-04 创建，附在线预览站；GitHub API 实测 3.6 万+ star"
+     ],
+     "tag": "图表生成"
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 1151,
+     "intro": "面向编码代理的「harness 性能优化系统」：用 skills、instincts、记忆、安全与研究先行开发的组合，让 Claude Code / Codex / OpenCode / Cursor 等干得更快更稳。",
+     "facts": [
+      "主页 ecc.tools，README 自称 agent harness 操作系统，核心覆盖 skills/instincts/memory/security/research-first 五大维度",
+      "明确支持 Claude Code、Codex、OpenCode、Cursor 等主流编码代理（官方描述原文）",
+      "文档提供中英日韩葡俄等多语言版本，MIT 协议，2026-01 创建",
+      "GitHub API 实测 25 万+ star；今日与本周双榜在列"
+     ],
+     "tag": "Agent 框架"
+    },
+    {
+     "repo": "Tencent/teamai-cli",
+     "lang": "TypeScript",
+     "delta": 1083,
+     "intro": "腾讯开源的团队级 AI 工程化 CLI：把团队的 skills、规则、MCP 配置与知识库统一管理，再同步分发到每位成员的各种 AI 编码代理上，让整个团队「AI 原生」。",
+     "facts": [
+      "安装：npm install -g teamai-cli；支持 GitHub/GitLab/GitCode/CNB/TGit 等 Git 托管平台",
+      "管理员对共享仓库执行 teamai init 建立团队基线，成员协同维护；可先 clone teamai-hub 官方模板仓库起步（含生产级 skills/rules/review agents）",
+      "覆盖 Claude Code、Codex、CodeBuddy、WorkBuddy、OpenCode、Cursor 等代理（README 明列）",
+      "腾讯出品，2026-04 创建，npm 包已发布（CI + downloads badge）"
+     ],
+     "tag": "大厂开源"
+    },
+    {
+     "repo": "liquidslr/system-design-notes",
+     "lang": "",
+     "delta": 910,
+     "intro": "系统设计面试经典《System Design Interview – An Insider's Guide》（Alex Xu Vol.1/2）的逐章精读笔记：从零扩容到 YouTube、Google Drive 全套经典设计题都有。",
+     "facts": [
+      "按章整理：限流器、一致性哈希、KV 存储、分布式 ID、URL 短链、爬虫、通知、News Feed、聊天、搜索自动补全、YouTube、Google Drive、附近服务等（README 目录实列）",
+      "基于 Vol.1 与 Vol.2 第 2 版整理，作者注明仍在持续更新（work in progress）",
+      "配套在线阅读站点 pagefy.io 可直接浏览（README 附链接）",
+      "2024-12 创建至今，GitHub API 实测 1.7 万+ star"
+     ],
+     "tag": "学习笔记"
+    },
+    {
+     "repo": "obra/superpowers",
+     "lang": "Shell",
+     "delta": 690,
+     "intro": "一套「可组合技能 + 引导指令」的编码代理软件开发方法论：让代理从一上来就写码，变成先问清目标、再分段确认规范、再产出可执行实施计划的结构化流程。",
+     "facts": [
+      "核心工作流：代理先问「你到底想做什么」→ 把规范切小段给你确认 → 生成清晰实施计划才动手（README How it works）",
+      "覆盖 Claude Code、Codex CLI/App、Cursor、Devin CLI、Gemini CLI、GitHub Copilot CLI、Grok Build、Kimi Code、OpenCode、Pi、Hermes Agent 等十余种代理（README 安装目录）",
+      "内含 brainstorming / writing-plans / subagent-driven-development 等可组合技能，主题含 sdlc、skills",
+      "MIT 协议，2025-10 创建；GitHub API 实测 28 万+ star"
+     ],
+     "tag": "Agent 框架"
+    },
+    {
+     "repo": "freestylefly/awesome-gpt-image-2",
+     "lang": "JavaScript",
+     "delta": 612,
+     "intro": "GPT-Image2 工业级提示词引擎与模板库（Prompt as Code）：对 500+ 真实案例做逆向工程提炼出 20+ 套工业级模板，并进一步沉淀成可直接给代理用的 Skills。",
+     "facts": [
+      "官方 badge 标注 544 个逆向案例、20+ 工业级模板；GitHub 主题含 prompt-as-code、workflow-automation、agents",
+      "提供网页入口 gpt-image2.canghe.ai，支持 DSH 插件 / Agent Skills 形式接入（topics 含 dsh-plugin、skills）",
+      "中英双语 README，作者标注持续更新中；MIT 协议，2026-04 创建",
+      "GitHub API 实测 3 万 star；今日与本月双榜在列"
+     ],
+     "tag": "AIGC"
+    },
+    {
+     "repo": "openai/plugins",
+     "lang": "JavaScript",
+     "delta": 505,
+     "intro": "OpenAI 官方开源的 Codex 插件示例合集：一个插件一个目录 + 标准 plugin.json 清单，示范给 Codex 挂技能、MCP、agents、commands 与 hooks。",
+     "facts": [
+      "结构为 plugins/<name>/ 内含必需的 .codex-plugin/plugin.json，可选 skills/、.app.json、.mcp.json、agents/、commands/、hooks.json 等（README 实述）",
+      "内置默认 marketplace（.agents/plugins/marketplace.json），API key 登录用户另有独立 marketplace",
+      "重点示例：Figma（Code to Canvas/Code Connect）、Notion、iOS/macOS/Web App 构建、Expo、Netlify、Remotion、Google Slides",
+      "2026-03 创建；GitHub API 实测 6 千+ star"
+     ],
+     "tag": "大厂开源"
+    }
+   ]
+  },
+  {
+   "key": "week",
+   "label": "本周榜",
+   "sub": "近 7 天",
+   "rows": [
+    {
+     "repo": "mattpocock/skills",
+     "lang": "Shell",
+     "delta": 13419,
+     "intro": "TypeScript 明星讲师 Matt Pocock 的「真工程师」技能包：把他自己每天写代码用的 .agents 目录直接开源，小而可改、可组合，不绑架你的工作流。",
+     "facts": [
+      "作者明确与 GSD/BMAD/Spec-Kit 等重流程方案划清界限：不夺走控制权，skills 保持小型、易改、可组合，适配任何模型（README 原文）",
+      "30 秒安装二选一：Claude Code 插件（只读托管包、作者更新即自动跟进）或直接取自仓库",
+      "配套 aihero.dev 技能通讯，README 称约 6 万人订阅",
+      "MIT 协议，2026-02 创建；GitHub API 实测 25 万+ star，本周 +13.4k 居周榜第一"
+     ],
+     "tag": "Agent Skill"
+    },
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 13318,
+     "intro": "编码代理用的「架构即代码」技能：把代码库或系统描述直接在对话里变成可交互的架构图/流程图/时序图——自包含 HTML+SVG、带动效、可干净导出，还能做合并前架构评审。",
+     "facts": [
+      "五类图 + 四种预设 + 深/浅主题 + 品牌标识 + 有限动效；输出自包含 HTML，可另导出 PNG/SVG/WebM 与 1200×630 分享卡（README 实述）",
+      "支持评审：两份已校验快照对比 Before/Delta/After，精确列出新增/删除/变更/迁移/改道事实",
+      "代理产出类型化 JSON IR，Archify 确定性编译成 HTML/SVG，拓扑可溯源不臆造；支持 Cursor、Claude Code、Codex CLI、OpenCode",
+      "MIT，2026-04 创建；GitHub API 实测 5.5 万+ star——本月 +44.2k 居月榜第一、本周 +13.3k 居周榜第二"
+     ],
+     "tag": "图表生成"
+    },
+    {
+     "repo": "DietrichGebert/ponytail",
+     "lang": "JavaScript",
+     "delta": 12598,
+     "intro": "让 AI 代理像「组里最懒的资深工程师」那样思考的技能：能少写就少写、把 YAGNI 当默认动作——最好的代码是你从未写过的代码。",
+     "facts": [
+      "badge 显示兼容 20+ 种编码代理，官网 ponytail.dev，MIT 协议",
+      "npm 已发布 @dietrichgebert/ponytail；GitHub 主题含 yagni、claude-code-plugin、cursor-rules、agent-skills",
+      "2026-06 创建，上线约三个月 GitHub API 实测 13 万+ star",
+      "人设是「他什么都不说，写一行，然后它能跑」——砍废话与过度设计（README 原文直译）"
+     ],
+     "tag": "Agent Skill"
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 8527,
+     "intro": "面向编码代理的「harness 性能优化系统」：skills、instincts、记忆、安全与研究先行开发，覆盖 Claude Code / Codex / Opencode / Cursor 等（今日榜 #3，见上）。",
+     "facts": [],
+     "tag": "Agent 框架"
+    },
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 5927,
+     "intro": "给编程 AI 助手用的技能包：把结论放最前、步骤编号、零废话，ADHD 友好输出（今日榜 #1，见上）。",
+     "facts": [],
+     "tag": "Agent Skill"
+    },
+    {
+     "repo": "blader/humanizer",
+     "lang": "Python",
+     "delta": 5790,
+     "intro": "去除「AI 味」写作的技能：不改原意把文本重写成真人笔感；本质是一份 Markdown，因此任何支持 skills 的代理都能用。",
+     "facts": [
+      "安装：npx skills add blader/humanizer（可 --global / --agent 指定），Claude Code 2.1.142+ 可走 /plugin 安装，手动安装即拷 SKILL.md（README 实述）",
+      "以 /humanizer 唤起：可贴文本、给文件路径整篇改写，也支持直接自然语言请求",
+      "支持声音匹配：附上 2-3 段你自己的文字，按你的节奏、措辞、标点乃至破折号习惯重写",
+      "2026-01 创建，MIT 协议；skills.sh 有安装量 badge，GitHub API 实测 4.5 万+ star"
+     ],
+     "tag": "Agent Skill"
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 4380,
+     "intro": "清华大学 THU-MAIC 团队开源的「多智能体交互课堂」：让多个 AI 角色同台互动的沉浸式学习体验，一键启动，适合把复杂主题变成可对话的课堂。",
+     "facts": [
+      "开放在线 Demo（open.maic.chat），也支持 Vercel 一键部署：配好任一 LLM provider key 即可（.env.example 说明各 key 均可选）",
+      "对应论文发表于 JCST'26（DOI 10.1007/s11390-025-6000-0，jcst.ict.ac.cn）",
+      "提供中英文体验指南（飞书 wiki 链接）；MIT 协议，2026-03 创建",
+      "GitHub API 实测 3.4 万+ star；本周与本月双榜在列"
+     ],
+     "tag": "高校开源"
+    },
+    {
+     "repo": "NousResearch/hermes-agent",
+     "lang": "Python",
+     "delta": 4221,
+     "intro": "Nous Research 出品的「会自我成长的 AI 代理」：能从经验中沉淀技能、边用边改进、主动持久化知识并检索自己的历史记忆——代理本身也在进化。",
+     "facts": [
+      "内置学习回路：从经验创建技能、使用中改进技能、主动提示自己保存知识、能搜索自身过往（README 实述）",
+      "提供 Hermes Desktop 与 CLI 两种形态，文档见 hermes-agent.nousresearch.com/docs",
+      "GitHub 主题含 anthropic/claude/codex/chatgpt 等多模型生态，MIT 协议，2025-07 创建",
+      "GitHub API 实测 24 万+ star"
+     ],
+     "tag": "Agent 框架"
+    }
+   ]
+  },
+  {
+   "key": "month",
+   "label": "本月榜",
+   "sub": "近 30 天",
+   "rows": [
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 44220,
+     "intro": "编码代理用的「架构即代码」技能：对话中把代码库变成可交互架构图，自包含 HTML+SVG 带动效、可干净导出（本周榜 #2，见上）。",
+     "facts": [],
+     "tag": "图表生成"
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 30797,
+     "intro": "编码代理用的 38+ 种编辑部级图表技能：自包含 HTML+SVG、无 Mermaid（今日榜 #2，见上）。",
+     "facts": [],
+     "tag": "图表生成"
+    },
+    {
+     "repo": "public-apis/public-apis",
+     "lang": "Python",
+     "delta": 23450,
+     "intro": "最经典的免费公开 API 聚合清单：按领域收录上千个无需付费的公共 API，是开发者找数据源、做练习与 Demo 的默认去处。",
+     "facts": [
+      "A-Z 分类收录（动物、金融、天气、地理、新闻等），老牌常青仓库；README 顶部现为赞助商 APILayer 商业聚合服务的推广位",
+      "MIT 协议，2016-03 创建；GitHub API 实测 47.7 万+ star，位列全 GitHub 最热仓库之一",
+      "本月 +23.4k 属于「收藏/推荐型」常青增长",
+      "配套赞助商 APILayer 提供 One API Key 的付费聚合 API（README 推广位可见）"
+     ],
+     "tag": "API 聚合"
+    },
+    {
+     "repo": "freestylefly/awesome-gpt-image-2",
+     "lang": "JavaScript",
+     "delta": 19654,
+     "intro": "GPT-Image2 工业级提示词引擎与模板库：500+ 案例逆向工程、20+ 套工业级模板并沉淀为 Skills（今日榜 #7，见上）。",
+     "facts": [],
+     "tag": "AIGC"
+    },
+    {
+     "repo": "omacom/omarchy",
+     "lang": "Shell",
+     "delta": 15226,
+     "intro": "Rails 之父 DHH 亲自打造的「好看、现代且有主见」的 Linux 发行版：开箱即用的桌面体验 + 统一剪贴板、内置 AI 工具链，并配整套官方手册。",
+     "facts": [
+      "官方自述 by DHH（David Heinemeier Hansson），官网 omarchy.org，主打 opinionated 桌面体验",
+      "手册式文档：manual/ 目录为权威来源、镜像至 learn.omacom.io，覆盖入门/导航/主题/热键/统一剪贴板/提醒/AI/开发工具/游戏等 26+ 章（目录实列）",
+      "内置 Omarchy CLI、终端、Neovim、AI、GUI/TUI 应用全家桶",
+      "MIT 协议，2025-06 创建；GitHub API 实测 4 万 star，本月 +15.2k"
+     ],
+     "tag": "Linux"
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 13038,
+     "intro": "清华 THU-MAIC 的多智能体交互课堂：一键开启沉浸式多 AI 学习体验（本周榜 #7，见上）。",
+     "facts": [],
+     "tag": "高校开源"
+    },
+    {
+     "repo": "vorssaint/vorssaint-utils",
+     "lang": "Swift",
+     "delta": 12282,
+     "intro": "免费开源的 macOS 菜单栏工具全家桶：一个菜单栏图标顶替十几个付费 Mac 小工具——音量混音、Alt-Tab 窗口切换、应用卸载、系统监控、防睡眠等，全在本机运行。",
+     "facts": [
+      "覆盖能力（GitHub topics 实列）：alt-tab 窗口切换、app-uninstaller、keep-awake、system-monitor、volume-mixer、finder 增强",
+      "要求 macOS 14+ 且 Apple Silicon；SwiftUI/AppKit 原生实现，README 明示一切都在你的 Mac 上运行",
+      "GPL-3.0；官网 vorssaint.com，Release 页提供安装包并展示下载量统计",
+      "2026-06 创建；GitHub API 实测 1.7 万+ star"
+     ],
+     "tag": "macOS"
+    },
+    {
+     "repo": "AprilNEA/OpenLogi",
+     "lang": "Rust",
+     "delta": 11896,
+     "intro": "用 Rust 写的罗技 Logitech Options+ 开源替代品：经 HID++/UVC 协议原生解锁罗技键鼠、键盘与摄像头的按键重映射、DPI、SmartShift 等能力——本地优先，无账号、无遥测。",
+     "facts": [
+      "支持罗技鼠标/键盘/摄像头，目标覆盖 MX Master 等（topics 含 hidpp、mx-master、smartshift、dpi）",
+      "UI 基于 Zed 开源的 GPUI 框架；Apache-2.0，官网 openlogi.org",
+      "README 顶部明确 WARNING：处于活跃开发中、尚未稳定，功能与配置可能变更",
+      "GitHub API 实测 2 万+ star，本月 +11.9k"
+     ],
+     "tag": "Rust"
+    }
+   ]
+  }
+ ],
+ "insight": [
+  "**Agent Skill 生态全面霸榜**：24 个上榜槽位里近 2/3 是 skill / agent 框架类项目；i-have-adhd（ADHD 友好输出）、ponytail（最懒资深工程师 / YAGNI）这类「反套路」定位也能单日/单周涨数千星。",
+  "**巨头与名校集中下场**：OpenAI（Codex 插件官方示例）、腾讯（teamai-cli）、Nous Research（hermes-agent）、清华 THU-MAIC（OpenMAIC）与 Rails 之父 DHH（Omarchy）同现本期三榜——给 AI 编码代理做基建已成兵家必争之地。",
+  "**架构图告别 Mermaid？** archify（月榜第一 +44.2k）与 diagram-design（+30.8k）双双主打「不再产出 Mermaid 垃圾图」，自包含 HTML/SVG、可验证、可评审成为图表新卖点。",
+  "**个人效率工具回潮**：Rust 写的罗技替代品 OpenLogi 与 macOS 菜单栏全家桶 vorssaint-utils 同进月榜，本地优先、无遥测的「开源替代付费小工具」赛道热度不输 AI 基建。"
+ ]
+}

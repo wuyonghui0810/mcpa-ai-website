@@ -20,6 +20,10 @@ export function SiteHeader() {
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-mi-text">
             <Link href="/#servers" className="hover:text-mi-black transition-colors">Servers</Link>
+            <Link href="/trending" className="hover:text-mi-black transition-colors flex items-center gap-1">
+              <span>Trending</span>
+              <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-mi-orange/10 text-mi-orange rounded-full">Weekly</span>
+            </Link>
             <Link href="/about" className="hover:text-mi-black transition-colors">About</Link>
             <a
               href="https://github.com/modelcontextprotocol"
@@ -51,6 +55,10 @@ export function SiteHeader() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-mi-border bg-white px-4 py-4 space-y-3">
           <Link href="/" className="block text-sm font-medium text-mi-text">Servers</Link>
+          <Link href="/trending" className="block text-sm font-medium text-mi-text flex items-center justify-between">
+            <span>Trending</span>
+            <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-mi-orange/10 text-mi-orange rounded-full">Weekly</span>
+          </Link>
           <Link href="/about" className="block text-sm font-medium text-mi-text">About</Link>
           <a
             href="https://github.com/modelcontextprotocol"
