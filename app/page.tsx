@@ -195,6 +195,15 @@ export default function HomePage() {
               <h4 className="font-semibold text-mi-black mb-3">Resources</h4>
               <ul className="space-y-2 text-sm text-mi-muted">
                 <li>
+                  <Link
+                    href="/trending"
+                    className="hover:text-mi-black transition-colors flex items-center gap-1.5 text-mi-black font-medium"
+                  >
+                    <span>Weekly Trending Radar</span>
+                    <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-mi-orange/10 text-mi-orange rounded-full">New</span>
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://modelcontextprotocol.io/"
                     className="hover:text-mi-black transition-colors"
