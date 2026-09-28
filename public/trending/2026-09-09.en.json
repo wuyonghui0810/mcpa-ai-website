@@ -1,0 +1,316 @@
+{
+ "period_date": "2026-09-09",
+ "fetch_note": "Fetched at 2026-09-09 16:30 MST (UTC-7)",
+ "foot_note": "Summaries and facts verified against repo READMEs and GitHub APIs (2026-09-09)",
+ "insight": [
+  "**The Agent Skill ecosystem dominates the charts**: Nearly two-thirds of the 24 trending spots are skill and agent framework projects. Even unconventional, niche-positioned projects like i-have-adhd (ADHD-friendly output) and ponytail (\"the laziest staff engineer\" / YAGNI) are pulling in thousands of stars within a single day or week.",
+  "**Tech giants and elite universities enter the fray**: OpenAI (official Codex plugin examples), Tencent (teamai-cli), Nous Research (hermes-agent), Tsinghua THU-MAIC (OpenMAIC), and Rails creator DHH (Omarchy) all made appearances across this period's top trending lists—building infrastructure for AI coding agents has become the ultimate battleground.",
+  "**Moving past Mermaid for architecture diagrams?** Both archify (#1 on the monthly chart, +44.2k stars) and diagram-design (+30.8k) lead with the pitch of \"no more junk Mermaid diagrams,\" making self-contained HTML/SVG, verifiability, and reviewability the new key selling points for diagramming tools.",
+  "**The resurgence of personal productivity tools**: OpenLogi (a Rust-based Logitech replacement) and vorssaint-utils (an all-in-one macOS menu bar suite) both landed on the monthly charts. The local-first, telemetry-free niche of \"open-source alternatives to paid utilities\" is currently rivaling AI infrastructure in popularity."
+ ],
+ "sections": [
+  {
+   "key": "today",
+   "label": "Daily Trending",
+   "sub": "Past 24 hours",
+   "rows": [
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 4624,
+     "tag": "Agent Skill",
+     "intro": "A skill pack for AI coding assistants: forces them to put answers first—lead with action, use numbered steps, and eliminate fluff—delivering an output style optimized for users with ADHD (and better for everyone).",
+     "facts": [
+      "Installs as a skill/plugin into CLI coding assistants like Claude Code (`INSTALL.md` instructions included); official docs state no ADHD diagnosis is required to benefit",
+      "Core rules: Action first + numbered steps; README includes before-and-after examples demonstrating how to avoid burying conclusions in lengthy explanations",
+      "README provided in 7 languages (EN, ZH, JA, PT, VI, KO, TH); MIT licensed; created in 2026-05",
+      "33k+ stars verified via GitHub API (as of 2026-09-09)"
+     ]
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 2286,
+     "tag": "Diagram Generation",
+     "intro": "An editorial-grade diagramming skill for coding agents like Claude Code, Codex, and Pi: outputs self-contained HTML+SVG across 38+ diagram types—no low-effort Mermaid outputs, no decorative shadows.",
+     "facts": [
+      "Officially covers 38/39 diagram types: Sankey, Fishbone, Wardley maps, Kanban, User Journeys, Deployment diagrams, Dependency graphs, UML Class diagrams, DB schemas, etc. (README v2.5.10 release notes)",
+      "Decouples semantic patterns from layout: queues, strategy tracking, and trust boundaries reuse existing base types to avoid infinite type bloat",
+      "Parses draw.io and Mermaid source files to redraw them at specified formats, dimensions, and detail levels; defaults to static HTML with optional accessible animations",
+      "MIT licensed; created in 2026-04 with a live preview site; 36k+ stars verified via GitHub API"
+     ]
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 1151,
+     "tag": "Agent Framework",
+     "intro": "A harness performance optimization system for coding agents: combines skills, instincts, memory, security, and research-first development to make Claude Code, Codex, OpenCode, and Cursor faster and more reliable.",
+     "facts": [
+      "Hosted at ecc.tools; positioned as an agent harness operating system covering 5 core pillars: skills, instincts, memory, security, and research-first development",
+      "Explicitly supports major coding agents including Claude Code, Codex, OpenCode, and Cursor",
+      "Documentation available in EN, ZH, JA, KO, PT, RU, and more; MIT licensed; created in 2026-01",
+      "250k+ stars verified via GitHub API; listed on both daily and weekly trending charts"
+     ]
+    },
+    {
+     "repo": "Tencent/teamai-cli",
+     "lang": "TypeScript",
+     "delta": 1083,
+     "tag": "Enterprise Open Source",
+     "intro": "Tencent's open-source team-level AI engineering CLI: centrally manages team skills, rules, MCP configs, and knowledge bases, synchronizing them across every member's AI coding agents to make the team fully 'AI-native'.",
+     "facts": [
+      "Installation: `npm install -g teamai-cli`; supports Git hosting platforms including GitHub, GitLab, GitCode, CNB, and TGit",
+      "Admins run `teamai init` on a shared repo to establish a team baseline for collaborative maintenance; bootstrap via the official `teamai-hub` template repo (includes production-grade skills, rules, and review agents)",
+      "Supports agents including Claude Code, Codex, CodeBuddy, WorkBuddy, OpenCode, and Cursor (explicitly listed in README)",
+      "Built by Tencent; created in 2026-04; published npm package (with CI + download badges)"
+     ]
+    },
+    {
+     "repo": "liquidslr/system-design-notes",
+     "lang": "",
+     "delta": 910,
+     "tag": "Study Notes",
+     "intro": "Chapter-by-chapter deep-dive study notes for Alex Xu's classic *System Design Interview – An Insider's Guide* (Vol. 1 & 2): from scaling 0 to millions of users down to complete designs for YouTube and Google Drive.",
+     "facts": [
+      "Organized by chapter: Rate Limiter, Consistent Hashing, Key-Value Store, Distributed ID Generator, URL Shortener, Web Crawler, Notification System, News Feed, Chat System, Search Autocomplete, YouTube, Google Drive, Proximity Service, and more",
+      "Based on Vol. 1 and Vol. 2 (2nd Edition); noted by author as an active work in progress",
+      "Available to read directly on companion site pagefy.io (linked in README)",
+      "Created in 2024-12; 17k+ stars verified via GitHub API"
+     ]
+    },
+    {
+     "repo": "obra/superpowers",
+     "lang": "Shell",
+     "delta": 690,
+     "tag": "Agent Framework",
+     "intro": "A software development methodology of composable skills and guided instructions for coding agents: shifts agents from blindly writing code to a structured workflow that clarifies intent, confirms specs in chunks, and generates an actionable plan first.",
+     "facts": [
+      "Core workflow: agent asks 'what are you actually trying to do?' → breaks specs into manageable chunks for confirmation → produces a clear implementation plan before coding (README 'How it works')",
+      "Supports 10+ agents including Claude Code, Codex CLI/App, Cursor, Devin CLI, Gemini CLI, GitHub Copilot CLI, Grok Build, Kimi Code, OpenCode, Pi, and Hermes Agent (README install directory)",
+      "Includes composable skills like `brainstorming`, `writing-plans`, and `subagent-driven-development`; tagged with `sdlc` and `skills`",
+      "MIT licensed; created in 2025-10; 280k+ stars verified via GitHub API"
+     ]
+    },
+    {
+     "repo": "freestylefly/awesome-gpt-image-2",
+     "lang": "JavaScript",
+     "delta": 612,
+     "tag": "Generative AI",
+     "intro": "An industrial-grade prompt engine and template library (Prompt-as-Code) for GPT-Image2: reverse-engineers 500+ real-world cases into 20+ production templates, packaged as ready-to-use Agent Skills.",
+     "facts": [
+      "Official badges highlight 544 reverse-engineered cases and 20+ industrial templates; GitHub topics include `prompt-as-code`, `workflow-automation`, and `agents`",
+      "Web portal available at gpt-image2.canghe.ai; supports integration via DSH plugins and Agent Skills (topics include `dsh-plugin`, `skills`)",
+      "Bilingual EN/ZH README; marked as actively updated; MIT licensed; created in 2026-04",
+      "30k stars verified via GitHub API; listed on both daily and monthly trending charts"
+     ]
+    },
+    {
+     "repo": "openai/plugins",
+     "lang": "JavaScript",
+     "delta": 505,
+     "tag": "Enterprise Open Source",
+     "intro": "OpenAI's official collection of Codex plugin examples: one directory per plugin with a standard `plugin.json` manifest, showing how to attach skills, MCPs, agents, commands, and hooks to Codex.",
+     "facts": [
+      "Structure: `plugins/<name>/` containing required `.codex-plugin/plugin.json`, with optional `skills/`, `.app.json`, `.mcp.json`, `agents/`, `commands/`, `hooks.json`, etc. (per README)",
+      "Includes a default marketplace (`.agents/plugins/marketplace.json`), with an isolated marketplace available for API-key-authenticated users",
+      "Key examples: Figma (Code to Canvas / Code Connect), Notion, iOS/macOS/Web App scaffolding, Expo, Netlify, Remotion, and Google Slides",
+      "Created in 2026-03; 6k+ stars verified via GitHub API"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "week",
+   "label": "Weekly Trending",
+   "sub": "Past 7 days",
+   "rows": [
+    {
+     "repo": "mattpocock/skills",
+     "lang": "Shell",
+     "delta": 13419,
+     "tag": "Agent Skill",
+     "intro": "Star TypeScript educator Matt Pocock's \"real engineer\" skill pack: directly open-sourcing the `.agents` directory he uses daily for coding—small, modifiable, composable, and never hijacks your workflow.",
+     "facts": [
+      "The author explicitly distances this from heavy-process frameworks like GSD/BMAD/Spec-Kit: no taking away control, skills stay small, easily modifiable, composable, and compatible with any model (verbatim from README)",
+      "30-second install with two choices: Claude Code plugin (read-only hosted package, auto-updates on new releases) or pulled directly from the repo",
+      "Paired with the aihero.dev skills newsletter, boasting ~60k subscribers according to the README",
+      "MIT license, created in 2026-02; verified via GitHub API at 250k+ stars, ranked #1 on the weekly trending chart with +13.4k stars this week"
+     ]
+    },
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 13318,
+     "tag": "Diagram Generation",
+     "intro": "An \"Architecture-as-Code\" skill for coding agents: turns codebases or system descriptions directly into interactive architecture, flow, or sequence diagrams right in chat—self-contained HTML+SVG, animated, cleanly exportable, and capable of pre-merge architectural reviews.",
+     "facts": [
+      "5 diagram types + 4 presets + dark/light themes + branding logos + subtle animations; outputs self-contained HTML, exportable to PNG/SVG/WebM and 1200×630 share cards (per README)",
+      "Supports review mode: compares two validated snapshots across Before/Delta/After, precisely breaking down additions, deletions, modifications, migrations, and reroutes",
+      "Agents output typed JSON IR, deterministically compiled by Archify into HTML/SVG with traceable, non-hallucinated topologies; supports Cursor, Claude Code, Codex CLI, and OpenCode",
+      "MIT license, created in 2026-04; verified via GitHub API at 55k+ stars—ranked #1 monthly with +44.2k stars, and #2 weekly with +13.3k stars"
+     ]
+    },
+    {
+     "repo": "DietrichGebert/ponytail",
+     "lang": "JavaScript",
+     "delta": 12598,
+     "tag": "Agent Skill",
+     "intro": "A skill that makes AI agents think like \"the laziest senior engineer on your team\": write as little as possible, make YAGNI the default instinct—the best code is the code you never wrote.",
+     "facts": [
+      "Badge shows compatibility with 20+ coding agents; official site ponytail.dev, MIT license",
+      "Published on npm as `@dietrichgebert/ponytail`; GitHub topics include `yagni`, `claude-code-plugin`, `cursor-rules`, and `agent-skills`",
+      "Created in 2026-06, reaching 130k+ stars verified via GitHub API within ~3 months of launch",
+      "Persona: \"He says nothing, writes one line, and it works\"—cutting fluff and over-engineering (verbatim from README)"
+     ]
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 8527,
+     "tag": "Agent Framework",
+     "intro": "A \"harness performance optimization system\" for coding agents: covers skills, instincts, memory, safety, and research-first development across Claude Code, Codex, Opencode, Cursor, and more (#3 on today's trending chart, see above).",
+     "facts": []
+    },
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 5927,
+     "tag": "Agent Skill",
+     "intro": "A skill pack for coding AI assistants: conclusions first, numbered steps, zero fluff—ADHD-friendly output (#1 on today's trending chart, see above).",
+     "facts": []
+    },
+    {
+     "repo": "blader/humanizer",
+     "lang": "Python",
+     "delta": 5790,
+     "tag": "Agent Skill",
+     "intro": "A skill to strip out \"AI-sounding\" writing: rewrites text to sound authentically human without changing the original meaning; essentially a Markdown file, making it compatible with any agent supporting skills.",
+     "facts": [
+      "Install: `npx skills add blader/humanizer` (with optional `--global` / `--agent`), via `/plugin` in Claude Code 2.1.142+, or manually by copying `SKILL.md` (per README)",
+      "Invoked via `/humanizer`: paste text, provide a file path for full-file rewriting, or use natural language prompts directly",
+      "Supports voice matching: provide 2–3 sample paragraphs of your own writing to match your rhythm, phrasing, punctuation, and even em-dash habits",
+      "Created in 2026-01, MIT license; features an install-count badge from skills.sh, with 45k+ stars verified via GitHub API"
+     ]
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 4380,
+     "tag": "Academic Open Source",
+     "intro": "An open-source \"multi-agent interactive classroom\" from Tsinghua University's THU-MAIC team: an immersive learning experience with multiple AI personas interacting together, one-click deployable, and ideal for turning complex topics into conversational classrooms.",
+     "facts": [
+      "Public live demo available at open.maic.chat, plus one-click Vercel deployment: configure any LLM provider key (`.env.example` notes all keys are optional)",
+      "Accompanying paper published in JCST'26 (DOI 10.1007/s11390-025-6000-0, jcst.ict.ac.cn)",
+      "Provides bilingual onboarding guides in Chinese and English (Feishu wiki link); MIT license, created in 2026-03",
+      "Verified via GitHub API at 34k+ stars; featured on both weekly and monthly trending charts"
+     ]
+    },
+    {
+     "repo": "NousResearch/hermes-agent",
+     "lang": "Python",
+     "delta": 4221,
+     "tag": "Agent Framework",
+     "intro": "A \"self-growing AI agent\" by Nous Research: derives skills from experience, improves through usage, proactively persists knowledge, and retrieves past memories—the agent itself evolves.",
+     "facts": [
+      "Built-in learning loop: creates skills from experience, improves skills in use, proactively prompts itself to retain knowledge, and searches its own past (per README)",
+      "Available in two flavors: Hermes Desktop and CLI; documentation at hermes-agent.nousresearch.com/docs",
+      "GitHub topics span multi-model ecosystems including `anthropic`, `claude`, `codex`, `chatgpt`; MIT license, created in 2025-07",
+      "Verified via GitHub API at 240k+ stars"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "month",
+   "label": "Monthly Trending",
+   "sub": "Past 30 days",
+   "rows": [
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 44220,
+     "tag": "Diagram Generation",
+     "intro": "An \"Architecture-as-Code\" skill for coding agents: converts codebases into interactive architecture diagrams during chat, featuring self-contained animated HTML+SVG with clean export (#2 on this week's trending list, see above).",
+     "facts": []
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 30797,
+     "tag": "Diagram Generation",
+     "intro": "38+ editorial-grade diagramming skills for coding agents: self-contained HTML+SVG, zero Mermaid dependencies (#2 on today's trending list, see above).",
+     "facts": []
+    },
+    {
+     "repo": "public-apis/public-apis",
+     "lang": "Python",
+     "delta": 23450,
+     "tag": "API Directory",
+     "intro": "The quintessential curated list of free public APIs: indexes thousands of free-to-use APIs across multiple domains—the default destination for developers hunting for data sources, exercises, and demo backends.",
+     "facts": [
+      "A-to-Z categorized index (Animals, Finance, Weather, Geocoding, News, etc.); classic evergreen repo; top of README now serves as a sponsored placement for APILayer's commercial API aggregation service.",
+      "MIT licensed, created in 2016-03; 477k+ stars via GitHub API, ranking among the most-starred repositories across all of GitHub.",
+      "+23.4k stars this month, reflecting classic evergreen growth driven by bookmarks and recommendations.",
+      "Partnered sponsor APILayer provides a paid \"One API Key\" aggregation service (featured in the README promo slot)."
+     ]
+    },
+    {
+     "repo": "freestylefly/awesome-gpt-image-2",
+     "lang": "JavaScript",
+     "delta": 19654,
+     "tag": "Generative AI",
+     "intro": "Production-grade prompt engine and template library for GPT-Image2: reverse-engineered from 500+ cases with 20+ enterprise templates packaged into agent skills (#7 on today's trending list, see above).",
+     "facts": []
+    },
+    {
+     "repo": "omacom/omarchy",
+     "lang": "Shell",
+     "delta": 15226,
+     "tag": "Linux",
+     "intro": "A \"beautiful, modern, and opinionated\" Linux distribution crafted by Rails creator DHH: out-of-the-box desktop experience, unified clipboard, built-in AI toolchain, and a complete official handbook.",
+     "facts": [
+      "Official distribution by DHH (David Heinemeier Hansson); official site at omarchy.org, focusing on an opinionated desktop workflow.",
+      "Handbook-style documentation: the `manual/` directory serves as the authoritative source, mirrored to learn.omacom.io, spanning 26+ chapters covering onboarding, navigation, themes, hotkeys, unified clipboard, notifications, AI, dev tools, gaming, etc.",
+      "Bundles the Omarchy CLI, terminal, Neovim, AI tools, and a full suite of GUI/TUI applications out of the box.",
+      "MIT licensed, created in 2025-06; 40k stars via GitHub API, +15.2k this month."
+     ]
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 13038,
+     "tag": "Academic Open Source",
+     "intro": "A multi-agent interactive classroom by Tsinghua THU-MAIC: one-click setup for an immersive multi-AI collaborative learning experience (#7 on this week's trending list, see above).",
+     "facts": []
+    },
+    {
+     "repo": "vorssaint/vorssaint-utils",
+     "lang": "Swift",
+     "delta": 12282,
+     "tag": "macOS",
+     "intro": "A free, open-source macOS menu bar utility suite: replaces a dozen paid Mac utilities under a single menu bar icon—volume mixer, Alt-Tab window switcher, app uninstaller, system monitor, keep-awake, and more, all running 100% locally.",
+     "facts": [
+      "Feature set (from GitHub topics): `alt-tab` window switching, `app-uninstaller`, `keep-awake`, `system-monitor`, `volume-mixer`, and Finder enhancements.",
+      "Requires macOS 14+ and Apple Silicon; native SwiftUI/AppKit implementation, with the README emphasizing that everything runs entirely on your Mac.",
+      "GPL-3.0 license; official site at vorssaint.com, with download packages and telemetry-free download stats on the Releases page.",
+      "Created in 2026-06; 17k+ stars via GitHub API."
+     ]
+    },
+    {
+     "repo": "AprilNEA/OpenLogi",
+     "lang": "Rust",
+     "delta": 11896,
+     "tag": "Rust",
+     "intro": "An open-source, Rust-powered alternative to Logitech Options+: natively unlocks button remapping, DPI customization, and SmartShift for Logitech mice, keyboards, and webcams via HID++/UVC protocols—local-first, no account, zero telemetry.",
+     "facts": [
+      "Supports Logitech mice, keyboards, and webcams, targeting devices such as MX Master series (topics include `hidpp`, `mx-master`, `smartshift`, `dpi`).",
+      "UI built on GPUI, Zed's open-source UI framework; Apache-2.0 licensed, official site at openlogi.org.",
+      "Prominent WARNING at the top of the README: under active development and not yet stable; features and configurations are subject to change.",
+      "20k+ stars via GitHub API, +11.9k this month."
+     ]
+    }
+   ]
+  }
+ ]
+}

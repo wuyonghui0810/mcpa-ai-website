@@ -1,0 +1,321 @@
+{
+ "period_date": "2026-09-13",
+ "fetch_note": "Fetched at 2026-09-13 16:30 MST (UTC-7)",
+ "foot_note": "Summaries and facts verified against repo READMEs and GitHub APIs (2026-09-13)",
+ "insight": [
+  "**Agent skills remain the biggest star magnet**: 6 out of 19 featured standalone projects are skill/agent frameworks—including this week's #1 i-have-adhd (+15.9k), this month's #1 archify (+48.0k), diagram-design, ponytail, ECC, and newcomer Claude-Red. 'Unconventional personas' (such as ADHD-friendly outputs or the 'laziest senior engineer') continue to resonate, pulling in over 10k stars in a single week.",
+  "**Local deployment and self-hosting have become core selling points**: colibri (pure C, squeezing a 744B MoE onto consumer hardware), VoiceStudio (a local ElevenLabs alternative), and YuE2 (generating full musical tracks on a self-hosted 24GB VRAM rig) all champion the ethos of 'don't rent APIs—own your stack.' Compute cost has directly evolved into a product narrative.",
+  "**The two standout projects this edition**: gods-eye-view aggregates flights, maritime vessels, satellites, earthquakes, and public webcams into a photorealistic in-browser 3D globe with fully auditable full-stack code—topping today's trending list (+2.9k) while holding #2 on the weekly chart (+10.5k); meanwhile, system_prompts_leaks—a verbatim archive of proprietary LLM system instructions—has been cited by The Washington Post and CEPS for investigative reporting and dashboards, turning prompt transparency into a matter of public interest.",
+  "**Agent pipelines for video and document processing are maturing in parallel**: HeyGen open-sourced hyperframes (code HTML for deterministic MP4 generation, packed with 20 skills) handling the output side, while Microsoft's markitdown (184k stars, converting any document into Markdown to feed LLMs) handles ingestion—both pipelines trending in the exact same week."
+ ],
+ "sections": [
+  {
+   "key": "today",
+   "label": "Daily Trending",
+   "sub": "Past 24 hours",
+   "rows": [
+    {
+     "repo": "bilawalsidhu/gods-eye-view",
+     "lang": "JavaScript",
+     "delta": 2898,
+     "tag": "地理空间",
+     "intro": "浏览器里的「间谍卫星模拟器」——但数据全是真的：把航班应答机、船舶航标、在轨卫星、地震台站与公共摄像头汇到同一个写实 3D 地球仪上，本地运行、代码可审计可扩展。",
+     "facts": [
+      "作者 bilawalsidhu 来自 YouTube 热门系列 God's Eye View（原 WorldView，YouTube 播放 500 万+、社媒 2,500 万+），2026-08 曾登 GitHub Trending 日榜与周榜第一，Product Hunt 当日 #8（README 实述）",
+      "两条安装路径：Pinokio 桌面端一键装（Windows/macOS/Linux，需 Pinokio 8.2+），或终端/编码代理本地跑；无需账号与 API Key 即可用航班、军用与卫星、地震、公共摄像头、无线电、火箭发射等图层",
+      "写实 3D 地形需自备 Cesium ion token（个人非商用）或 Google Maps key，在应用内 POWER UP 面板添加；交通数据是沿真实道路的模拟，摄像头位姿与火箭轨迹为粗略估计",
+      "功能面：驾驶舱视角、250km 目标名册、点击追踪任意目标、语音白板、GLSL 传感器滤镜（CRT/NVG/FLIR/Noir）、军事 HUD、场景导演与可分享的追踪链接；每个图层都是独立模块，可自行替换数据源；2026-06 建，GitHub API 实测 3.18 万 star"
+     ]
+    },
+    {
+     "repo": "debpalash/VoiceStudio",
+     "lang": "Python",
+     "delta": 2546,
+     "tag": "AIGC",
+     "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费。",
+     "facts": [
+      "16 个 TTS 引擎 + 11 个 ASR 引擎，语言目录 646 种（实际覆盖与质量取决于所选引擎）；可在模型目录或 Ctrl/Cmd+E 里热切换引擎",
+      "平台覆盖 macOS 13.3+（Apple Silicon）、Windows 10/11 x64、Linux x86_64（需 glibc 2.39+），另有 Docker 镜像（linux/amd64）与 Colab 免安装试跑；算力可选 CUDA / Apple MPS·MLX / Linux ROCm / 纯 CPU，并支持远端 worker 卸载",
+      "除桌面应用外还暴露本地 REST/SSE/WebSocket、OpenAI 兼容音频 API 与 MCP Server；语音、项目、设置与产物默认全部留在本机",
+      "现名 VoiceStudio（原 OmniVoice-Studio），AGPL-3.0；README 顶部标注 Electron 重写进行中、当前为 active beta，建议用最新 Release 做正式工作；2026-04 创建，GitHub API 实测 2.67 万 star"
+     ]
+    },
+    {
+     "repo": "JustVugg/colibri",
+     "lang": "C",
+     "delta": 960,
+     "tag": "本地推理",
+     "intro": "纯 C、零依赖的「小引擎跑大模型」推理引擎：把 NVMe、内存与显存当成一个统一的分层推理层级，让 744B～2.8T 参数的前沿 MoE 模型跑在你已有的消费级/异构硬件上——专家权重直接从磁盘流式读取。",
+     "facts": [
+      "已支持 9 个模型家族：GLM-5.2/5.3（744B）、GLM-5.3-Flash（321B，带视觉）、Inkling（975B）、Kimi K3（2.8T）、DeepSeek V4 Flash（284B）与 V4.1 Flash（552B，带视觉）、Qwen3.8-Flash-Next、Qwen3.6（35B-A3B）、OLMoE（7B）——每族一个 C 文件，共用 coli chat / coli serve / coli web 入口",
+      "实测数据（README 截图）：GLM-5.2 744B int4 在 6×RTX 5090 上 4 tok/s、TTFT 1.6s、磁盘读取 0（专家全驻留）；Web 面板给出 VRAM/RAM/磁盘分层条与每轮耗时拆解，Brain / Atlas 页把 19,456 个专家按存储层级与实测路由亲和度可视化",
+      "设计立场明确：不给速度 SLA，但硬保证语义——默认策略绝不悄悄改模型精度或路由语义，快内存不足只降速、不换模型；用 token-exact 前向校验与 57× 压缩的 MLA KV 状态兜底正确性",
+      "Apache-2.0，官网 justvugg.github.io/colibri，README 有英/简中/繁中/意大语版本；2026-07 创建，GitHub API 实测 2.97 万 star"
+     ]
+    },
+    {
+     "repo": "asgeirtj/system_prompts_leaks",
+     "lang": "JavaScript",
+     "delta": 727,
+     "tag": "提示词研究",
+     "intro": "各家大模型系统提示词的「逐字抄录」档案库：把你按下发送键之前 ChatGPT / Claude / Gemini / Grok / Kimi / Perplexity 等预先收到的那份隐藏指令原文整理成档，持续更新。",
+     "facts": [
+      "覆盖厂商（README 目录）：Anthropic（Claude Fable 5.1、Opus 5、Sonnet 5、Claude Code、Claude Design、Claude Cowork、Claude Science）、OpenAI（ChatGPT、GPT-6-Astra、Codex）、Google（Gemini 3.8 Flash、3.1 Pro、Antigravity）、xAI（Grok 4.6、Grok Bot）、Meta Muse Code、Kimi K2.6、Perplexity、OpenCode、Pi 等",
+      "最近更新表：2026-09-13 新增 ChatGPT Work Codex 本地提示词与 Gemini 3.8 Flash；09-05 补 Claude Code headless（Fable 5.1）；09-04 补 Codex GPT-6-Astra",
+      "已被媒体二次使用：华盛顿邮报据本仓库做过交互报道《See the hidden rules behind AI》（2026-05），CEPS 的 AI World 用它做过实时数据看板（2026-07）",
+      "CC0-1.0 公有领域贡献，欢迎 PR 补录；2025-05 创建，GitHub API 实测 6.6 万 star"
+     ]
+    },
+    {
+     "repo": "vxcontrol/pentagi",
+     "lang": "Go",
+     "delta": 613,
+     "tag": "AI 安全",
+     "intro": "自托管的全自主 AI 渗透测试系统：让一组 AI Agent 在隔离 Docker 沙箱里自行规划并执行完整渗透流程，内置 nmap、Metasploit、sqlmap 等专业工具，最后产出带利用步骤的漏洞报告。",
+     "facts": [
+      "安全与记忆：所有操作在沙箱化 Docker 环境内完成；内置 20+ 专业安全工具；带长期记忆存储，可选 Graphiti/Neo4j 知识图谱做语义关系追踪；内置浏览器与 Tavily/Firecrawl/Perplexity/Sploitus/Searxng 等外部检索",
+      "模型接入灵活：内置 10+ LLM provider（OpenAI / Anthropic / Gemini / AWS Bedrock / Ollama / DeepSeek / GLM / Kimi / Qwen / MiniMax / 自建 OpenAI 兼容端点），也支持 OpenRouter、DeepInfra、OpenCode Go 等聚合层",
+      "工程化程度高：Docker Compose 快速部署，Web UI + REST/GraphQL（Bearer Token）API，PostgreSQL + pgvector 持久化全部命令与输出，Grafana/Prometheus 监控，多智能体按研究/开发/基础设施分工",
+      "README 明确边界：定位是自主 + 助手协同的渗透测试平台，不是 CALDERA 那类预置攻击剧本的 BAS 对抗仿真；MIT 协议，官网 pentagi.com，2025-01 创建，GitHub API 实测 2.4 万 star"
+     ]
+    },
+    {
+     "repo": "tonhowtf/omniget",
+     "lang": "Rust",
+     "delta": 547,
+     "tag": "桌面工具",
+     "intro": "不用开终端的下载 + 学习工具箱桌面应用：Udemy/Hotmart 等课程、YouTube、Instagram、X、Pinterest、TikTok、B 站、Telegram、磁力种子一律贴链接就下（1,800+ 站点），下完还能在同一个应用里播放、转写、读 PDF/EPUB。",
+     "facts": [
+      "底层是 yt-dlp + FFmpeg（自动安装并保持更新），原生支持 1,800+ 站点与种子下载；GPL-3.0，无账号、无广告、不记录下载内容遥测，文件只留在本机",
+      "三端桌面应用（Rust + Tauri）：Windows / macOS / Linux，另配浏览器扩展；内置课程播放器、PDF/EPUB 阅读器与音乐库",
+      "Tools 区共 108 个工具、16 个分类（README 目录），含字幕下载、Whisper 转写、文本转语音、Anki 卡片与间隔重复等「下完接着学」链路",
+      "README 自称在 udemy-downloader / hotmart-downloader / course-downloader 三个 topic 下均是星标最高的仓库，提供简中等多语言 README；2026-02 创建，GitHub API 实测 1.16 万 star"
+     ]
+    },
+    {
+     "repo": "SnailSploit/Claude-Red",
+     "lang": "Python",
+     "delta": 507,
+     "tag": "Agent Skill",
+     "intro": "给 Claude Skills 系统用的攻击性安全技能库：78 个结构化 SKILL.md，每个针对一类攻击面（SQL 注入、shellcode、EDR 规避、ADCS 滥用……）把 Claude 武装成懂方法学、懂工具链、懂边界情况的红队操作员。",
+     "facts": [
+      "规模：78 个技能 / 23 个分类（README badge 实标）——Web 16、无线 14、红队基建 7、漏洞利用开发 6、模糊测试 4，另含云、移动端、IoT/ICS、容器与 K8s、CI-CD、密码学、提权、后渗透与 C2、供应链、社工、AI 安全（提示注入 / 越狱 / RAG 投毒）等",
+      "安装：git clone 到 ~/.claude/skills/claude-red 即按对话触发词按需加载；也支持 sparse-checkout 只取某分类、cat SKILL.md 喂给 claude --system-file、或 ./install.sh --category web 脚本安装",
+      "按需加载省上下文——用不到的技能不占 context；另含快速分诊清单与专业报告模板 2 个工具类技能",
+      "定位是授权红队 / 漏洞赏金分诊 / 安全研究 / CTF 与操作员训练；MIT 协议，2026-03 创建，GitHub API 实测 4,115 star"
+     ]
+    },
+    {
+     "repo": "multimodal-art-projection/YuE",
+     "lang": "Python",
+     "delta": 500,
+     "tag": "AIGC",
+     "intro": "M-A-P 联合港科大等机构的前沿音乐生成模型：给它歌词和风格提示，它先写出可读可改的旋律与和弦「乐谱」，再把乐谱渲染成带人声与伴奏的完整歌曲——作曲过程白盒、可编辑、可让 Agent 参与改。",
+     "facts": [
+      "出品机构：HKUST、M·A·P、Tokenwave.AI、NYU、Stanford、MBZUAI、NOIZ、ACE Studio（README 机构图）；模型 YuE2-3B 已上 Hugging Face（m-a-p/YuE2-3B），产出 48 kHz 立体声、无量化",
+      "质量实测：在自建 WildSongBench（192 条提示词）上与 Suno v5/v6 竞争，best-of-8 取得 6.9632 SongBench Avg，为全部评估设置中的最高均值（README benchmark 章节 + 评分协议文档）",
+      "三种玩法：新建（歌词+风格 → 乐谱 → 整曲）、零样本翻唱（从已有录音转谱后换风格重演绎）、Agent 协作编辑（把音乐反馈对话式地对乐谱/编曲/歌词迭代，官方 demo 用例迭代 9 步 14 版）",
+      "运行门槛：Linux + Python 3.12 + 支持 BF16 的 NVIDIA GPU（24GB 显存）；pip 安装后跑 examples/generate.py 即可出曲，并保留乐谱、语义 token、声学 latent、生成设置等全部中间产物；Apache-2.0"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "week",
+   "label": "Weekly Trending",
+   "sub": "Past 7 days",
+   "rows": [
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 15924,
+     "tag": "Agent Skill",
+     "intro": "A skill package for AI coding assistants: forces answers upfront with action-first responses, numbered steps, and zero pleasantries/fluff—making outputs ADHD-friendly (and better for everyone).",
+     "facts": [
+      "Installs as a skill/plugin into CLI coding assistants like Claude Code (guided by `INSTALL.md` in the README); officially notes that no ADHD diagnosis is needed to benefit",
+      "Core rules prioritize action-first delivery and numbered steps: the README provides before/after comparisons demonstrating how to avoid burying conclusions under lengthy analysis",
+      "README is available in 7 languages (Chinese, English, Japanese, Portuguese, Vietnamese, Korean, Thai); MIT licensed; created in 2026-05",
+      "GitHub API reports 44k+ stars; ranked #1 on this week's trending list and #3 on this month's list"
+     ]
+    },
+    {
+     "repo": "bilawalsidhu/gods-eye-view",
+     "lang": "JavaScript",
+     "delta": 10510,
+     "tag": "Geospatial",
+     "intro": "A photorealistic 3D globe in the browser powered by live open data sources: tracking flights, vessels, satellites, earthquakes, public webcams, and radio signals all on one Earth (#1 on today's trending list, see above).",
+     "facts": []
+    },
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 10442,
+     "tag": "Diagram Generation",
+     "intro": "An Architecture-as-Code skill for coding agents: converts codebases or system descriptions directly into interactive architecture, flow, and sequence diagrams in-chat—complete with self-contained HTML+SVG, animations, clean exports, and pre-merge architecture reviews.",
+     "facts": [
+      "Supports 5 diagram types, 4 presets, dark/light themes, custom branding, and subtle animations; outputs self-contained HTML with export options for PNG, SVG, WebM, and 1200×630 social share cards (per README)",
+      "Supports review workflows: compares two validated snapshots (Before/Delta/After) to explicitly list additions, deletions, modifications, migrations, and reroutes",
+      "Agents produce a typed JSON IR that Archify deterministically compiles into HTML/SVG with traceable, non-hallucinated topologies; supports Cursor, Claude Code, Codex CLI, and OpenCode",
+      "MIT licensed, created in 2026-04; GitHub API reports 60.7k+ stars—gained +48.0k this month (#1 monthly) and +10.4k this week (#3 weekly)"
+     ]
+    },
+    {
+     "repo": "DietrichGebert/ponytail",
+     "lang": "JavaScript",
+     "delta": 9272,
+     "tag": "Agent Skill",
+     "intro": "A skill that makes AI agents think like the laziest senior engineer on the team: write as little code as possible, treat YAGNI as default—the best code is the code you never wrote.",
+     "facts": [
+      "Badges indicate compatibility with 20+ coding agents; official site: ponytail.dev; MIT licensed",
+      "Published on npm as `@dietrichgebert/ponytail`; GitHub topics include `yagni`, `claude-code-plugin`, `cursor-rules`, and `agent-skills`",
+      "Created in 2026-06, reaching 137k+ stars verified via GitHub API roughly three months after launch",
+      "Persona: 'He says nothing, writes one line, and it works'—eliminating fluff and overengineering (direct quote from README)"
+     ]
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 8086,
+     "tag": "Agent Framework",
+     "intro": "A harness performance optimization system for coding agents: combines skills, instincts, memory, security, and research-first workflows to make tools like Claude Code, Codex, OpenCode, and Cursor faster and more reliable.",
+     "facts": [
+      "Homepage: ecc.tools; self-described in the README as an agent harness OS spanning five core pillars: skills, instincts, memory, security, and research-first",
+      "Explicitly supports major coding agents including Claude Code, Codex, OpenCode, and Cursor (official description)",
+      "Documentation available in multiple languages including Chinese, English, Japanese, Korean, Portuguese, and Russian; MIT licensed; created in 2026-01",
+      "GitHub API reports 257k+ stars"
+     ]
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 7409,
+     "tag": "Diagram Generation",
+     "intro": "An editorial-grade diagramming skill library for coding agents like Claude Code, Codex, and Pi: generates 38+ diagram types directly as self-contained HTML+SVG, eliminating sloppy Mermaid charts and unnecessary drop shadows.",
+     "facts": [
+      "Officially covers 38/39 diagram types: Sankey, Fishbone, Wardley maps, Kanban, User Journeys, Deployment diagrams, Dependency graphs, UML class diagrams, Database schemas, etc. (README v2.5.10 release notes)",
+      "Decouples semantic schemas from layout: behaviors like queues, policy tracking, and trust boundaries reuse existing representations to avoid diagram type bloat",
+      "Parses draw.io and Mermaid source files to redraw them at specified formats, canvas sizes, and detail levels; defaults to static HTML with optional accessible animations",
+      "MIT licensed, created in 2026-04 with an online preview site; GitHub API reports 39k+ stars"
+     ]
+    },
+    {
+     "repo": "heygen-com/hyperframes",
+     "lang": "TypeScript",
+     "delta": 5124,
+     "tag": "Generative AI",
+     "intro": "HeyGen's open-source 'write HTML, render video' framework: deterministically renders HTML/CSS/media and seekable animations into MP4s—usable via local CLI or attached as skills to AI coding agents as a video production pipeline.",
+     "facts": [
+      "Two usage modes: direct local CLI rendering, or install 20 skills via `npx skills add heygen-com/hyperframes` and prompt your agent: 'use /hyperframes to make a 10-second product teaser'; supports Claude Code, Cursor, Gemini CLI, Codex, and more",
+      "Entry skill is the `/hyperframes` router, directing downstream workflows like `product-launch-video`, `faceless-explainer`, `pr-to-video`, `embedded-captions`, `talking-head-recut`, `motion-graphics`, `music-to-video`, `slideshow`, and `remotion-to-hyperframes`",
+      "Deterministic rendering stack built on ffmpeg + Puppeteer, tagged with MCP topics; playground (hyperframes.dev) and catalog (preset blocks) available online",
+      "Apache-2.0 licensed, requires Node.js >= 22, npm package `hyperframes`; created in 2026-03, with 49.6k stars on GitHub API"
+     ]
+    },
+    {
+     "repo": "microsoft/markitdown",
+     "lang": "Python",
+     "delta": 4823,
+     "tag": "Open Source",
+     "intro": "Microsoft's official Python utility for converting anything into Markdown: turns PDFs, Office documents, images, audio, HTML, EPUB, and more into LLM-friendly Markdown as a lightweight ingestion converter for text analysis pipelines.",
+     "facts": [
+      "Supports PDF, PowerPoint, Word, Excel, Images (EXIF + OCR), Audio (EXIF + transcription), HTML, CSV/JSON/XML, ZIP (directory traversal), YouTube URLs, EPUB, and more (per README)",
+      "Installation: `pip install 'markitdown[all]'`; CLI: `markitdown file.pdf > out.md`; also offers Python APIs and an MCP server for direct integration into agent/LLM pipelines",
+      "Similar positioning to `textract` but focuses on preserving document hierarchy (headings, lists, tables, links), optimized for machine readability rather than high-fidelity human layout; requires Python 3.10+; MIT licensed",
+      "GitHub topics include `autogen`, `langchain`, `openai`; created in 2024-11; GitHub API reports 183.6k stars"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "month",
+   "label": "Monthly Trending",
+   "sub": "Past 30 days",
+   "rows": [
+    {
+     "repo": "tt-a1i/archify",
+     "lang": "JavaScript",
+     "delta": 48036,
+     "tag": "Diagram Generation",
+     "intro": "An 'Architecture as Code' skill for coding agents: converts codebases into interactive architecture diagrams directly in conversation, featuring animated self-contained HTML+SVG and clean exports (#3 on this week's chart, see above).",
+     "facts": []
+    },
+    {
+     "repo": "cathrynlavery/diagram-design",
+     "lang": "HTML",
+     "delta": 30533,
+     "tag": "Diagram Generation",
+     "intro": "38+ editorial-grade diagramming skills for coding agents: self-contained HTML+SVG, explicitly saying no to Mermaid (#6 on this week's chart, see above).",
+     "facts": []
+    },
+    {
+     "repo": "ayghri/i-have-adhd",
+     "lang": "Python",
+     "delta": 23327,
+     "tag": "Agent Skill",
+     "intro": "A skill pack for AI coding assistants: bottom-line up front, numbered steps, zero fluff—ADHD-friendly output (#1 on this week's chart, see above).",
+     "facts": []
+    },
+    {
+     "repo": "freestylefly/awesome-gpt-image-2",
+     "lang": "JavaScript",
+     "delta": 21779,
+     "tag": "Generative AI",
+     "intro": "An industrial-grade prompt engine and template library (Prompt as Code) for GPT-Image2: reverse-engineered from 530+ real-world cases into 20+ production templates, further packaged into ready-to-use Agent Skills.",
+     "facts": [
+      "Official badges highlight 544 reverse-engineered cases and 20+ production templates; GitHub topics include prompt-as-code, workflow-automation, agents, and skills",
+      "Web portal available at gpt-image2.canghe.ai, supports integration via DSH plugin / Agent Skills (topics include dsh-plugin); newly added 2.5 same-prompt comparison showcase with full prompts and generation logs",
+      "Bilingual Chinese/English README, marked by the author as actively updated; MIT licensed, created in 2026-04",
+      "GitHub API reports 31.6k stars"
+     ]
+    },
+    {
+     "repo": "omacom/omarchy",
+     "lang": "Shell",
+     "delta": 16303,
+     "tag": "Linux",
+     "intro": "A beautiful, modern, and opinionated Linux distribution crafted by Rails creator DHH: out-of-the-box desktop experience with a unified clipboard, built-in AI toolchain, and comprehensive official documentation.",
+     "facts": [
+      "Officially authored by DHH (David Heinemeier Hansson), official website omarchy.org, centered around an opinionated desktop experience",
+      "Comprehensive manual: `manual/` directory serves as the canonical source, mirrored to learn.omacom.io, spanning 26+ chapters covering onboarding, navigation, themes, hotkeys, unified clipboard, notifications, AI, dev tools, gaming, etc.",
+      "Ships with an out-of-the-box suite including Omarchy CLI, terminal, Neovim, AI, and GUI/TUI applications",
+      "MIT licensed, created in 2025-06; GitHub API reports 40.8k stars (+16.3k this month)"
+     ]
+    },
+    {
+     "repo": "THU-MAIC/OpenMAIC",
+     "lang": "TypeScript",
+     "delta": 15605,
+     "tag": "Academic Open Source",
+     "intro": "An open-source 'multi-agent interactive classroom' from Tsinghua University's THU-MAIC team: an immersive learning experience featuring collaborative AI personas with one-click launch, ideal for turning complex topics into conversational classrooms.",
+     "facts": [
+      "Live online demo available at open.maic.chat, supports one-click Vercel deployment: works once any LLM provider key is configured (`.env.example` notes that individual keys are optional)",
+      "Corresponding research paper published in JCST'26 (DOI 10.1007/s11390-025-6000-0, jcst.ict.ac.cn)",
+      "Provides bilingual Chinese/English walkthrough guides (Feishu wiki links); MIT licensed, created in 2026-03",
+      "GitHub API reports 36.5k+ stars"
+     ]
+    },
+    {
+     "repo": "vorssaint/vorssaint-utils",
+     "lang": "Swift",
+     "delta": 13434,
+     "tag": "macOS",
+     "intro": "A free, open-source all-in-one macOS menu bar utility: replaces over a dozen paid Mac tools with a single menu bar icon—volume mixer, Alt-Tab window switcher, app uninstaller, system monitor, keep-awake, and more, all running 100% locally.",
+     "facts": [
+      "Built-in capabilities (listed in GitHub topics): alt-tab window switcher, app-uninstaller, keep-awake, system-monitor, volume-mixer, and Finder enhancements",
+      "Requires macOS 14+ and Apple Silicon; natively implemented in SwiftUI/AppKit, README emphasizes that everything runs locally on your Mac",
+      "GPL-3.0 licensed; official website vorssaint.com, Release page provides installation packages with download stats",
+      "Created in 2026-06; GitHub API reports 18.8k+ stars"
+     ]
+    },
+    {
+     "repo": "debpalash/VoiceStudio",
+     "lang": "Python",
+     "delta": 13070,
+     "tag": "Generative AI",
+     "intro": "A fully local, open-source ElevenLabs alternative: an all-in-one solution for voice cloning, dubbing, dictation, and audiobook production (#2 on today's chart, see above).",
+     "facts": []
+    }
+   ]
+  }
+ ]
+}
