@@ -63,7 +63,7 @@ test.describe('MCPA.ai site', () => {
   test('about page has disclaimer', async ({ page }) => {
     await page.goto('/about');
     await expect(page.locator('text=Legal Disclaimer')).toBeVisible();
-    await expect(page.locator('text=Linux Foundation')).toBeVisible();
+    await expect(page.locator('text=Linux Foundation').first()).toBeVisible();
   });
 
   test('privacy page loads', async ({ page }) => {
