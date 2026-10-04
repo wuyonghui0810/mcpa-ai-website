@@ -1,12 +1,12 @@
 {
- "period_date": "2026-09-27",
- "fetch_note": "Fetched at 2026-09-27 16:30 MST (UTC-7)",
- "foot_note": "Summaries and facts verified against repo READMEs and GitHub APIs (2026-09-27)",
+ "period_date": "2026-10-04",
+ "fetch_note": "Fetched at 2026-10-04 16:30 MST (UTC-7)",
+ "foot_note": "Summaries and facts verified against repo READMEs and GitHub APIs (2026-10-04)",
  "insight": [
-  "**From \"Remembering\" to \"Governing\": Managing Agents at Scale**: hindsight took the #1 spot on both the daily and weekly leaderboards (SOTA on LongMemEval long-term memory; README notes results were independently replicated by Virginia Tech and The Washington Post); paperclip treats agents like employees (org structures, budgets, governance, goal alignment); and orca orchestrates parallel agents into an IDE. All three projects tackle the exact same emerging pain point: how to manage agents once they proliferate.",
-  "**Big Tech Internal Tools Continue Going Open Source**: Alibaba's open-code-review (battle-tested internally for two years across tens of thousands of developers and millions of defects), Cloudflare's security-audit-skill (the foundation of their in-house vulnerability harness), Tencent's WeKnora (enterprise knowledge platform), Vercel Labs' scriptc (TypeScript-to-native compiler), and Tsinghua's OpenMAIC all made the leaderboards. From code reviews and security audits to knowledge bases and compilers, tech giants are bringing their internal infrastructure straight into the open.",
-  "**Local-First Remains a Major Selling Point**: VoiceStudio pitches itself as a fully local ElevenLabs alternative (+3,060 today), Madeira runs Windows games on non-jailbroken iPhones, hindsight supports local inference via Ollama/LM Studio and even direct access through personal ChatGPT Plus / Claude Pro subscriptions, and WeKnora integrates 27 model providers with support for local Ollama. \"Own your capabilities rather than renting APIs\" has become a core product narrative.",
-  "**The Two Must-Watch Projects This Issue**: hindsight (+4,463 today / +7,282 this week, #1 on both leaderboards) is currently the hottest agent memory system—well worth benchmarking against its retain/recall/reflect paradigm when designing your own memory architectures; paperclip (+2,527 / +5,376) offers a productized answer to governing multi-agent teams (goal alignment, budgets, approvals, auditing), making it especially valuable for engineering leads driving AI delivery."
+  "**Agent infrastructure has solidified into clear layers**: The trending charts this cycle are dominated by the same recurring stack—sandboxing (NVIDIA/OpenShell), memory (hindsight / claude-mem), team orchestration (paperclip / openrig / ECC), interaction surfaces (t3code), and web access (Agent-Reach). The battleground has shifted from raw model capability to the underlying substrate powering the agent.",
+  "**The memory layer is the most contested frontier**: hindsight sets a high benchmark with third-party reproducible LongMemEval scores, while claude-mem pursues a plug-and-play approach with single-command integration into any test harness—together adding +15k stars this week. Conveniently, my local Hermes setup uses hindsight as its backing store (`bank: hermes`), making it easy to run a quick side-by-side benchmark.",
+  "**Safety and cost governance have become the primary selling points**: OpenShell bakes security policies directly into the kernel with formal verification; Paperclip focuses on budget limits, alerts, and automated pauses upon hitting thresholds; OpenMontage runs ffprobe, frame sampling, and audio level sanity checks before every delivery while keeping auditable provider scoring logs. Now that agents can run end-to-end, only those proving they 'won't cause havoc and won't burn through cash' get a seat at the production table.",
+  "**Tech giants and solo developers compete on the same stage**: NVIDIA (OpenShell) and Alibaba (open-code-review) entered the arena armed with battle-tested internal production data, going head-to-head with breakout indie hits like ponytail, impeccable, and Agent-Reach (+1.9k to +3.3k stars in a single week). This makes it clear that the real barrier to entry in agent tooling isn't massive capital investment—it's having a crystal-clear understanding of the problem constraints."
  ],
  "sections": [
   {
@@ -15,107 +15,107 @@
    "sub": "Past 24 hours",
    "rows": [
     {
-     "repo": "vectorize-io/hindsight",
+     "repo": "DietrichGebert/ponytail",
+     "lang": "JavaScript",
+     "delta": 1894,
+     "tag": "Agent Skill",
+     "intro": "An agent skill that makes AI coding agents think like the \"laziest senior engineer on your team\": write as little code as possible, treat YAGNI as the default—the best code is the code you never wrote.",
+     "facts": [
+      "Badges indicate compatibility with 20+ coding agents; official site: ponytail.dev; MIT licensed.",
+      "Published on npm as `@dietrichgebert/ponytail`; GitHub topics include `yagni`, `claude-code-plugin`, `cursor-rules`, and `agent-skills`.",
+      "Created in 2026-06; verified via GitHub API at over 137k+ stars ~3 months post-launch (sampled 2026-09).",
+      "Persona: \"He says nothing, writes one line, and it works\"—cuts fluff and over-engineering (direct quote from README)."
+     ]
+    },
+    {
+     "repo": "pbakaus/impeccable",
+     "lang": "JavaScript",
+     "delta": 1170,
+     "tag": "Agent Skill",
+     "intro": "A frontend design standards skill for AI coding agents to stop models from outputting obviously \"AI-generated\" UIs—the ubiquitous generic SaaS template vibe, Inter font, purple-blue gradients, and cards inside cards.",
+     "facts": [
+      "Features 1 skill + 24 commands (`polish`, `audit`, `critique`, `distill`, `animate`, `bolder`, `quieter`, etc.) + 61 deterministic validation rules; the CLI and browser extension run rules without LLM calls or API keys (per README).",
+      "Installation: run `npx impeccable install` in the project root, then execute `/impeccable init` within your AI tool to generate `PRODUCT.md`, locking in long-term product facts (audience, intent, constraints, tone) to prevent confusion with visual styling.",
+      "Originated from Anthropic's `frontend-design` skill as actionable constraints against \"all models trained into the same template\"; includes a VS Code extension (requires 1.109.3+ and Copilot Chat) and multi-host support for Grok, Gemini CLI, and more.",
+      "Apache-2.0 licensed by pbakaus; official site: impeccable.style; verified via GitHub API at 76k+ stars (sampled 2026-10)."
+     ]
+    },
+    {
+     "repo": "Panniantong/Agent-Reach",
      "lang": "Python",
-     "delta": 4463,
+     "delta": 979,
+     "tag": "Agent Skill",
+     "intro": "A CLI + Skill giving AI agents one-click \"internet access\": enables Claude Code, Cursor, OpenClaw, and others to read and search Twitter/X, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu with zero API costs.",
+     "facts": [
+      "A single CLI plus `SKILL.md`—no memorizing commands, agents invoke tools autonomously; uses \"primary + fallback\" multi-backend routing per platform with auto-failover (e.g., switched to `bili-cli` after Bilibili anti-scraping blocked `yt-dlp` in 2026-06 with zero user intervention).",
+      "Fully open source with free APIs; the only potential cost is an overseas proxy (~$1/mo) while running locally is free; covers web-wide semantic search (via MCP), Xiaohongshu, and Xiaoyuzhou podcast transcription (via Whisper).",
+      "Login-required platforms require explicit user authorization: Twitter only accepts manual Cookie-Editor exports (no automated logins or cookie injection); OpenClaw users must grant `exec` permissions beforehand, or agents cannot run commands like `pip install`.",
+      "MIT licensed, requires Python 3.10+, with README available in EN/ZH/JA/KO; badges show it previously hit #1 on GitHub Trending Daily; verified via GitHub API at 90k+ stars (sampled 2026-10)."
+     ]
+    },
+    {
+     "repo": "thedotmack/claude-mem",
+     "lang": "TypeScript",
+     "delta": 627,
      "tag": "Agent Memory",
-     "intro": "A long-term memory system for AI agents: goes beyond just storing conversation logs to help agents actually learn from experience—officially claiming state-of-the-art results on the LongMemEval long-term memory benchmark.",
+     "intro": "A cross-session agent memory plugin: logs everything an agent does in a session, compresses it with AI, and reinjects relevant context into future sessions—works across Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, and more.",
      "facts": [
-      "Built by Vectorize under the MIT license; official site hindsight.vectorize.io, paper arXiv:2512.12818; created in 2025-10, with 37.2k stars via GitHub API, ranking #1 on both today's and this week's trending lists.",
-      "The README highlights that its benchmark results were independently reproduced by Virginia Tech's Sanghani Center for AI & Data Analytics and The Washington Post (unlike self-reported competitor scores), with continuous accuracy, latency, and cost tracking published at benchmarks.hindsight.vectorize.io.",
-      "Deployment: One-line Docker startup (API on 8888 / UI on 9999, persistent volume storage), plus pip/npm clients and an embedded Python mode (no standalone server required); supports 25+ LLM providers including local inference via ollama/lmstudio/llamacpp, arbitrary OpenAI-compatible endpoints, and direct hooks into ChatGPT Plus/Pro, Claude Pro/Max, Cursor, and GitHub Copilot subscriptions.",
-      "Core abstractions center on retain / recall / reflect primitives backed by a memory bank; easily integrated as a two-line LLM wrapper into existing agents or deployed as an MCP server with coding agents like Claude Code and Cursor (including `npx skills add` for doc-retrieval skills)."
+      "One-command install: `npx claude-mem install` (or `/plugin install claude-mem` in Claude Code, or `install.cmem.ai` script in OpenClaw); specify the host via `--ide opencode / grok-bot / antigravity / omp`.",
+      "Three memory provider options: official hosted `claude-mem observer` (browser email login, no card required, 14-day free trial without consuming your plan quota), bring-your-own OpenRouter/Gemini key, or direct Anthropic plan; also supports `--provider host` for local observation with optional login bypass in CI.",
+      "Note that `claude-mem` on npm is solely an SDK/library; installing the plugin requires `npx` or `/plugin`, otherwise plugin hooks and worker services will not be registered (stated explicitly in README).",
+      "Tech stack includes ChromaDB vector retrieval and `claude-agent-sdk` (from topics); Apache-2.0 licensed, created 2025-08, official site: claude-mem.ai; verified via GitHub API at 96k+ stars (sampled 2026-10)."
      ]
     },
     {
-     "repo": "debpalash/VoiceStudio",
+     "repo": "OpenCut-app/OpenCut",
+     "lang": "TypeScript",
+     "delta": 512,
+     "tag": "Open Source Tool",
+     "intro": "An open-source CapCut alternative: a free video editor for web, desktop, and mobile.",
+     "facts": [
+      "Currently undergoing a ground-up rewrite in Rust: targeting a single codebase for desktop, mobile, and web, with planned Editor APIs, first-class plugin architecture, MCP server for AI agents, headless batch rendering, and an in-editor scripting tab.",
+      "The currently available release is the classic edition at `opencut-app/opencut-classic`, which still powers opencut.app; the rewritten version is deployed at new.opencut.app until proven stable for takeover.",
+      "Developed with `proto` + `moon` toolchains (Node/Rust versions pinned via `.prototools`); provides setup guides for Linux, macOS, WSL, and Windows.",
+      "MIT licensed, created 2025-06, official site: opencut.app; verified via GitHub API at 92k+ stars (sampled 2026-10)."
+     ]
+    },
+    {
+     "repo": "pingdotgg/t3code",
+     "lang": "TypeScript",
+     "delta": 492,
+     "tag": "Agent Tool",
+     "intro": "An \"agent harness console\": remotely control existing coding agent sessions running on your local machine (Claude Code, Codex, Cursor, Grok Build, OpenCode, Antigravity) across mobile apps, web, and desktop.",
+     "facts": [
+      "Available across three clients: official iOS/Android apps, web client at app.t3.codes, and an Electron desktop app—all interact with locally authenticated agents without transporting credentials.",
+      "Prerequisite is having at least one provider installed and authenticated locally: `codex login`, `claude auth login`, `agent login` (Cursor), `grok login`, or `opencode auth login`; Antigravity logs in via Google in settings without CLI.",
+      "Creator pingdotgg (Theo) explicitly states nothing is sold and there are no subscription fees: positioned as \"performant, remote-capable, genuinely open source\"—if the direction doesn't suit you, fork it into your preferred editor.",
+      "Install: `curl -fsSL https://t3.codes/install.sh | sh` (use `install.ps1` on Windows); MIT licensed, created 2026-02, official site: t3.codes; verified via GitHub API at 25k+ stars (sampled 2026-10)."
+     ]
+    },
+    {
+     "repo": "calesthio/OpenMontage",
      "lang": "Python",
-     "delta": 3060,
-     "tag": "Generative Audio",
-     "intro": "A completely local, open-source ElevenLabs alternative: all-in-one voice cloning, voice design, video dubbing, transcription/dictation, and audiobook generation—fully on-device with zero accounts, API keys, subscriptions, or metered billing.",
+     "delta": 361,
+     "tag": "AIGC",
+     "intro": "Billed as the first open-source \"agentic video production system\": turns coding assistants into a full video production pipeline, delegating topic research, image generation, scriptwriting, voiceover, soundtrack selection, subtitle burning, and final rendering to agents.",
      "facts": [
-      "Features 16 TTS engines + 11 ASR engines supporting 646 languages (actual coverage and fidelity depend on the active engine); supports hot-swapping engines in the model directory or via Ctrl/Cmd+E.",
-      "Platform support covers macOS 13.3+ (Apple Silicon), Windows 10/11 x64, and Linux x86_64 (glibc 2.39+ required), alongside a Docker image (linux/amd64) and a zero-install Colab demo; compute runtimes include CUDA, Apple MPS/MLX, Linux ROCm, and pure CPU, with remote worker offloading support.",
-      "In addition to the desktop GUI, it exposes local REST, SSE, and WebSocket endpoints, an OpenAI-compatible audio API, and an MCP server; audio, projects, settings, and output artifacts remain entirely on-device by default.",
-      "Formerly OmniVoice-Studio, now VoiceStudio under the AGPL-3.0 license; the README notes an ongoing Electron rewrite in active beta and recommends the latest Release for production workloads; created in 2026-04, with 26.7k stars via GitHub API."
+      "Features 12 production pipelines, 100+ tools, and 700+ agent skills and production knowledge files; official 60-second demo short *THE LAST BANANA* cost $1.33 total using 6 Kling v3 shots (via fal.ai), Google Chirp3-HD narration, and Remotion composition.",
+      "The only hard dependency is FFmpeg; offers both `make` and manual installation flows (`Python venv` + `pip install -r requirements.txt` + `npm install` inside `remotion-composer` + `piper-tts`), with dedicated guides for macOS, Linux, and Windows.",
+      "Runs multi-point self-checks before delivery: `ffprobe` validation, frame sampling, audio level analysis, deliverable commitment checks, and subtitle inspection; scores provider choices across 7 dimensions with audit logs, requiring human sign-off on creative decisions.",
+      "Includes Backlot, a local dashboard displaying real-time pipeline progress and per-step costs; AGPL-3.0 licensed, created 2026-03, official site: openmontage.video; verified via GitHub API at 63k+ stars (sampled 2026-10)."
      ]
     },
     {
-     "repo": "paperclipai/paperclip",
+     "repo": "tester-army/e2e",
      "lang": "TypeScript",
-     "delta": 2527,
-     "tag": "Agent Framework",
-     "intro": "An open-source multi-agent orchestration platform: decomposes initiatives into corporate objectives, assigns roles, budgets, and access rights across agents, and tracks execution and spend in a task manager-style UI—as the creators put it, 'If OpenClaw is an employee, Paperclip is the company.'",
+     "delta": 344,
+     "tag": "Testing Framework",
+     "intro": "A next-generation E2E testing framework for web and mobile: describe objectives in natural language, let AI agents drive the app to that state, and verify results in the same test using standard locators and assertions.",
      "facts": [
-      "Architected as a Node.js service with a React UI around a strict three-step workflow: define goals (e.g., 'grow product to $1M MRR') → assemble team (CEO/CTO/Engineering/Design/Marketing across arbitrary bots and model providers) → approve and execute, with live dashboard interventions and budget tuning.",
-      "Integrates with OpenClaw, Claude Code, Codex, Cursor, Bash, and raw HTTP (README quote: anything wakeable via heartbeat can be 'hired').",
-      "Built on 'Four Pillars' = Organizational Hierarchy, Budget & Governance, Goal Alignment, and Agent Coordination; tailored for 24/7 unattended multi-agent fleets running 20+ terminals concurrently with full auditability and mobile management support.",
-      "MIT license, official site paperclip.ing, docs at docs.paperclip.ing; created in 2026-03, with 89.7k stars via GitHub API, ranking #3 today and #5 this week."
-     ]
-    },
-    {
-     "repo": "dream-num/univer",
-     "lang": "TypeScript",
-     "delta": 920,
-     "tag": "Office SDK",
-     "intro": "An open-source Office SDK: a unified runtime embedding spreadsheets, documents, slides, multi-dimensional tables, and kanban boards into your own products (with PDF annotation marked coming soon), engineered not as a passive viewer, but as a productivity foundation 'where humans and AI agents collaborate within the same document.'",
-     "facts": [
-      "Powered by a plugin architecture, Canvas rendering engine, built-in formula engine, and a unified browser/Node facade API; embeddable into SaaS platforms, internal tools, BI pipelines, or AI apps, as well as UI-less server-side workbook manipulation.",
-      "Three integration modes: Preset mode (zero-config out-of-the-box Sheets/Docs), Plugin mode (strictly modular packaging and lazy loading), and Headless mode (server-side formula calculation on Node ≥ 18.17); all `@univerjs/*` packages require aligned versions within the same release train.",
-      "Compatibility requirements: Chrome/Edge ≥88, Firefox ≥90, Safari ≥14.1, Electron ≥12; UI layer uses React 18 with React 19 compatibility; depends on `Intl.Segmenter` (polyfills needed on legacy runtimes).",
-      "Apache-2.0 license, official site univer.ai, docs at docs.univer.ai; created in 2022-09, with 20.1k stars via GitHub API."
-     ]
-    },
-    {
-     "repo": "rohitg00/ai-engineering-from-scratch",
-     "lang": "Python",
-     "delta": 848,
-     "tag": "Curriculum",
-     "intro": "A self-paced, production-ready AI engineering curriculum: 523 lessons across 20 phases spanning roughly 342 hours, grounded in the mantra 'don't just study AI—build it from scratch,' requiring a tangible, reusable artifact (prompt, skill, agent, or MCP server) for every lesson.",
-     "facts": [
-      "Scope and languages: 523 lessons / 20 phases / ~342 hours (tracked via README badges), with implementations across Python, TypeScript, Rust, and Julia; covers mathematical foundations, ML, computer vision, NLP, RL, LLM engineering, MCP, and beyond.",
-      "Core rationale highlighted on the README: 84% of students already leverage AI tools, yet only 18% feel equipped to deploy them professionally—this course bridges that exact delta.",
-      "Platform metrics report 114,584 readers and 181,995 page views over the trailing 30 days (as of 2026-08-29); GitHub repo and official site aiengineeringfromscratch.com share an identical curriculum codebase.",
-      "MIT license, providing landing pages localized into 12 languages including Simplified Chinese; author rohitg00 also created the Agent Memory project; created in 2026-03, with 59.2k stars via GitHub API."
-     ]
-    },
-    {
-     "repo": "InfinityLoop1308/PipePipe",
-     "lang": "Shell",
-     "delta": 274,
-     "tag": "Android",
-     "intro": "An independent Android client forked from NewPipe in early 2022, built to deliver a 'faster, more stable, and feature-rich' browsing experience across YouTube and Bilibili: sponsor skipping, dislike restoration, danmaku (bullet comments), background playback, and batch downloads.",
-     "facts": [
-      "Media enhancements: Built-in SponsorBlock to skip sponsor segments (supported on both YouTube and Bilibili), ReturnYouTubeDislike integration, original non-localized title display, account authentication for age-gated/member-only streams, and live chat displayed as an on-screen danmaku overlay.",
-      "Playback features: AV1/VP9 video playback, dedicated audio mode, background playback, swipe seek and full-screen gestures, long-press speed boost, and a sleep timer; supports keyword/channel filtering and hides Shorts and paid content.",
-      "Downloads and lists: Batch download entire playlists at once, with search and custom sorting across local playlists and watch history.",
-      "GPL-3.0 license, official site pipepipe.dev, released on F-Droid and IzzyOnDroid (package name `InfinityLoop1309.NewPipeEnhanced`); README explicitly states it is decoupled from upstream NewPipe; created in 2022-05, with 6,554 stars via GitHub API."
-     ]
-    },
-    {
-     "repo": "vercel-labs/scriptc",
-     "lang": "TypeScript",
-     "delta": 186,
-     "tag": "Compiler",
-     "intro": "An experimental compiler from Vercel Labs: compiles TypeScript and JavaScript directly into typed IR, readable C, LLVM IR, assembly, object files, native executables, and WebAssembly modules—producing standalone artifacts that execute without Node.js.",
-     "facts": [
-      "Leverages the official TypeScript compiler for AST parsing and type checking; static builds include a minimal native runtime without Node or a JS engine, surfacing uncompilable dynamic code as compiler diagnostics.",
-      "Installation: `npm install -g scriptc` (requires Node.js 24+); run `scriptc run hello.ts` for single-step compile-and-run, or `scriptc build hello.ts -o hello` to emit a standalone binary; npm packages and `any`-typed scripts can explicitly embed quickjs-ng using `--dynamic`.",
-      "Tiered outputs: `--emit=ir|c|llvm` requires only Node; `--emit=asm|obj` relies on bundled platform helpers (macOS 15+ arm64 supported) without requiring external toolchains, linkers, or SDKs; producing standard executables requires a platform linker driver (customizable via `SCRIPTC_LINKER`).",
-      "Targets macOS, Linux, Windows, and WASI Preview 1; explicitly flagged by the team as experimental; Apache-2.0 license, official site scriptc.dev; created in 2026-07, with 5,381 stars via GitHub API."
-     ]
-    },
-    {
-     "repo": "willfaust/Madeira",
-     "lang": "C",
-     "delta": 117,
-     "tag": "iOS",
-     "intro": "A research effort running x86-64 Windows PC games on non-jailbroken iPhones: bundles Wine (ARM64EC), FEX-Emu (x86-64→ARM64 translation), and DXMT (D3D11→Metal) into a single Mach process, running wineserver as an in-process thread.",
-     "facts": [
-      "Status (per README): Thumper and ULTRAKILL are fully playable; Marvel Cosmic Invasion boots but encounters mysterious crashes and unreliable input; other titles run at playable low frame rates. Positioned strictly as a research project rather than a commercial product.",
-      "Hardware and OS constraints: Non-jailbroken iPhone (development tested on A15 / iPhone 13 Pro), strictly requires JIT via debugger attachment on iOS (using StikDebug); requires Apple ID signing, where free profiles expire after 7 days requiring weekly reinstalls (app container, save data, and wineprefixes persist).",
-      "Ineligible for App Store listing due to JIT constraints, requiring sideloading; build pipeline is split across multiple scripts (`build/*/build.sh` + `xcodebuild`) covering Unix-side Wine libraries, ARM64EC PE modules, FEX, DXMT, and the iOS application wrapper.",
-      "Licensed under GPL-3.0-or-later; uses iOS-adapted forks of wine, dxmt, and rpmalloc with licenses diverging from upstream (itemized in README); author explicitly requests not upstreaming AI-generated modifications to FEX; created in 2026-03, with 797 stars via GitHub API."
+      "Mixes natural language actions and assertions within the same test case: e.g., `await agent.act('upgrade workspace to Pro tier')` followed by `agent.assert(...)` or `expect(screen.getByRole('status')).toContainText('Pro')`.",
+      "Tests with agent steps verified by subsequent assertions record actions for zero-LLM replay on subsequent runs (re-invoking AI only when UI changes); tests without agent steps incur zero model consumption.",
+      "Bring your own model: personal subscriptions, API keys, or local models; modular npm packages include `e2e` (SDK/CLI), `@e2e-dev/web` (Chromium/Firefox/WebKit via Playwright), `@e2e-dev/mobile` (iOS/Android emulators), and `@e2e-dev/github` (posts results as PR comments).",
+      "Install with `npx e2e init` (interactive setup for engine, web/mobile targets, model provider); disable telemetry via `npx e2e telemetry disable`; Apache-2.0 licensed, created 2026-07, official site: tester.army/e2e; verified via GitHub API at 3,000+ stars (sampled 2026-10)."
      ]
     }
    ]
@@ -126,92 +126,107 @@
    "sub": "Past 7 days",
    "rows": [
     {
+     "repo": "debpalash/VoiceStudio",
+     "lang": "Python",
+     "delta": 16775,
+     "tag": "AIGC",
+     "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费。",
+     "facts": [
+      "默认引擎是 k2-fsa/OmniVoice，也可换其他引擎，官方提供 features & engine catalog；覆盖 646 种语言的克隆、设计与转写",
+      "三种用法：Electron 桌面应用（克隆 / 设计音色、带时间轴的视频配音、悬浮听写控件、批量任务）、本地 API 与 MCP 供 agent 调用、可选远程 worker 分担算力",
+      "硬件按引擎分档：NVIDIA GPU（Windows / Linux）走 CUDA 加速，Apple 侧有 MLX 支持（GitHub topics 实抓），性能对照表在 docs/performance.md",
+      "提供简体中文与日文 README，AGPL-3.0，2026-04 创建，官网 voicestudio.sh；GitHub API 实测 5.3 万+ star（2026-10 实抓）"
+     ]
+    },
+    {
      "repo": "vectorize-io/hindsight",
      "lang": "Python",
-     "delta": 7282,
-     "tag": "Agent Memory",
-     "intro": "A long-term memory system for AI agents: goes beyond logging chat history to enable agents to actively learn from experience. Officially reported to achieve state-of-the-art results on the LongMemEval long-term memory benchmark (#1 on today's trending list, see above).",
-     "facts": []
-    },
-    {
-     "repo": "stablyai/orca",
-     "lang": "TypeScript",
-     "delta": 6503,
-     "tag": "Agent IDE",
-     "intro": "An Agent Development Environment (ADE) built for developers running multiple agents simultaneously: run Codex, Claude Code, OpenCode, and Pi side-by-side, each isolated in a dedicated git worktree, and compare results in a single unified UI.",
+     "delta": 14507,
+     "tag": "Agent 记忆",
+     "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩。",
      "facts": [
-      "Parallel worktrees: Fan out a single prompt across up to five isolated agents, evaluate their outputs, and merge the winner; terminal features Ghostty-grade WebGL rendering, unlimited split panes, and persistent scrollback across restarts.",
-      "Mobile companion app: Receive push notifications when agents complete tasks and dispatch follow-up commands directly from mobile (iOS via App Store / TestFlight; Android provides APK 0.0.50).",
-      "Design Mode: Click any UI element in a live Chromium window to pipe its HTML, CSS, and cropped screenshot straight into the agent's prompt.",
-      "MIT license, supports macOS / Windows / Linux, official site onOrca.dev, includes multilingual READMEs (e.g., Chinese); created in 2026-03, verified at 79.5k GitHub stars via API, #2 on this week's trending list."
-     ]
-    },
-    {
-     "repo": "cloudflare/security-audit-skill",
-     "lang": "JavaScript",
-     "delta": 6474,
-     "tag": "Agent Skill",
-     "intro": "Cloudflare's official open-source security audit skill for coding agents: transforms agents into security auditors across six stages—reconnaissance, coverage-driven hunting, candidate verification, structured output, independent review, and reporting—yielding machine-readable, independently verifiable findings.",
-     "facts": [
-      "Documented provenance: Originated as Cloudflare's internal vulnerability discovery harness (as covered in their blog post *Build your own vulnerability harness*); while the harness grew into an internal multi-stage system, this repo preserves the standalone repository form.",
-      "Six-stage pipeline: Recon outputs `architecture.md` and `coverage-ledger.json` → isolated hunters dispatched per ledger unit, with a coverage critic identifying gaps → each candidate handed to a fresh verifier dedicated to falsification → `findings.json` validated against `report-schema.json` → fresh agent independently audits source code conclusions → generates `REPORT.md`, `FINDINGS-DETAIL.md`, and `NEEDS-VALIDATION.md`.",
-      "Strictly defined three-tier findings: `confirmed` (complete source-level trace + bounded observations), `needs_validation` (unresolved facts identified, no severity assigned), and `rejected` (falsified); supports incremental audits on the same repo using historical ledgers to pinpoint new coverage gaps.",
-      "Attack surface knowledge modularized by domain: memory safety & binaries, AI/LLM (prompt injection/tool abuse), web protocols & auth, client-side, supply chain & releases, cloud & deployment, RPC & messaging, resource exhaustion, data isolation & lifecycle, desktop/mobile & local IPC; MIT license; created in 2026-06, verified at 22.3k GitHub stars via API."
-     ]
-    },
-    {
-     "repo": "affaan-m/ECC",
-     "lang": "JavaScript",
-     "delta": 5522,
-     "tag": "Agent Framework",
-     "intro": "A harness performance optimization system for coding agents: combines skills, instincts, memory, security, and research-first development to make Claude Code, Codex, OpenCode, Cursor, and others run faster and more reliably.",
-     "facts": [
-      "Official site ecc.tools; README positions it as an agent harness operating system spanning five core pillars: skills, instincts, memory, security, and research-first development.",
-      "Explicit out-of-the-box support for mainstream coding agents including Claude Code, Codex, OpenCode, and Cursor (verbatim from official description).",
-      "Documentation available in multiple languages including English, Chinese, Japanese, Korean, Portuguese, and Russian; MIT license; created in 2026-01.",
-      "Verified at 257k+ GitHub stars via API."
+      "核心是三个操作 retain / recall / reflect，外加 observations、mental models & knowledge pages、banks 等概念；官方定位是「让 agent 学习，而不只是记住」",
+      "LongMemEval 成绩由第三方（Virginia Tech Sanghani Center、The Washington Post）独立复现，其他厂商分数为自报；实时榜单在 benchmarks.hindsight.vectorize.io，论文 arXiv:2512.12818",
+      "接入成本很低：LLM wrapper 两行代码，pip install hindsight-api / hindsight-client（Python）或 npm @vectorize-io/hindsight-client，另有 MCP server 与一批集成；还有 Hindsight Cloud 托管版",
+      "MIT 协议，2025-10 创建，官网 hindsight.vectorize.io；GitHub API 实测 4.5 万+ star（2026-10 实抓）"
      ]
     },
     {
      "repo": "paperclipai/paperclip",
      "lang": "TypeScript",
-     "delta": 5376,
-     "tag": "Agent Framework",
-     "intro": "An open-source multi-agent team management application: breaks initiatives into company goals, assigns roles, budgets, and permissions to distinct agents, and tracks progress and spend in a task-manager-style dashboard—in their words: 'If OpenClaw is the employee, Paperclip is the company' (#3 on today's trending list, see above).",
-     "facts": []
+     "delta": 10722,
+     "tag": "Agent 框架",
+     "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」。",
+     "facts": [
+      "Node.js 服务 + React UI：agent 有岗位、汇报线、权限和预算，执行走 DB 支撑的 heartbeat 唤醒队列（合并唤醒、预算检查、工作区解析、密钥注入、技能加载、适配器调用）",
+      "适配器可混搭 Claude Code、Codex、Cursor（含 Cloud）、Gemini CLI、Pi、Hermes / Hermes Gateway、Grok Build、Kimi Code、OpenClaw 和 HTTP/webhook 机器人，也支持自定义进程与外部适配器包——「只要能被心跳唤醒，就算入职」",
+      "成本治理是重点：公司 / agent / 项目三级预算、花费追踪、阈值告警、到线自动暂停，专治 agent 死循环烧 token；任务、评论与文档留在 Paperclip 内，支持的适配器可恢复历史会话",
+      "MIT 协议，2026-03 创建，官网 paperclip.ing（另有 Cloud 等候名单）；GitHub API 实测 9.7 万+ star（2026-10 实抓）"
+     ]
     },
     {
-     "repo": "alibaba/open-code-review",
-     "lang": "Go",
-     "delta": 4310,
-     "tag": "Enterprise Open Source",
-     "intro": "Alibaba open-sources its internal AI code review assistant used in production for two years: a hybrid architecture of deterministic pipelines and tool-augmented LLM agents that inspects Git diffs to deliver line-accurate code review feedback, reportedly serving tens of thousands of internal engineers and identifying millions of defects.",
+     "repo": "NVIDIA/OpenShell",
+     "lang": "Rust",
+     "delta": 5854,
+     "tag": "大厂开源",
+     "intro": "英伟达开源的自主 AI Agent 运行沙箱：给 agent 读文件、装包、调 API、用凭据的能力，同时用策略把它们关在笼子里，不让它们碰你的数据、密钥和网络。",
      "facts": [
-      "Agent looks beyond diffs: reads entire source files, searches the broader codebase, and cross-examines related changes in the same batch for deeper contextual feedback; includes built-in multilingual rulesets covering NPEs, thread safety, XSS, and SQL injection; model layer is compatible with OpenAI and Anthropic.",
-      "Install via `npm install -g @alibaba-group/open-code-review` to get the `ocr` CLI; run `ocr config provider` / `ocr config model` for interactive model setup and connectivity testing, followed by `ocr review` for workspace diffs, `--from --to` for branch ranges, `--commit` for single commits, and `ocr scan` for full-repo scans; supports `--format json` output and session resumption.",
-      "Delegation mode: OCR handles file selection and rule parsing while delegating actual review execution to the host coding agent without requiring local LLM configuration; ships with plugins and an MCP Server for Claude Code, Codex, Cursor, and Kimi Code.",
-      "Requires Git ≥ 2.41; written in Go, Apache-2.0 license, OpenSSF Best Practices Gold badge, official site open-codereview.ai; created in 2026-05, verified at 41.9k GitHub stars via API, #6 this week and #5 this month."
+      "双保险治理：一是内核级强制——每个 agent 跑在隔离沙箱，文件访问、系统调用和每个网络连接都过策略检查，且 agent 永远看不到真实凭据，只在发往白名单端点时注入；二是形式化验证——策略变更前先算出它新放开了什么（如「能带凭据访问新主机」），这类改动挂起等人工审",
+      "组成上是 CLI + 本地 gateway + sandbox 三件套，一条命令装：curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh，然后 openshell sandbox create --name demo",
+      "默认沙箱镜像是最精简 Ubuntu、不带任何 agent；官方教程用 OpenCode + OpenRouter 免费模型跑第一个 agent，演示它需要新权限时你怎么逐次批准",
+      "Apache-2.0，PyPI 包名 openshell，文档 docs.nvidia.com/openshell，2026-02 创建；GitHub API 实测 1.48 万+ star（2026-10 实抓）"
      ]
     },
     {
      "repo": "rohitg00/ai-engineering-from-scratch",
      "lang": "Python",
-     "delta": 3207,
-     "tag": "Educational",
-     "intro": "A zero-to-production self-study curriculum for AI engineering: 523 lessons across 20 phases and ~342 hours, built around the philosophy 'don't just study AI, build it yourself'—every lesson requires delivering a reusable artifact (prompt / skill / agent / MCP server) (#5 on today's trending list, see above).",
-     "facts": []
+     "delta": 5059,
+     "tag": "学习笔记",
+     "intro": "从零到能交付的 AI 工程自学课程仓库：523 节课、20 个阶段、约 342 小时，主张「不只是学 AI，而是亲手把它造出来」，每节课都要交付一个可复用产物（prompt / skill / agent / MCP server）。",
+     "facts": [
+      "523 节课 / 20 个阶段 / 约 342 小时，语言覆盖 Python、TypeScript、Rust、Julia；每个 lesson 都要交出可复用产物，MIT 协议、全部免费",
+      "不止「大而全」：提供按目标走的路线，例如 Model Context Protocol (MCP) 的 17 节专线、Agent Skills 工程路线，以及 MCPA（MCP Associate）认证备考轨道",
+      "可直接在你已有的 host 里开学：对 agent 说 use start-learning 开课、learn-mcp 走 MCP 线、learn-agent-skills 走技能线、check-understanding 做阶段测验，会生成 MCP-LEARNING.md 之类的进度文件",
+      "配套官网 aiengineeringfromscratch.com，README 有 12 种语言版本；2026-03 创建，GitHub API 实测 6.4 万+ star（2026-10 实抓）"
+     ]
     },
     {
-     "repo": "Tencent/WeKnora",
-     "lang": "Go",
-     "delta": 3015,
-     "tag": "Enterprise Open Source",
-     "intro": "Tencent's open-source enterprise LLM knowledge platform: consolidates fragmented team documentation into a searchable, reason-capable, self-maintaining knowledge base, serving RAG QA, multi-step agent workflows, and wiki interfaces over a single knowledge foundation.",
+     "repo": "mvschwarz/openrig",
+     "lang": "TypeScript",
+     "delta": 4245,
+     "tag": "Agent 框架",
+     "intro": "给多 agent 团队用的「机架」：用 YAML 定义你的 agent 团队，一条命令把 Claude Code 和 Codex 装进同一个 rig，当成一个系统来管。",
      "facts": [
-      "Three delivery formats unified over one knowledge base: RAG powered by hybrid retrieval + multimodal parsing + verifiable citations; Agent for multi-step tasks equipped with skills, sandboxes, a local browser, MCP tools, and memory; Wiki organizing documents into a knowledge base with knowledge graphs and version rollbacks.",
-      "Agent toolbox: Skills installed via ClawHub / SkillHub / Git / ZIP run inside session-persistent Docker / E2B / Cube sandboxes, with interactive terminals and graphical desktops accessible alongside the chat interface; BrowserSkill drives your local Chrome/Edge, and external MCP servers (including OAuth) can be toggled on a per-tool basis.",
-      "Broad data ingestion: Automated sync with Feishu Wiki/Drive, Confluence, GitLab, Tencent IMA, Notion, Yuque, DingTalk Docs, and RSS feeds; supports 10+ file formats including PDF, Word, images, Excel, and XMind; QA integrates into WeCom, Feishu, Slack, Telegram, and other IM platforms, with website embed widgets and a built-in MCP Server.",
-      "Model layer catalog supports 27 providers out of the box (OpenAI, DeepSeek, Qwen, Zhipu, Hunyuan, Gemini, MiniMax, NVIDIA, LiteLLM, Ollama, etc.); multi-workspace RBAC (four roles, resource-scoped ownership, workspace audit logs); currently v0.8.2, official site weknora.weixin.qq.com; created in 2025-07, verified at 30.6k GitHub stars via API."
+      "定位一句话：harness 包住模型，rig 包住你的 harness。它把散落的终端会话变成有岗位、有共享上下文、各自认领工作的常驻团队，你只需跟 lead agent 谈目标，它再协调各团队专家",
+      "环境要求 Node.js 22 或 24 + tmux，仅 macOS / Linux（原生 Windows 不支持、WSL2 未测）；安装 npm install -g @openrig/cli，建议先 rig setup --dry-run 预览会改哪些文件",
+      "复用你已有的账号：Claude Code、Codex 任选或都要，不需要再买订阅；launch 前会问一次是否允许 agent 免重复确认执行 rig 命令（可撤销），并会写入 provider hooks 与 workspace trust 设置",
+      "作者 mvschwarz 用它跑自己的「AI 文明」实验，配套 TUI 可视化（团队图 → agent 座位表 → 单座详情，含 runtime / 模型 / 上下文 / 状态）；Apache-2.0，2026-04 创建，官网 openrig.dev；GitHub API 实测约 5,000 star（2026-10 实抓）"
+     ]
+    },
+    {
+     "repo": "Panniantong/Agent-Reach",
+     "lang": "Python",
+     "delta": 3952,
+     "tag": "Agent Skill",
+     "intro": "给 AI Agent 一键装上「互联网能力」的 CLI + Skill：让 Claude Code、Cursor、OpenClaw 等能读能搜 Twitter/X、Reddit、YouTube、GitHub、B 站、小红书，零 API 费用（今日榜 #3，见上）。",
+     "facts": [
+      "一个 CLI 加一份 SKILL.md，不用背命令、Agent 自己知道调什么；每个平台走「首选 + 备选」多后端路由，接入方式失效自动切换（README 举例：2026-06 B 站风控封死 yt-dlp 后切 bili-cli，用户零操作）",
+      "全部工具开源、API 免费，唯一可能花钱的是海外服务器代理（约 $1/月），本地电脑不用付费；已覆盖全网语义搜索（MCP 接入）、小红书、小宇宙播客转录（Whisper）等",
+      "需登录的平台必须由用户显式授权：Twitter 只接受 Cookie-Editor 手工导出，不代登录、不注入 Cookie；OpenClaw 用户要先开 exec 权限，否则 Agent 跑不了 pip install 这类命令",
+      "MIT 协议，Python 3.10+，README 有中/英/日/韩版；官方 badge 显示曾登 GitHub Trending 日榜第一，GitHub API 实测 9.0 万+ star（2026-10 实抓）"
+     ]
+    },
+    {
+     "repo": "pbakaus/impeccable",
+     "lang": "JavaScript",
+     "delta": 3311,
+     "tag": "Agent Skill",
+     "intro": "给 AI 编码代理用的前端设计规范技能：让模型别再输出一眼就看出「AI 生成」的界面——同一个 SaaS 模板味、Inter 字体、紫蓝渐变、卡片套卡片（今日榜 #2，见上）。",
+     "facts": [
+      "一个 skill + 24 条命令（polish / audit / critique / distill / animate / bolder / quieter 等）+ 61 条确定性检测规则；CLI 与浏览器插件跑规则时不调 LLM、不要 API Key（README 实述）",
+      "安装：项目根目录 npx impeccable install，再在 AI 工具里跑 /impeccable init 生成 PRODUCT.md，把受众、目的、约束、语气等长期产品事实固定下来，避免和视觉方向混淆",
+      "起点是 Anthropic 的 frontend-design skill，专门针对「所有模型都训练出同一套模板」的可执行约束；另有 VS Code 扩展（需 1.109.3+ 与 Copilot Chat）和 Grok / Gemini CLI 等多宿主接入",
+      "Apache-2.0，作者 pbakaus，官网 impeccable.style；GitHub API 实测 7.6 万+ star（2026-10 实抓）"
      ]
     }
    ]
@@ -224,90 +239,105 @@
     {
      "repo": "tt-a1i/archify",
      "lang": "JavaScript",
-     "delta": 55722,
-     "tag": "Diagramming",
-     "intro": "An Architecture-as-Code skill for coding agents: turns codebases or system descriptions directly into interactive architecture, flow, and sequence diagrams in chat—self-contained HTML+SVG with animations, clean exports, and pre-merge architecture reviews.",
+     "delta": 31939,
+     "tag": "Diagram Generation",
+     "intro": "An 'Architecture as Code' skill for coding agents: converts codebases or system descriptions directly into interactive architecture, flow, or sequence diagrams within chat—outputting self-contained, animated HTML+SVG with clean exports and pre-merge architecture reviews.",
      "facts": [
-      "5 diagram types + 4 presets + dark/light themes + custom branding + bounded animations; outputs self-contained HTML with exports to PNG/SVG/WebM and 1200×630 social cards (per README).",
-      "Supports review workflows: compares two verified snapshots (Before/Delta/After) to pinpoint added, removed, modified, migrated, and rerouted elements.",
-      "Agents generate a typed JSON IR that Archify deterministically compiles into HTML/SVG with traceable, hallucination-free topologies; supports Cursor, Claude Code, Codex CLI, and OpenCode.",
-      "MIT licensed, created in 2026-04; GitHub API reports 60.7k+ stars—ranked #1 on the monthly trending chart (+48.0k) and #3 weekly (+10.4k)."
+      "Supports 5 diagram types, 4 presets, dark/light themes, custom branding, and subtle animations; outputs self-contained HTML and exports to PNG, SVG, WebM, and 1200×630 social share cards (per README).",
+      "Supports review workflows: compares two verified snapshots across Before / Delta / After, precisely listing additions, removals, modifications, migrations, and reroutes.",
+      "Agents emit a typed JSON IR that Archify deterministically compiles into HTML/SVG with traceable, non-hallucinated topologies; supports Cursor, Claude Code, Codex CLI, and OpenCode.",
+      "MIT license, created in 2026-04; 60k+ stars via GitHub API (verified 2026-09), #1 on this month's trending chart."
+     ]
+    },
+    {
+     "repo": "DietrichGebert/ponytail",
+     "lang": "JavaScript",
+     "delta": 30546,
+     "tag": "Agent Skill",
+     "intro": "A skill that makes AI agents think like 'the laziest senior engineer on your team': write less code whenever possible and treat YAGNI as the default—the best code is the code you never wrote (#1 on today's chart, see above).",
+     "facts": [
+      "Badges indicate compatibility with 20+ coding agents; official site ponytail.dev; MIT licensed.",
+      "Published on npm as `@dietrichgebert/ponytail`; GitHub topics include `yagni`, `claude-code-plugin`, `cursor-rules`, and `agent-skills`.",
+      "Created in 2026-06; reached 137k+ stars via GitHub API ~3 months after launch (verified 2026-09).",
+      "Persona: 'He says nothing, writes one line, and it works'—eliminating fluff and over-engineering (direct translation from README)."
      ]
     },
     {
      "repo": "bilawalsidhu/gods-eye-view",
      "lang": "JavaScript",
-     "delta": 38582,
+     "delta": 30444,
      "tag": "Geospatial",
-     "intro": "A browser-based 'spy satellite simulator' powered entirely by real-world data: aggregates flight transponders, ship AIS beacons, orbiting satellites, seismic stations, and public webcams onto a photorealistic 3D globe; runs locally with auditable, extensible code.",
+     "intro": "An in-browser 'spy satellite simulator' powered entirely by real data: aggregates flight transponders, ship beacons, orbiting satellites, seismic stations, and public webcams onto a photorealistic 3D globe; runs locally with auditable, extensible code.",
      "facts": [
-      "Created by bilawalsidhu from the viral YouTube series God's Eye View (formerly WorldView, 5M+ YouTube views, 25M+ across socials); hit #1 on GitHub Trending daily and weekly in 2026-08, and #8 on Product Hunt (per README).",
-      "Two installation paths: one-click desktop install via Pinokio (Windows/macOS/Linux, requires Pinokio 8.2+), or run locally via terminal/coding agents; no accounts or API keys required for flights, military/satellites, earthquakes, webcams, radio, and rocket launch layers.",
-      "Photorealistic 3D terrain requires your own Cesium ion token (personal non-commercial) or Google Maps key added in the in-app POWER UP panel; traffic data is simulated along real roads, while camera poses and rocket trajectories are rough approximations.",
-      "Features: cockpit view, 250km target roster, click-to-track any entity, voice whiteboard, GLSL sensor filters (CRT/NVG/FLIR/Noir), military HUD, scene director, and shareable tracking links; each layer is an isolated module with swappable data sources; created in 2026-06, GitHub API reports 31.8k stars."
+      "Created by bilawalsidhu from the hit YouTube series *God's Eye View* (formerly *WorldView*, 5M+ YouTube views, 25M+ social views); hit #1 on GitHub Trending daily and weekly charts in 2026-08, and #8 Product Hunt Product of the Day (per README).",
+      "Two installation paths: one-click via Pinokio desktop (Windows / macOS / Linux, requires Pinokio 8.2+), or run locally via terminal / coding agents; no account or API keys required for flights, military & satellites, earthquakes, public webcams, radio, and rocket launch layers.",
+      "Photorealistic 3D terrain requires your own Cesium ion token (personal non-commercial) or Google Maps key added in the in-app POWER UP panel; traffic data simulates along real roads; webcam poses and rocket trajectories are rough estimates.",
+      "Features: cockpit view, 250km target roster, click-to-track any entity, voice whiteboard, GLSL sensor shaders (CRT/NVG/FLIR/Noir), military HUD, scene director, and shareable tracking links; each layer is an isolated module with swappable data feeds; created 2026-06, 31k+ stars via GitHub API (verified 2026-09)."
+     ]
+    },
+    {
+     "repo": "affaan-m/ECC",
+     "lang": "JavaScript",
+     "delta": 26724,
+     "tag": "Agent Framework",
+     "intro": "A harness performance optimization system for coding agents: combines skills, instincts, memory, security, and research-first workflows to make Claude Code, Codex, OpenCode, Cursor, and others run faster and more reliably.",
+     "facts": [
+      "Homepage at ecc.tools; README describes it as an agent harness operating system spanning 5 core dimensions: skills, instincts, memory, security, and research-first.",
+      "Explicitly supports major coding agents including Claude Code, Codex, OpenCode, and Cursor (official description).",
+      "Documentation available in multiple languages including English, Chinese, Japanese, Korean, Portuguese, and Russian; MIT license, created in 2026-01.",
+      "Over 257k stars via GitHub API (verified 2026-09), consistently topping monthly trending charts."
      ]
     },
     {
      "repo": "ayghri/i-have-adhd",
      "lang": "Python",
-     "delta": 27092,
+     "delta": 26497,
      "tag": "Agent Skill",
-     "intro": "A skill pack for AI coding assistants: forces them to put answers first—lead with action, number steps, and cut pleasantries/filler, making outputs ADHD-friendly (and better for everyone).",
+     "intro": "A skill pack for AI coding assistants: forces them to put answers upfront—action-first, numbered steps, zero conversational filler, making outputs friendlier for ADHD users (and everyone else).",
      "facts": [
-      "Installs as a skill/plugin for CLI coding assistants like Claude Code (instructions in INSTALL.md); documentation notes no formal ADHD diagnosis is needed to benefit.",
-      "Core rules: Action first + numbered steps; the README demonstrates before-and-after examples showing how to avoid burying conclusions under lengthy analysis.",
-      "README available in 7 languages (English, Chinese, Japanese, Portuguese, Vietnamese, Korean, Thai); MIT licensed, created in 2026-05.",
-      "GitHub API reports 44k+ stars; ranked #1 on the weekly trending chart and #3 monthly."
+      "Installed as a skill/plugin into CLI coding assistants like Claude Code (INSTALL.md guide in README); official docs note no ADHD diagnosis needed to benefit.",
+      "Core rules are Action first + numbered steps: the README demonstrates before-and-after examples of never burying conclusions in walls of analysis.",
+      "README provided in 7 languages (EN / ZH / JA / PT / VI / KO / TH); MIT license, created in 2026-05.",
+      "Over 44k stars via GitHub API (verified 2026-09), maintaining a steady presence atop weekly and monthly charts."
      ]
     },
     {
-     "repo": "debpalash/VoiceStudio",
+     "repo": "vectorize-io/hindsight",
      "lang": "Python",
-     "delta": 24241,
-     "tag": "Voice AI",
-     "intro": "A fully local, open-source ElevenLabs alternative: all-in-one voice cloning, timbre design, video dubbing, transcription/dictation, and audiobook production—runs completely offline without accounts, API keys, subscriptions, or usage fees (trending #2 today).",
-     "facts": []
+     "delta": 23065,
+     "tag": "Agent Memory",
+     "intro": "A long-term memory system for AI agents: goes beyond storing chat history to let agents actively 'learn' from experience—officially claims SOTA results on the LongMemEval long-term memory benchmark (#2 on this week's chart, see above).",
+     "facts": [
+      "Centered on three core operations: retain, recall, and reflect, alongside concepts like observations, mental models & knowledge pages, and banks; positioned as 'enabling agents to learn, not just remember'.",
+      "LongMemEval scores were independently reproduced by third parties (Virginia Tech Sanghani Center, The Washington Post), whereas other vendors' scores are self-reported; live leaderboard at benchmarks.hindsight.vectorize.io, paper at arXiv:2512.12818.",
+      "Low integration overhead: two lines of code for the LLM wrapper, `pip install hindsight-api` / `hindsight-client` (Python) or npm `@vectorize-io/hindsight-client`, plus an MCP server and integrations; also offers hosted Hindsight Cloud.",
+      "MIT license, created 2025-10, official site hindsight.vectorize.io; 45k+ stars via GitHub API (verified 2026-10)."
+     ]
     },
     {
      "repo": "alibaba/open-code-review",
      "lang": "Go",
-     "delta": 20421,
+     "delta": 21959,
      "tag": "Enterprise Open Source",
-     "intro": "Alibaba open-sourced its internal AI code review assistant after two years of production use: a hybrid architecture combining a deterministic pipeline with a tool-enabled LLM agent that inspects Git diffs to deliver line-level feedback; reportedly used by tens of thousands of internal developers to detect millions of defects (trending #6 this week).",
-     "facts": []
-    },
-    {
-     "repo": "cloudflare/security-audit-skill",
-     "lang": "JavaScript",
-     "delta": 19124,
-     "tag": "Agent Skill",
-     "intro": "Cloudflare's official open-source security audit skill for coding agents: turns agents into security auditors using an isolated swarm to execute six phases—reconnaissance, coverage-driven hunting, candidate validation, structured output, independent review, and reporting—generating machine-readable, independently verifiable findings (trending #3 this week).",
-     "facts": []
-    },
-    {
-     "repo": "THU-MAIC/OpenMAIC",
-     "lang": "TypeScript",
-     "delta": 18374,
-     "tag": "Academic Open Source",
-     "intro": "An open-source 'multi-agent interactive classroom' from Tsinghua University's THU-MAIC team: an immersive learning experience where multiple AI personas interact together; launches with one click to turn complex topics into conversational classrooms.",
+     "intro": "Alibaba open-sourced its internal AI code review assistant used for two years: a hybrid architecture combining a deterministic pipeline with a tool-augmented LLM Agent that reviews Git diffs down to exact lines of code; internally served tens of thousands of developers and identified millions of defects.",
      "facts": [
-      "Live online demo available at open.maic.chat, plus one-click Vercel deployment: simply configure any supported LLM provider key (.env.example notes all keys are optional).",
-      "Corresponding paper published in JCST'26 (DOI 10.1007/s11390-025-6000-0, jcst.ict.ac.cn).",
-      "Provides bilingual guides in Chinese and English (via Feishu/Lark wiki link); MIT licensed, created in 2026-03.",
-      "GitHub API reports 36.5k+ stars."
+      "Single-command npm install: `npm install -g @alibaba-group/open-code-review`, configure models via `ocr config provider` / `ocr config model`, and run reviews with `ocr review`; supports `ocr review --from main --to feature-branch` or `--commit <sha>`.",
+      "Beyond diff inspection: `ocr scan` audits entire repos or specific directories with `--resume` checkpointing; `ocr review --format json --output result.json` emits structured outputs for CI, alongside `ocr delegate` for rule delegation.",
+      "Addresses 3 major pitfalls of code review agents (location drift, surface-level diffing, insufficient context): reads full files, searches codebases, and cross-references related changes; includes built-in multilingual rule sets (NPE, thread safety, XSS, SQL injection), compatible with OpenAI and Anthropic.",
+      "Apache-2.0 license, created 2026-05, website open-codereview.ai, npm package `@alibaba-group/open-code-review`; 44k+ stars via GitHub API (verified 2026-10)."
      ]
     },
     {
-     "repo": "miuuyy/codex-chatgpt-web",
+     "repo": "paperclipai/paperclip",
      "lang": "TypeScript",
-     "delta": 10457,
-     "tag": "AI Tools",
-     "intro": "Use ChatGPT Web (including Pro) as a native model inside Codex: consumes your ChatGPT Web usage allowance without depleting Codex/Work quotas, preserving UI, tasks, images, and streaming outputs.",
+     "delta": 17030,
+     "tag": "Agent Framework",
+     "intro": "An open-source multi-agent 'team management' app: decomposes tasks into company objectives, assigns roles, budgets, and permissions across agents, and monitors progress and spend in a task-manager-style dashboard—in their words: 'If OpenClaw is the employee, Paperclip is the company' (#3 on this week's chart, see above).",
      "facts": [
-      "Three modes: Browser-only (messages only, touches no local tools), Full harness (connects ChatGPT via MCP to workspace files, terminal, tools, and approval flows aligned with Codex tasks), and Zero Risk (manual copy-paste).",
-      "Auto-detects models based on account tier: Free/Go tiers use Luna / Think; accounts with reasoning effort controls get Instant–High, plus Extra High and Pro where eligible, with model names suffixed with `(Web)` to indicate source.",
-      "Out-of-the-box installers for Windows x64, macOS (Apple Silicon & Intel), and Linux AppImage, plus one-click install scripts (`install-launcher.sh` / `.ps1` with checksum validation, preserving ChatGPT profiles and settings); bundled with its own browser and runtime—no external Chrome, Node, or Bun required.",
-      "MIT licensed, offers READMEs in 4 languages including Simplified Chinese, architecture docs (`docs/architecture.md`), and `TROUBLESHOOTING.md`; created in 2026-07, GitHub API reports 12.1k stars."
+      "Node.js backend + React UI: agents have roles, reporting lines, permissions, and budgets; execution relies on a DB-backed heartbeat wake-up queue (coalesced wakeups, budget checks, workspace resolution, secret injection, skill loading, adapter invocation).",
+      "Adapters can mix and match Claude Code, Codex, Cursor (incl. Cloud), Gemini CLI, Pi, Hermes / Hermes Gateway, Grok Build, Kimi Code, OpenClaw, and HTTP/webhook bots, plus custom processes and external adapter packages—'if it can wake on a heartbeat, it's hired'.",
+      "Cost governance at the core: 3-tier budgets across company / agent / project, spend tracking, threshold alerts, and auto-pause at limits to prevent runaway token burning; tasks, comments, and docs stay inside Paperclip, with session resumption for supported adapters.",
+      "MIT license, created 2026-03, official site paperclip.ing (with Cloud waitlist); 97k+ stars via GitHub API (verified 2026-10)."
      ]
     }
    ]

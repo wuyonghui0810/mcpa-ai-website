@@ -1,0 +1,346 @@
+{
+  "period_date": "2026-10-04",
+  "fetch_note": "抓取于 2026-10-04 16:30（北京 2026-10-05 07:30）",
+  "foot_note": "功能摘要基于各仓库 README / GitHub API 实抓整理",
+  "sections": [
+    {
+      "key": "today",
+      "label": "今日榜",
+      "sub": "过去 24 小时",
+      "rows": [
+        {
+          "repo": "DietrichGebert/ponytail",
+          "lang": "JavaScript",
+          "delta": 1894,
+          "intro": "让 AI 代理像「组里最懒的资深工程师」那样思考的技能：能少写就少写、把 YAGNI 当默认动作——最好的代码是你从未写过的代码。",
+          "facts": [
+            "badge 显示兼容 20+ 种编码代理，官网 ponytail.dev，MIT 协议",
+            "npm 已发布 @dietrichgebert/ponytail；GitHub 主题含 yagni、claude-code-plugin、cursor-rules、agent-skills",
+            "2026-06 创建，上线约三个月 GitHub API 实测 13.7 万+ star（2026-09 实抓）",
+            "人设是「他什么都不说，写一行，然后它能跑」——砍废话与过度设计（README 原文直译）"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "pbakaus/impeccable",
+          "lang": "JavaScript",
+          "delta": 1170,
+          "intro": "给 AI 编码代理用的前端设计规范技能：让模型别再输出一眼就看出「AI 生成」的界面——同一个 SaaS 模板味、Inter 字体、紫蓝渐变、卡片套卡片。",
+          "facts": [
+            "一个 skill + 24 条命令（polish / audit / critique / distill / animate / bolder / quieter 等）+ 61 条确定性检测规则；CLI 与浏览器插件跑规则时不调 LLM、不要 API Key（README 实述）",
+            "安装：项目根目录 npx impeccable install，再在 AI 工具里跑 /impeccable init 生成 PRODUCT.md，把受众、目的、约束、语气等长期产品事实固定下来，避免和视觉方向混淆",
+            "起点是 Anthropic 的 frontend-design skill，专门针对「所有模型都训练出同一套模板」的可执行约束；另有 VS Code 扩展（需 1.109.3+ 与 Copilot Chat）和 Grok / Gemini CLI 等多宿主接入",
+            "Apache-2.0，作者 pbakaus，官网 impeccable.style；GitHub API 实测 7.6 万+ star（星星数 2026-10 实抓）"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "Panniantong/Agent-Reach",
+          "lang": "Python",
+          "delta": 979,
+          "intro": "给 AI Agent 一键装上「互联网能力」的 CLI + Skill：让 Claude Code、Cursor、OpenClaw 等能读能搜 Twitter/X、Reddit、YouTube、GitHub、B 站、小红书，零 API 费用。",
+          "facts": [
+            "一个 CLI 加一份 SKILL.md，不用背命令、Agent 自己知道调什么；每个平台走「首选 + 备选」多后端路由，接入方式失效自动切换（README 举例：2026-06 B 站风控封死 yt-dlp 后切 bili-cli，用户零操作）",
+            "全部工具开源、API 免费，唯一可能花钱的是海外服务器代理（约 $1/月），本地电脑不用付费；已覆盖全网语义搜索（MCP 接入）、小红书、小宇宙播客转录（Whisper）等",
+            "需登录的平台必须由用户显式授权：Twitter 只接受 Cookie-Editor 手工导出，不代登录、不注入 Cookie；OpenClaw 用户要先开 exec 权限，否则 Agent 跑不了 pip install 这类命令",
+            "MIT 协议，Python 3.10+，README 有中/英/日/韩版；官方 badge 显示曾登 GitHub Trending 日榜第一，GitHub API 实测 9.0 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "thedotmack/claude-mem",
+          "lang": "TypeScript",
+          "delta": 627,
+          "intro": "跨会话的 Agent 记忆插件：把 agent 一次会话里干的事全记下来、用 AI 压缩，再把相关上下文回注到未来会话——Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等都能用。",
+          "facts": [
+            "一条命令装：npx claude-mem install（或 Claude Code 内 /plugin install claude-mem，OpenClaw 走 install.cmem.ai 脚本），可用 --ide opencode / grok-bot / antigravity / omp 指定宿主",
+            "记忆 provider 三选一：官方托管的 claude-mem observer（浏览器邮箱登录，免卡，免费 14 天且不占自家套餐额度）、自备 OpenRouter / Gemini Key、或直接用 Anthropic 套餐；也可 --provider host 走本地观察，CI 场景可跳过登录",
+            "注意 npm 上的 claude-mem 只是 SDK/库，装插件必须走 npx 或 /plugin，否则不会注册 plugin hooks 与 worker 服务（README 明示）",
+            "技术栈含 ChromaDB 等向量检索与 claude-agent-sdk（topics 实抓），Apache-2.0，2025-08 创建，官网 claude-mem.ai；GitHub API 实测 9.6 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 记忆"
+        },
+        {
+          "repo": "OpenCut-app/OpenCut",
+          "lang": "TypeScript",
+          "delta": 512,
+          "intro": "开源的剪映 / CapCut 替代品：面向网页、桌面和移动端的免费视频剪辑器。",
+          "facts": [
+            "正在用 Rust 内核从零重写：目标是一套代码库同时出桌面 / 移动 / 浏览器三端，并规划 Editor API、一等公民插件架构、给 AI 代理用的 MCP server、无头批量渲染与编辑器内脚本页",
+            "当前可用的是经典版 opencut-app/opencut-classic，opencut.app 线上仍跑经典版；重写版先部署在 new.opencut.app，长稳后接管",
+            "开发用 proto + moon 工具链（Node / Rust 版本由 .prototools 固定），Linux、macOS、WSL 与 Windows 都有安装指引",
+            "MIT 协议，2025-06 创建，官网 opencut.app；GitHub API 实测 9.2 万+ star（2026-10 实抓）"
+          ],
+          "tag": "开源工具"
+        },
+        {
+          "repo": "pingdotgg/t3code",
+          "lang": "TypeScript",
+          "delta": 492,
+          "intro": "一个「agent harness 控制台」：在手机 App、网页和桌面上远程接管你机器上已有的编码代理会话（Claude Code、Codex、Cursor、Grok Build、OpenCode、Antigravity）。",
+          "facts": [
+            "三端齐上：官方 iOS / Android App、网页版 app.t3.codes、Electron 桌面版，都是操作本机已登录的 agent，不搬运凭据",
+            "使用前提是本机已装并登录至少一个 provider：codex login / claude auth login / agent login（Cursor）/ grok login / opencode auth login，Antigravity 在设置里用 Google 登录、不需要 CLI",
+            "作者 pingdotgg（Theo）明确不卖任何东西、不收订阅费：定位是「性能好、可远程、真开源」，方向不对你可以直接 fork 出自己想要的编辑器",
+            "安装：curl -fsSL https://t3.codes/install.sh | sh（Windows 用 install.ps1）；MIT 协议，2026-02 创建，官网 t3.codes；GitHub API 实测 2.5 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 工具"
+        },
+        {
+          "repo": "calesthio/OpenMontage",
+          "lang": "Python",
+          "delta": 361,
+          "intro": "自称首个开源的「agentic 视频制作系统」：把编码助手变成一整条视频生产线，从选题调研、生成配图、写稿配音、找配乐、烧字幕到渲染交付全交给 agent。",
+          "facts": [
+            "12 条制作流水线、100+ 工具、700+ agent skill 与制作知识文件；官方示例《THE LAST BANANA》60 秒短片用 6 个 Kling v3 镜头（走 fal.ai）+ Google Chirp3-HD 旁白 + Remotion 合成，总成本 $1.33",
+            "唯一硬依赖是 FFmpeg；提供 make 与手工两套安装（Python venv + pip install -r requirements.txt + remotion-composer 里 npm install + piper-tts），macOS / Linux / Windows 均有明确步骤",
+            "交付前跑多点自检：ffprobe 校验、抽帧、音频电平分析、交付承诺核对与字幕检查；每个 provider 选择按 7 个维度打分并留可审计决策日志，创意决策要你点头",
+            "配套 Backlot 本地看板实时显示流水线进度与每一笔花费；AGPL-3.0，2026-03 创建，官网 openmontage.video；GitHub API 实测 6.3 万+ star（2026-10 实抓）"
+          ],
+          "tag": "AIGC"
+        },
+        {
+          "repo": "tester-army/e2e",
+          "lang": "TypeScript",
+          "delta": 344,
+          "intro": "面向 Web 与移动端的下一代端到端测试框架：用自然语言描述目标，AI agent 自己驱动应用走到那一步，同一条测试里再用定位器和断言校验结果。",
+          "facts": [
+            "写法就是把自然语言和断言混在同一条用例里：await agent.act('把工作区升级到 Pro 套餐') 之后接 agent.assert(...) 或 expect(screen.getByRole('status')).toContainText('Pro')",
+            "带 agent 步骤且被后续断言验证过的测试会记录动作，下次运行直接回放、不再调模型（应用变了才重新走 AI）；完全没有 agent 步骤的测试零模型消耗",
+            "模型可自带：自己的订阅、API Key 或本地模型；npm 拆成 e2e（SDK/CLI）、@e2e-dev/web（Chromium/Firefox/WebKit via Playwright）、@e2e-dev/mobile（iOS/Android 模拟器）、@e2e-dev/github（把结果发成 PR 评论）等包",
+            "安装 npx e2e init（交互选引擎、web 或 mobile、模型 provider），遥测可用 npx e2e telemetry disable 关闭；Apache-2.0，2026-07 创建，官网 tester.army/e2e；GitHub API 实测 3,000+ star（2026-10 实抓）"
+          ],
+          "tag": "测试框架"
+        }
+      ]
+    },
+    {
+      "key": "week",
+      "label": "本周榜",
+      "sub": "近 7 天",
+      "rows": [
+        {
+          "repo": "debpalash/VoiceStudio",
+          "lang": "Python",
+          "delta": 16775,
+          "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费。",
+          "facts": [
+            "默认引擎是 k2-fsa/OmniVoice，也可换其他引擎，官方提供 features & engine catalog；覆盖 646 种语言的克隆、设计与转写",
+            "三种用法：Electron 桌面应用（克隆 / 设计音色、带时间轴的视频配音、悬浮听写控件、批量任务）、本地 API 与 MCP 供 agent 调用、可选远程 worker 分担算力",
+            "硬件按引擎分档：NVIDIA GPU（Windows / Linux）走 CUDA 加速，Apple 侧有 MLX 支持（GitHub topics 实抓），性能对照表在 docs/performance.md",
+            "提供简体中文与日文 README，AGPL-3.0，2026-04 创建，官网 voicestudio.sh；GitHub API 实测 5.3 万+ star（2026-10 实抓）"
+          ],
+          "tag": "AIGC"
+        },
+        {
+          "repo": "vectorize-io/hindsight",
+          "lang": "Python",
+          "delta": 14507,
+          "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩。",
+          "facts": [
+            "核心是三个操作 retain / recall / reflect，外加 observations、mental models & knowledge pages、banks 等概念；官方定位是「让 agent 学习，而不只是记住」",
+            "LongMemEval 成绩由第三方（Virginia Tech Sanghani Center、The Washington Post）独立复现，其他厂商分数为自报；实时榜单在 benchmarks.hindsight.vectorize.io，论文 arXiv:2512.12818",
+            "接入成本很低：LLM wrapper 两行代码，pip install hindsight-api / hindsight-client（Python）或 npm @vectorize-io/hindsight-client，另有 MCP server 与一批集成；还有 Hindsight Cloud 托管版",
+            "MIT 协议，2025-10 创建，官网 hindsight.vectorize.io；GitHub API 实测 4.5 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 记忆"
+        },
+        {
+          "repo": "paperclipai/paperclip",
+          "lang": "TypeScript",
+          "delta": 10722,
+          "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」。",
+          "facts": [
+            "Node.js 服务 + React UI：agent 有岗位、汇报线、权限和预算，执行走 DB 支撑的 heartbeat 唤醒队列（合并唤醒、预算检查、工作区解析、密钥注入、技能加载、适配器调用）",
+            "适配器可混搭 Claude Code、Codex、Cursor（含 Cloud）、Gemini CLI、Pi、Hermes / Hermes Gateway、Grok Build、Kimi Code、OpenClaw 和 HTTP/webhook 机器人，也支持自定义进程与外部适配器包——「只要能被心跳唤醒，就算入职」",
+            "成本治理是重点：公司 / agent / 项目三级预算、花费追踪、阈值告警、到线自动暂停，专治 agent 死循环烧 token；任务、评论与文档留在 Paperclip 内，支持的适配器可恢复历史会话",
+            "MIT 协议，2026-03 创建，官网 paperclip.ing（另有 Cloud 等候名单）；GitHub API 实测 9.7 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 框架"
+        },
+        {
+          "repo": "NVIDIA/OpenShell",
+          "lang": "Rust",
+          "delta": 5854,
+          "intro": "英伟达开源的自主 AI Agent 运行沙箱：给 agent 读文件、装包、调 API、用凭据的能力，同时用策略把它们关在笼子里，不让它们碰你的数据、密钥和网络。",
+          "facts": [
+            "双保险治理：一是内核级强制——每个 agent 跑在隔离沙箱，文件访问、系统调用和每个网络连接都过策略检查，且 agent 永远看不到真实凭据，只在发往白名单端点时注入；二是形式化验证——策略变更前先算出它新放开了什么（如「能带凭据访问新主机」），这类改动挂起等人工审",
+            "组成上是 CLI + 本地 gateway + sandbox 三件套，一条命令装：curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh，然后 openshell sandbox create --name demo",
+            "默认沙箱镜像是最精简 Ubuntu、不带任何 agent；官方教程用 OpenCode + OpenRouter 免费模型跑第一个 agent，演示它需要新权限时你怎么逐次批准",
+            "Apache-2.0，PyPI 包名 openshell，文档 docs.nvidia.com/openshell，2026-02 创建；GitHub API 实测 1.48 万+ star（2026-10 实抓）"
+          ],
+          "tag": "大厂开源"
+        },
+        {
+          "repo": "rohitg00/ai-engineering-from-scratch",
+          "lang": "Python",
+          "delta": 5059,
+          "intro": "从零到能交付的 AI 工程自学课程仓库：523 节课、20 个阶段、约 342 小时，主张「不只是学 AI，而是亲手把它造出来」，每节课都要交付一个可复用产物（prompt / skill / agent / MCP server）。",
+          "facts": [
+            "523 节课 / 20 个阶段 / 约 342 小时，语言覆盖 Python、TypeScript、Rust、Julia；每个 lesson 都要交出可复用产物，MIT 协议、全部免费",
+            "不止「大而全」：提供按目标走的路线，例如 Model Context Protocol (MCP) 的 17 节专线、Agent Skills 工程路线，以及 MCPA（MCP Associate）认证备考轨道",
+            "可直接在你已有的 host 里开学：对 agent 说 use start-learning 开课、learn-mcp 走 MCP 线、learn-agent-skills 走技能线、check-understanding 做阶段测验，会生成 MCP-LEARNING.md 之类的进度文件",
+            "配套官网 aiengineeringfromscratch.com，README 有 12 种语言版本；2026-03 创建，GitHub API 实测 6.4 万+ star（2026-10 实抓）"
+          ],
+          "tag": "学习笔记"
+        },
+        {
+          "repo": "mvschwarz/openrig",
+          "lang": "TypeScript",
+          "delta": 4245,
+          "intro": "给多 agent 团队用的「机架」：用 YAML 定义你的 agent 团队，一条命令把 Claude Code 和 Codex 装进同一个 rig，当成一个系统来管。",
+          "facts": [
+            "定位一句话：harness 包住模型，rig 包住你的 harness。它把散落的终端会话变成有岗位、有共享上下文、各自认领工作的常驻团队，你只需跟 lead agent 谈目标，它再协调各团队专家",
+            "环境要求 Node.js 22 或 24 + tmux，仅 macOS / Linux（原生 Windows 不支持、WSL2 未测）；安装 npm install -g @openrig/cli，建议先 rig setup --dry-run 预览会改哪些文件",
+            "复用你已有的账号：Claude Code、Codex 任选或都要，不需要再买订阅；launch 前会问一次是否允许 agent 免重复确认执行 rig 命令（可撤销），并会写入 provider hooks 与 workspace trust 设置",
+            "作者 mvschwarz 用它跑自己的「AI 文明」实验，配套 TUI 可视化（团队图 → agent 座位表 → 单座详情，含 runtime / 模型 / 上下文 / 状态）；Apache-2.0，2026-04 创建，官网 openrig.dev；GitHub API 实测约 5,000 star（2026-10 实抓）"
+          ],
+          "tag": "Agent 框架"
+        },
+        {
+          "repo": "Panniantong/Agent-Reach",
+          "lang": "Python",
+          "delta": 3952,
+          "intro": "给 AI Agent 一键装上「互联网能力」的 CLI + Skill：让 Claude Code、Cursor、OpenClaw 等能读能搜 Twitter/X、Reddit、YouTube、GitHub、B 站、小红书，零 API 费用（今日榜 #3，见上）。",
+          "facts": [
+            "一个 CLI 加一份 SKILL.md，不用背命令、Agent 自己知道调什么；每个平台走「首选 + 备选」多后端路由，接入方式失效自动切换（README 举例：2026-06 B 站风控封死 yt-dlp 后切 bili-cli，用户零操作）",
+            "全部工具开源、API 免费，唯一可能花钱的是海外服务器代理（约 $1/月），本地电脑不用付费；已覆盖全网语义搜索（MCP 接入）、小红书、小宇宙播客转录（Whisper）等",
+            "需登录的平台必须由用户显式授权：Twitter 只接受 Cookie-Editor 手工导出，不代登录、不注入 Cookie；OpenClaw 用户要先开 exec 权限，否则 Agent 跑不了 pip install 这类命令",
+            "MIT 协议，Python 3.10+，README 有中/英/日/韩版；官方 badge 显示曾登 GitHub Trending 日榜第一，GitHub API 实测 9.0 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "pbakaus/impeccable",
+          "lang": "JavaScript",
+          "delta": 3311,
+          "intro": "给 AI 编码代理用的前端设计规范技能：让模型别再输出一眼就看出「AI 生成」的界面——同一个 SaaS 模板味、Inter 字体、紫蓝渐变、卡片套卡片（今日榜 #2，见上）。",
+          "facts": [
+            "一个 skill + 24 条命令（polish / audit / critique / distill / animate / bolder / quieter 等）+ 61 条确定性检测规则；CLI 与浏览器插件跑规则时不调 LLM、不要 API Key（README 实述）",
+            "安装：项目根目录 npx impeccable install，再在 AI 工具里跑 /impeccable init 生成 PRODUCT.md，把受众、目的、约束、语气等长期产品事实固定下来，避免和视觉方向混淆",
+            "起点是 Anthropic 的 frontend-design skill，专门针对「所有模型都训练出同一套模板」的可执行约束；另有 VS Code 扩展（需 1.109.3+ 与 Copilot Chat）和 Grok / Gemini CLI 等多宿主接入",
+            "Apache-2.0，作者 pbakaus，官网 impeccable.style；GitHub API 实测 7.6 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent Skill"
+        }
+      ]
+    },
+    {
+      "key": "month",
+      "label": "本月榜",
+      "sub": "近 30 天",
+      "rows": [
+        {
+          "repo": "tt-a1i/archify",
+          "lang": "JavaScript",
+          "delta": 31939,
+          "intro": "编码代理用的「架构即代码」技能：把代码库或系统描述直接在对话里变成可交互的架构图 / 流程图 / 时序图——自包含 HTML+SVG、带动效、可干净导出，还能做合并前架构评审。",
+          "facts": [
+            "五类图 + 四种预设 + 深 / 浅主题 + 品牌标识 + 有限动效；输出自包含 HTML，可另导出 PNG / SVG / WebM 与 1200×630 分享卡（README 实述）",
+            "支持评审：两份已校验快照对比 Before / Delta / After，精确列出新增、删除、变更、迁移、改道的事实",
+            "代理产出类型化 JSON IR，Archify 确定性编译成 HTML/SVG，拓扑可溯源不臆造；支持 Cursor、Claude Code、Codex CLI、OpenCode",
+            "MIT，2026-04 创建；GitHub API 实测 6 万+ star（2026-09 实抓），本期月榜第一"
+          ],
+          "tag": "图表生成"
+        },
+        {
+          "repo": "DietrichGebert/ponytail",
+          "lang": "JavaScript",
+          "delta": 30546,
+          "intro": "让 AI 代理像「组里最懒的资深工程师」那样思考的技能：能少写就少写、把 YAGNI 当默认动作——最好的代码是你从未写过的代码（今日榜 #1，见上）。",
+          "facts": [
+            "badge 显示兼容 20+ 种编码代理，官网 ponytail.dev，MIT 协议",
+            "npm 已发布 @dietrichgebert/ponytail；GitHub 主题含 yagni、claude-code-plugin、cursor-rules、agent-skills",
+            "2026-06 创建，上线约三个月 GitHub API 实测 13.7 万+ star（2026-09 实抓）",
+            "人设是「他什么都不说，写一行，然后它能跑」——砍废话与过度设计（README 原文直译）"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "bilawalsidhu/gods-eye-view",
+          "lang": "JavaScript",
+          "delta": 30444,
+          "intro": "浏览器里的「间谍卫星模拟器」——但数据全是真的：把航班应答机、船舶航标、在轨卫星、地震台站与公共摄像头汇到同一个写实 3D 地球仪上，本地运行、代码可审计可扩展。",
+          "facts": [
+            "作者 bilawalsidhu 来自 YouTube 热门系列 God's Eye View（原 WorldView，YouTube 播放 500 万+、社媒 2,500 万+），2026-08 曾登 GitHub Trending 日榜与周榜第一，Product Hunt 当日 #8（README 实述）",
+            "两条安装路径：Pinokio 桌面端一键装（Windows / macOS / Linux，需 Pinokio 8.2+），或终端 / 编码代理本地跑；无需账号与 API Key 即可使用航班、军用与卫星、地震、公共摄像头、无线电、火箭发射等图层",
+            "写实 3D 地形需自备 Cesium ion token（个人非商用）或 Google Maps key，在应用内 POWER UP 面板添加；交通数据是沿真实道路的模拟，摄像头位姿与火箭轨迹为粗略估计",
+            "功能面：驾驶舱视角、250km 目标名册、点击追踪任意目标、语音白板、GLSL 传感器滤镜（CRT/NVG/FLIR/Noir）、军事 HUD、场景导演与可分享的追踪链接；每个图层都是独立模块，可自行替换数据源；2026-06 创建，GitHub API 实测 3.1 万+ star（2026-09 实抓）"
+          ],
+          "tag": "地理空间"
+        },
+        {
+          "repo": "affaan-m/ECC",
+          "lang": "JavaScript",
+          "delta": 26724,
+          "intro": "面向编码代理的「harness 性能优化系统」：用 skills、instincts、记忆、安全与研究先行开发的组合，让 Claude Code / Codex / OpenCode / Cursor 等干得更快更稳。",
+          "facts": [
+            "主页 ecc.tools，README 自称 agent harness 操作系统，核心覆盖 skills / instincts / memory / security / research-first 五大维度",
+            "明确支持 Claude Code、Codex、OpenCode、Cursor 等主流编码代理（官方描述原文）",
+            "文档提供中英日韩葡俄等多语言版本，MIT 协议，2026-01 创建",
+            "GitHub API 实测 25.7 万+ star（2026-09 实抓），长期霸榜月榜"
+          ],
+          "tag": "Agent 框架"
+        },
+        {
+          "repo": "ayghri/i-have-adhd",
+          "lang": "Python",
+          "delta": 26497,
+          "intro": "给编程 AI 助手用的技能包：强制它把答案直接放最前面——先行动、步骤编号、删掉寒暄废话，输出对 ADHD 用户（也即所有人）更友好。",
+          "facts": [
+            "以 skill / plugin 形式装进 Claude Code 等 CLI 编码助手（README 提供 INSTALL.md 指引），官方说明无需任何 ADHD 诊断即可受益",
+            "核心规则是 Action first + 编号步骤：README 用改造前后对比示例展示如何不把结论埋在长篇分析里",
+            "README 提供中 / 英 / 日 / 葡 / 越 / 韩 / 泰等 7 种语言说明，MIT 协议，2026-05 创建",
+            "GitHub API 实测 4.4 万+ star（2026-09 实抓），长期占据周榜与月榜前列"
+          ],
+          "tag": "Agent Skill"
+        },
+        {
+          "repo": "vectorize-io/hindsight",
+          "lang": "Python",
+          "delta": 23065,
+          "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩（本周榜 #2，见上）。",
+          "facts": [
+            "核心是三个操作 retain / recall / reflect，外加 observations、mental models & knowledge pages、banks 等概念；官方定位是「让 agent 学习，而不只是记住」",
+            "LongMemEval 成绩由第三方（Virginia Tech Sanghani Center、The Washington Post）独立复现，其他厂商分数为自报；实时榜单在 benchmarks.hindsight.vectorize.io，论文 arXiv:2512.12818",
+            "接入成本很低：LLM wrapper 两行代码，pip install hindsight-api / hindsight-client（Python）或 npm @vectorize-io/hindsight-client，另有 MCP server 与一批集成；还有 Hindsight Cloud 托管版",
+            "MIT 协议，2025-10 创建，官网 hindsight.vectorize.io；GitHub API 实测 4.5 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 记忆"
+        },
+        {
+          "repo": "alibaba/open-code-review",
+          "lang": "Go",
+          "delta": 21959,
+          "intro": "阿里把内部用了两年的 AI 代码评审助手开源了：确定性流水线 + 带工具能力的 LLM Agent 混合架构，读 Git diff 后给出精确到行的评审意见，官方称内部已服务数万开发者、识别数百万缺陷。",
+          "facts": [
+            "npm 一条命令装：npm install -g @alibaba-group/open-code-review，再用 ocr config provider / ocr config model 选模型，ocr review 直接评审；支持 ocr review --from main --to feature-branch 或 --commit <sha>",
+            "不止看 diff：ocr scan 可对整库或指定目录做全文件审计并 --resume 断点续跑；ocr review --format json --output result.json 出结构化结果方便接 CI，另有 ocr delegate 做规则委派",
+            "针对业界代码评审 agent 三大痛点（位置漂移、只看表面 diff、上下文不足）：agent 能读完整文件、检索代码库、交叉查看其他改动文件；内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic",
+            "Apache-2.0，2026-05 创建，官网 open-codereview.ai，npm 包 @alibaba-group/open-code-review；GitHub API 实测 4.4 万+ star（2026-10 实抓）"
+          ],
+          "tag": "大厂开源"
+        },
+        {
+          "repo": "paperclipai/paperclip",
+          "lang": "TypeScript",
+          "delta": 17030,
+          "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」（本周榜 #3，见上）。",
+          "facts": [
+            "Node.js 服务 + React UI：agent 有岗位、汇报线、权限和预算，执行走 DB 支撑的 heartbeat 唤醒队列（合并唤醒、预算检查、工作区解析、密钥注入、技能加载、适配器调用）",
+            "适配器可混搭 Claude Code、Codex、Cursor（含 Cloud）、Gemini CLI、Pi、Hermes / Hermes Gateway、Grok Build、Kimi Code、OpenClaw 和 HTTP/webhook 机器人，也支持自定义进程与外部适配器包——「只要能被心跳唤醒，就算入职」",
+            "成本治理是重点：公司 / agent / 项目三级预算、花费追踪、阈值告警、到线自动暂停，专治 agent 死循环烧 token；任务、评论与文档留在 Paperclip 内，支持的适配器可恢复历史会话",
+            "MIT 协议，2026-03 创建，官网 paperclip.ing（另有 Cloud 等候名单）；GitHub API 实测 9.7 万+ star（2026-10 实抓）"
+          ],
+          "tag": "Agent 框架"
+        }
+      ]
+    }
+  ],
+  "insight": [
+    "**Agent 基础设施已经分层固化**：本期三榜几乎被同一批项目占满——沙箱（NVIDIA/OpenShell）、记忆（hindsight / claude-mem）、团队编排（paperclip / openrig / ECC）、操作界面（t3code）、上网能力（Agent-Reach）。竞争焦点从「模型多强」转到「给 agent 配什么底座」。",
+    "**记忆层打得最凶**：hindsight 用第三方可复现的 LongMemEval 成绩立标杆，claude-mem 走「一条命令装进任意 harness」的插件路线，两者本周合计 +15k star。本机跑的 Hermes 记忆库恰好就是 hindsight（bank: hermes），可以顺手做一轮对比实测。",
+    "**安全与成本成了新卖点**：OpenShell 把策略做进内核并做形式化验证，Paperclip 主打预算 / 告警 / 到线自动暂停，OpenMontage 每次交付前跑 ffprobe + 抽帧 + 音频电平自检并留可审计的 provider 打分日志。能跑之后，谁能证明「不闯祸、不烧钱」，谁才上桌。",
+    "**大厂与个人作者同台**：NVIDIA（OpenShell）、阿里（open-code-review）带着内部实战数据入场，跟 ponytail、impeccable、Agent-Reach 这类个人爆款（单周 +1.9k / +3.3k）混战——说明 agent 工具链的门槛在「想清楚约束」，不在资源投入。"
+  ]
+}
