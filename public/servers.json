@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T07:38:33.350782+00:00",
+  "generated_at": "2026-10-04T07:53:53.431130+00:00",
   "count": 500,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "full_name": "HKUDS/nanobot",
       "owner": "HKUDS",
       "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "stars": 48772,
+      "stars": 48773,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -35,7 +35,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/HKUDS/nanobot",
-      "updated_at": "2026-10-04T07:20:56Z",
+      "updated_at": "2026-10-04T07:45:40Z",
       "created_at": "2026-02-01T07:16:15Z"
     },
     {
@@ -44,7 +44,7 @@
       "full_name": "DeusData/codebase-memory-mcp",
       "owner": "DeusData",
       "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": 45769,
+      "stars": 45768,
       "language": "C",
       "license": "MIT",
       "topics": [
@@ -71,7 +71,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/DeusData/codebase-memory-mcp",
-      "updated_at": "2026-10-04T07:26:53Z",
+      "updated_at": "2026-10-04T07:38:55Z",
       "created_at": "2026-02-24T22:01:00Z"
     },
     {
@@ -268,7 +268,7 @@
       "full_name": "CoplayDev/unity-mcp",
       "owner": "CoplayDev",
       "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
-      "stars": 14673,
+      "stars": 14674,
       "language": "C#",
       "license": "MIT",
       "topics": [
@@ -291,7 +291,7 @@
       ],
       "category": "Media",
       "github_url": "https://github.com/CoplayDev/unity-mcp",
-      "updated_at": "2026-10-04T06:46:48Z",
+      "updated_at": "2026-10-04T07:46:39Z",
       "created_at": "2025-03-18T11:01:58Z"
     },
     {
@@ -494,7 +494,7 @@
       "full_name": "WenyuChiou/awesome-agentic-ai-zh",
       "owner": "WenyuChiou",
       "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-      "stars": 7345,
+      "stars": 7350,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -520,7 +520,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "updated_at": "2026-10-04T07:37:54Z",
+      "updated_at": "2026-10-04T07:53:01Z",
       "created_at": "2026-05-04T22:18:51Z"
     },
     {
@@ -561,7 +561,7 @@
       "full_name": "XiaoDuoYa/codex-with-chatgpt",
       "owner": "XiaoDuoYa",
       "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
-      "stars": 7009,
+      "stars": 7010,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -574,7 +574,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-      "updated_at": "2026-10-04T07:27:43Z",
+      "updated_at": "2026-10-04T07:41:02Z",
       "created_at": "2026-08-28T12:57:24Z"
     },
     {
@@ -989,7 +989,7 @@
       "full_name": "IvanMurzak/Unity-MCP",
       "owner": "IvanMurzak",
       "description": "AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into a tool by a single line. Works with Claude Code, Gemini, Copilot, Cursor and any other absolutely for free.",
-      "stars": 4385,
+      "stars": 4386,
       "language": "C#",
       "license": "Apache-2.0",
       "topics": [
@@ -1015,7 +1015,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/IvanMurzak/Unity-MCP",
-      "updated_at": "2026-10-04T03:40:09Z",
+      "updated_at": "2026-10-04T07:49:02Z",
       "created_at": "2025-04-02T09:57:01Z"
     },
     {
@@ -1150,7 +1150,7 @@
       "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
       "owner": "irinabuht12-oss",
       "description": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + GA4 + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: 250+ tools, OAuth login, no API keys, approval-gated writes, free. By Ryze AI.",
-      "stars": 3673,
+      "stars": 3674,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -1177,7 +1177,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
-      "updated_at": "2026-10-04T07:32:02Z",
+      "updated_at": "2026-10-04T07:49:38Z",
       "created_at": "2026-04-06T04:41:14Z"
     },
     {
@@ -1655,7 +1655,7 @@
       "full_name": "Appllama/appllama-skills",
       "owner": "Appllama",
       "description": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.",
-      "stars": 2314,
+      "stars": 2315,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -1681,7 +1681,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/Appllama/appllama-skills",
-      "updated_at": "2026-10-04T07:21:19Z",
+      "updated_at": "2026-10-04T07:47:14Z",
       "created_at": "2026-08-13T07:19:54Z"
     },
     {
@@ -1842,7 +1842,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/Syngnat/GoNavi",
-      "updated_at": "2026-10-04T07:33:35Z",
+      "updated_at": "2026-10-04T07:50:32Z",
       "created_at": "2026-01-31T09:30:47Z"
     },
     {
@@ -2792,7 +2792,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/uvwt/agentdock",
-      "updated_at": "2026-10-04T05:33:58Z",
+      "updated_at": "2026-10-04T07:53:29Z",
       "created_at": "2026-05-25T13:05:50Z"
     },
     {
@@ -3304,7 +3304,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/repoprompt/repoprompt-ce",
-      "updated_at": "2026-10-04T05:11:50Z",
+      "updated_at": "2026-10-04T07:43:55Z",
       "created_at": "2026-05-12T19:44:16Z"
     },
     {
@@ -3644,7 +3644,7 @@
       "full_name": "HelpCode-ai/anythingmcp",
       "owner": "HelpCode-ai",
       "description": "Open-source, self-hosted MCP gateway: turn any REST/OpenAPI, SOAP, GraphQL, OData or SQL API into MCP tools for Claude, ChatGPT & Copilot. 262 connectors incl. SAP S/4HANA & Business One, ERP, e-commerce.",
-      "stars": 834,
+      "stars": 836,
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "topics": [
@@ -3671,7 +3671,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/HelpCode-ai/anythingmcp",
-      "updated_at": "2026-10-04T07:25:42Z",
+      "updated_at": "2026-10-04T07:51:58Z",
       "created_at": "2026-02-28T12:01:26Z"
     },
     {
@@ -3903,7 +3903,7 @@
       ],
       "category": "Browser",
       "github_url": "https://github.com/risa-labs-inc/BossConsole",
-      "updated_at": "2026-10-04T01:49:58Z",
+      "updated_at": "2026-10-04T07:45:21Z",
       "created_at": "2026-07-21T01:01:05Z"
     },
     {
@@ -4164,7 +4164,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/kitfunso/hippo-memory",
-      "updated_at": "2026-10-04T07:28:35Z",
+      "updated_at": "2026-10-04T07:49:35Z",
       "created_at": "2026-03-15T10:40:26Z"
     },
     {
@@ -5163,38 +5163,12 @@
       "created_at": "2025-04-16T02:42:48Z"
     },
     {
-      "id": 1334532589,
-      "name": "Paxeer-X-Network",
-      "full_name": "Sidiora-Labs/Paxeer-X-Network",
-      "owner": "Sidiora-Labs",
-      "description": "Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them. ",
-      "stars": 575,
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent",
-        "agent-client-protocol",
-        "ai",
-        "ai-agents",
-        "blockchain",
-        "machine-learning",
-        "model-context-protocol",
-        "monorepo",
-        "network",
-        "web"
-      ],
-      "category": "DevTools",
-      "github_url": "https://github.com/Sidiora-Labs/Paxeer-X-Network",
-      "updated_at": "2026-10-04T07:35:34Z",
-      "created_at": "2026-08-14T19:56:00Z"
-    },
-    {
       "id": 1209966933,
       "name": "rea",
       "full_name": "morluto/rea",
       "owner": "morluto",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 573,
+      "stars": 576,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -5220,8 +5194,34 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/morluto/rea",
-      "updated_at": "2026-10-04T07:36:42Z",
+      "updated_at": "2026-10-04T07:52:52Z",
       "created_at": "2026-04-14T00:51:32Z"
+    },
+    {
+      "id": 1334532589,
+      "name": "Paxeer-X-Network",
+      "full_name": "Sidiora-Labs/Paxeer-X-Network",
+      "owner": "Sidiora-Labs",
+      "description": "Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them. ",
+      "stars": 575,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent",
+        "agent-client-protocol",
+        "ai",
+        "ai-agents",
+        "blockchain",
+        "machine-learning",
+        "model-context-protocol",
+        "monorepo",
+        "network",
+        "web"
+      ],
+      "category": "DevTools",
+      "github_url": "https://github.com/Sidiora-Labs/Paxeer-X-Network",
+      "updated_at": "2026-10-04T07:38:57Z",
+      "created_at": "2026-08-14T19:56:00Z"
     },
     {
       "id": 1024010771,
@@ -8472,7 +8472,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/Cotal-AI/Cotal",
-      "updated_at": "2026-10-04T07:35:09Z",
+      "updated_at": "2026-10-04T07:39:58Z",
       "created_at": "2026-06-02T02:52:25Z"
     },
     {
@@ -11963,7 +11963,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/morluto/jacobian",
-      "updated_at": "2026-10-04T07:20:34Z",
+      "updated_at": "2026-10-04T07:53:18Z",
       "created_at": "2026-07-23T09:08:45Z"
     },
     {
@@ -13102,6 +13102,34 @@
       "created_at": "2026-01-11T11:32:59Z"
     },
     {
+      "id": 1304521366,
+      "name": "xedit",
+      "full_name": "rotbit/xedit",
+      "owner": "rotbit",
+      "description": "Markdown 公众号排版工具：左边写 Markdown，右边实时预览，一键复制到微信公众号/知乎，样式全部内联不丢失。13 套主题、数学公式、图床、版本回滚、AI 内容审查，内置 MCP Server。",
+      "stars": 167,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "editor",
+        "markdown",
+        "markdown-editor",
+        "mcp",
+        "model-context-protocol",
+        "nextjs",
+        "react",
+        "self-hosted",
+        "typescript",
+        "wechat",
+        "wechat-mp",
+        "writing"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/rotbit/xedit",
+      "updated_at": "2026-10-04T07:41:20Z",
+      "created_at": "2026-07-18T01:55:36Z"
+    },
+    {
       "id": 971922154,
       "name": "bitbucket-mcp",
       "full_name": "MatanYemini/bitbucket-mcp",
@@ -13144,34 +13172,6 @@
       "github_url": "https://github.com/Toolbase-AI/toolbase",
       "updated_at": "2026-09-24T13:08:13Z",
       "created_at": "2024-12-19T16:40:56Z"
-    },
-    {
-      "id": 1304521366,
-      "name": "xedit",
-      "full_name": "rotbit/xedit",
-      "owner": "rotbit",
-      "description": "Markdown 公众号排版工具：左边写 Markdown，右边实时预览，一键复制到微信公众号/知乎，样式全部内联不丢失。13 套主题、数学公式、图床、版本回滚、AI 内容审查，内置 MCP Server。",
-      "stars": 166,
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "editor",
-        "markdown",
-        "markdown-editor",
-        "mcp",
-        "model-context-protocol",
-        "nextjs",
-        "react",
-        "self-hosted",
-        "typescript",
-        "wechat",
-        "wechat-mp",
-        "writing"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/rotbit/xedit",
-      "updated_at": "2026-10-04T05:52:58Z",
-      "created_at": "2026-07-18T01:55:36Z"
     },
     {
       "id": 1207055417,
