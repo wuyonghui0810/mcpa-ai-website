@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T08:06:32.593453+00:00",
+  "generated_at": "2026-10-11T08:25:20.418290+00:00",
   "count": 500,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "full_name": "morluto/rea",
       "owner": "morluto",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 80986,
+      "stars": 81381,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -35,7 +35,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/morluto/rea",
-      "updated_at": "2026-10-11T08:06:20Z",
+      "updated_at": "2026-10-11T08:25:07Z",
       "created_at": "2026-04-14T00:51:32Z"
     },
     {
@@ -44,7 +44,7 @@
       "full_name": "HKUDS/nanobot",
       "owner": "HKUDS",
       "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "stars": 48945,
+      "stars": 48946,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -71,7 +71,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/HKUDS/nanobot",
-      "updated_at": "2026-10-11T07:30:20Z",
+      "updated_at": "2026-10-11T08:24:41Z",
       "created_at": "2026-02-01T07:16:15Z"
     },
     {
@@ -143,7 +143,7 @@
       "full_name": "PrefectHQ/fastmcp",
       "owner": "PrefectHQ",
       "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
-      "stars": 28036,
+      "stars": 28037,
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [
@@ -159,7 +159,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/PrefectHQ/fastmcp",
-      "updated_at": "2026-10-11T07:58:03Z",
+      "updated_at": "2026-10-11T08:19:39Z",
       "created_at": "2024-11-30T01:47:40Z"
     },
     {
@@ -268,7 +268,7 @@
       "full_name": "CoplayDev/unity-mcp",
       "owner": "CoplayDev",
       "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
-      "stars": 14833,
+      "stars": 14835,
       "language": "C#",
       "license": "MIT",
       "topics": [
@@ -291,7 +291,7 @@
       ],
       "category": "Media",
       "github_url": "https://github.com/CoplayDev/unity-mcp",
-      "updated_at": "2026-10-11T07:18:28Z",
+      "updated_at": "2026-10-11T08:18:36Z",
       "created_at": "2025-03-18T11:01:58Z"
     },
     {
@@ -494,7 +494,7 @@
       "full_name": "WenyuChiou/awesome-agentic-ai-zh",
       "owner": "WenyuChiou",
       "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-      "stars": 7462,
+      "stars": 7463,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -520,7 +520,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "updated_at": "2026-10-11T06:53:40Z",
+      "updated_at": "2026-10-11T08:14:20Z",
       "created_at": "2026-05-04T22:18:51Z"
     },
     {
@@ -529,7 +529,7 @@
       "full_name": "XiaoDuoYa/codex-with-chatgpt",
       "owner": "XiaoDuoYa",
       "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
-      "stars": 7239,
+      "stars": 7241,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -542,7 +542,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-      "updated_at": "2026-10-11T07:56:35Z",
+      "updated_at": "2026-10-11T08:20:34Z",
       "created_at": "2026-08-28T12:57:24Z"
     },
     {
@@ -918,7 +918,7 @@
       "full_name": "homeassistant-ai/ha-mcp",
       "owner": "homeassistant-ai",
       "description": "The Unofficial and Awesome Home Assistant MCP Server",
-      "stars": 5016,
+      "stars": 5017,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -933,7 +933,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/homeassistant-ai/ha-mcp",
-      "updated_at": "2026-10-11T07:34:04Z",
+      "updated_at": "2026-10-11T08:23:19Z",
       "created_at": "2025-09-14T13:23:45Z"
     },
     {
@@ -962,7 +962,7 @@
       ],
       "category": "Finance",
       "github_url": "https://github.com/atilaahmettaner/tradingview-mcp",
-      "updated_at": "2026-10-11T07:56:43Z",
+      "updated_at": "2026-10-11T08:15:37Z",
       "created_at": "2025-08-08T22:34:03Z"
     },
     {
@@ -971,7 +971,7 @@
       "full_name": "jub0t/concat",
       "owner": "jub0t",
       "description": "⭐ Concat: The truly free, and open-source cross-platform CapCut replacement (supports MCPs).",
-      "stars": 4728,
+      "stars": 4732,
       "language": "Rust",
       "license": "AGPL-3.0",
       "topics": [
@@ -993,7 +993,7 @@
       ],
       "category": "Productivity",
       "github_url": "https://github.com/jub0t/concat",
-      "updated_at": "2026-10-11T07:57:56Z",
+      "updated_at": "2026-10-11T08:23:16Z",
       "created_at": "2026-08-25T18:34:47Z"
     },
     {
@@ -1625,7 +1625,7 @@
       ],
       "category": "Cloud",
       "github_url": "https://github.com/CrossPaste/crosspaste-desktop",
-      "updated_at": "2026-10-11T05:54:59Z",
+      "updated_at": "2026-10-11T08:11:58Z",
       "created_at": "2023-11-16T15:55:19Z"
     },
     {
@@ -1948,7 +1948,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/tianma-if/edgeever",
-      "updated_at": "2026-10-11T07:57:33Z",
+      "updated_at": "2026-10-11T08:13:17Z",
       "created_at": "2026-06-26T06:59:58Z"
     },
     {
@@ -2580,7 +2580,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/awslabs/cli-agent-orchestrator",
-      "updated_at": "2026-10-11T00:33:33Z",
+      "updated_at": "2026-10-11T08:21:11Z",
       "created_at": "2025-07-29T14:16:56Z"
     },
     {
@@ -3515,7 +3515,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/repoprompt/repoprompt-ce",
-      "updated_at": "2026-10-11T03:57:01Z",
+      "updated_at": "2026-10-11T08:16:27Z",
       "created_at": "2026-05-12T19:44:16Z"
     },
     {
@@ -3595,7 +3595,7 @@
       "full_name": "Natfii/UnrealClaude",
       "owner": "Natfii",
       "description": "Claude Code CLI integration for Unreal Engine 5.7 - Get AI coding assistance with built-in UE5.7 documentation context directly in the editor.",
-      "stars": 909,
+      "stars": 908,
       "language": "C++",
       "license": "Unknown",
       "topics": [
@@ -3620,7 +3620,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/Natfii/UnrealClaude",
-      "updated_at": "2026-10-09T14:17:12Z",
+      "updated_at": "2026-10-11T08:13:58Z",
       "created_at": "2026-01-03T23:21:51Z"
     },
     {
@@ -3724,7 +3724,7 @@
       "full_name": "riponcm/projectmem",
       "owner": "riponcm",
       "description": "Open-source coding agents memory. Records issues, attempts, fixes and decisions, then warns your agent before it repeats an approach that already failed. Native MCP server for Claude Code, Cursor, Antigravity and Codex. 100% local, no cloud, no telemetry. MIT.",
-      "stars": 860,
+      "stars": 861,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -3751,7 +3751,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/riponcm/projectmem",
-      "updated_at": "2026-10-11T00:13:33Z",
+      "updated_at": "2026-10-11T08:07:03Z",
       "created_at": "2026-05-09T20:28:36Z"
     },
     {
@@ -3760,7 +3760,7 @@
       "full_name": "marc-shade/world-intel-mcp",
       "owner": "marc-shade",
       "description": "120-tool MCP server for real-time global intelligence: markets, SEC filings, conflict, military, cyber, climate, news, and 30+ domains. AI situation briefs that cite their sources, user-defined geofences with escalation scoring, cited daily digests, live SSE dashboard. MIT, no paid API keys.",
-      "stars": 854,
+      "stars": 855,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -3787,7 +3787,7 @@
       ],
       "category": "Filesystem",
       "github_url": "https://github.com/marc-shade/world-intel-mcp",
-      "updated_at": "2026-10-11T08:01:21Z",
+      "updated_at": "2026-10-11T08:08:19Z",
       "created_at": "2025-11-29T16:49:53Z"
     },
     {
@@ -3831,7 +3831,7 @@
       "full_name": "karanb192/reddit-mcp-buddy",
       "owner": "karanb192",
       "description": "Clean, LLM-optimized Reddit MCP server. Browse posts, search content, analyze users. No fluff, just Reddit data.",
-      "stars": 849,
+      "stars": 850,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -3846,7 +3846,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/karanb192/reddit-mcp-buddy",
-      "updated_at": "2026-10-10T22:25:41Z",
+      "updated_at": "2026-10-11T08:12:53Z",
       "created_at": "2025-09-14T05:52:29Z"
     },
     {
@@ -4375,7 +4375,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/kitfunso/hippo-memory",
-      "updated_at": "2026-10-11T08:02:53Z",
+      "updated_at": "2026-10-11T08:12:17Z",
       "created_at": "2026-03-15T10:40:26Z"
     },
     {
@@ -4571,7 +4571,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/HelpCode-ai/anythingmcp",
-      "updated_at": "2026-10-11T08:03:29Z",
+      "updated_at": "2026-10-11T08:19:35Z",
       "created_at": "2026-02-28T12:01:26Z"
     },
     {
@@ -4675,7 +4675,7 @@
       "full_name": "Playa-Cyrene/Cyrene-Agent",
       "owner": "Playa-Cyrene",
       "description": "一款开源、基于昔涟开发的桌面 AI 智能体/An open-source desktop AI agent based on Cyrene.",
-      "stars": 697,
+      "stars": 698,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -4701,7 +4701,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/Playa-Cyrene/Cyrene-Agent",
-      "updated_at": "2026-10-11T06:15:15Z",
+      "updated_at": "2026-10-11T08:08:48Z",
       "created_at": "2026-07-06T21:33:15Z"
     },
     {
@@ -4902,7 +4902,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/genomoncology/biomcp",
-      "updated_at": "2026-10-11T07:23:05Z",
+      "updated_at": "2026-10-11T08:24:35Z",
       "created_at": "2025-04-01T21:44:02Z"
     },
     {
@@ -5192,7 +5192,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/StuMason/coolify-mcp",
-      "updated_at": "2026-10-10T02:02:37Z",
+      "updated_at": "2026-10-11T08:06:25Z",
       "created_at": "2025-03-05T12:35:43Z"
     },
     {
@@ -6500,7 +6500,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/haoruilee/awesome-agent-native-services",
-      "updated_at": "2026-10-11T08:06:20Z",
+      "updated_at": "2026-10-11T08:19:14Z",
       "created_at": "2026-03-15T04:02:04Z"
     },
     {
@@ -7019,7 +7019,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/Lyellr88/marm-memory",
-      "updated_at": "2026-10-11T07:52:46Z",
+      "updated_at": "2026-10-11T08:15:06Z",
       "created_at": "2025-06-10T06:36:49Z"
     },
     {
@@ -7189,7 +7189,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/ivnvxd/mcp-server-odoo",
-      "updated_at": "2026-10-10T19:15:09Z",
+      "updated_at": "2026-10-11T08:16:11Z",
       "created_at": "2025-03-22T20:45:03Z"
     },
     {
@@ -7264,7 +7264,7 @@
       "full_name": "db-lyon/ue-mcp",
       "owner": "db-lyon",
       "description": "Complete Unreal Engine development toolkit exposed as MCP tools.",
-      "stars": 396,
+      "stars": 397,
       "language": "C++",
       "license": "MIT",
       "topics": [
@@ -7279,7 +7279,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/db-lyon/ue-mcp",
-      "updated_at": "2026-10-11T04:00:15Z",
+      "updated_at": "2026-10-11T08:13:53Z",
       "created_at": "2026-02-24T22:13:00Z"
     },
     {
@@ -14276,6 +14276,36 @@
       "created_at": "2025-01-19T12:58:56Z"
     },
     {
+      "id": 1231704393,
+      "name": "akb",
+      "full_name": "dnotitia/akb",
+      "owner": "dnotitia",
+      "description": "AKB — Agent Knowledgebase. Organizational memory for AI agents: vault-scoped docs / tables / files unified by URI graph, served over MCP.",
+      "stars": 162,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [
+        "agent",
+        "claude",
+        "claude-code",
+        "fastapi",
+        "knowledge-base",
+        "knowledge-graph",
+        "mcp",
+        "model-context-protocol",
+        "multi-tenant",
+        "pgvector",
+        "postgres",
+        "rag",
+        "react",
+        "vector-search"
+      ],
+      "category": "Database",
+      "github_url": "https://github.com/dnotitia/akb",
+      "updated_at": "2026-10-10T22:56:45Z",
+      "created_at": "2026-05-07T07:54:22Z"
+    },
+    {
       "id": 913454177,
       "name": "coplay-unity-plugin",
       "full_name": "CoplayDev/coplay-unity-plugin",
@@ -14307,71 +14337,6 @@
       "github_url": "https://github.com/CoplayDev/coplay-unity-plugin",
       "updated_at": "2026-09-28T09:56:19Z",
       "created_at": "2025-01-07T18:01:40Z"
-    },
-    {
-      "id": 1231704393,
-      "name": "akb",
-      "full_name": "dnotitia/akb",
-      "owner": "dnotitia",
-      "description": "AKB — Agent Knowledgebase. Organizational memory for AI agents: vault-scoped docs / tables / files unified by URI graph, served over MCP.",
-      "stars": 162,
-      "language": "Python",
-      "license": "NOASSERTION",
-      "topics": [
-        "agent",
-        "claude",
-        "claude-code",
-        "fastapi",
-        "knowledge-base",
-        "knowledge-graph",
-        "mcp",
-        "model-context-protocol",
-        "multi-tenant",
-        "pgvector",
-        "postgres",
-        "rag",
-        "react",
-        "vector-search"
-      ],
-      "category": "Database",
-      "github_url": "https://github.com/dnotitia/akb",
-      "updated_at": "2026-10-10T22:56:45Z",
-      "created_at": "2026-05-07T07:54:22Z"
-    },
-    {
-      "id": 1203023842,
-      "name": "agent-lsp",
-      "full_name": "blackwell-systems/agent-lsp",
-      "owner": "blackwell-systems",
-      "description": "MCP server that orchestrates language servers into agent-native workflows. 65 tools, 30 CI-verified languages.",
-      "stars": 160,
-      "language": "Go",
-      "license": "MIT",
-      "topics": [
-        "agentskills",
-        "ai-agents",
-        "ai-tooling",
-        "claude",
-        "claude-code",
-        "code-intelligence",
-        "code-quality",
-        "coding-agent",
-        "developer-tools",
-        "go",
-        "language-server-protocol",
-        "lsp",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "python",
-        "rust",
-        "static-analysis",
-        "typescript"
-      ],
-      "category": "DevTools",
-      "github_url": "https://github.com/blackwell-systems/agent-lsp",
-      "updated_at": "2026-10-08T11:00:58Z",
-      "created_at": "2026-04-06T16:38:40Z"
     },
     {
       "id": 952406345,
@@ -14408,6 +14373,41 @@
       "github_url": "https://github.com/mahmoudrabie/agentic-ai",
       "updated_at": "2026-10-05T21:48:05Z",
       "created_at": "2025-03-21T08:23:49Z"
+    },
+    {
+      "id": 1203023842,
+      "name": "agent-lsp",
+      "full_name": "blackwell-systems/agent-lsp",
+      "owner": "blackwell-systems",
+      "description": "MCP server that orchestrates language servers into agent-native workflows. 65 tools, 30 CI-verified languages.",
+      "stars": 160,
+      "language": "Go",
+      "license": "MIT",
+      "topics": [
+        "agentskills",
+        "ai-agents",
+        "ai-tooling",
+        "claude",
+        "claude-code",
+        "code-intelligence",
+        "code-quality",
+        "coding-agent",
+        "developer-tools",
+        "go",
+        "language-server-protocol",
+        "lsp",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "python",
+        "rust",
+        "static-analysis",
+        "typescript"
+      ],
+      "category": "DevTools",
+      "github_url": "https://github.com/blackwell-systems/agent-lsp",
+      "updated_at": "2026-10-08T11:00:58Z",
+      "created_at": "2026-04-06T16:38:40Z"
     },
     {
       "id": 1127717919,
@@ -14881,6 +14881,28 @@
       "created_at": "2026-07-18T23:17:55Z"
     },
     {
+      "id": 1370916260,
+      "name": "digikala-mcp",
+      "full_name": "mmdju/digikala-mcp",
+      "owner": "mmdju",
+      "description": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no API key. 19 tools, hosted on Cloudflare Workers.",
+      "stars": 152,
+      "language": "JavaScript",
+      "license": "NOASSERTION",
+      "topics": [
+        "cloudflare-workers",
+        "digikala",
+        "iran",
+        "mcp",
+        "model-context-protocol",
+        "persian"
+      ],
+      "category": "Search",
+      "github_url": "https://github.com/mmdju/digikala-mcp",
+      "updated_at": "2026-10-11T06:15:44Z",
+      "created_at": "2026-09-15T04:54:56Z"
+    },
+    {
       "id": 951694053,
       "name": "mcp-ts-core",
       "full_name": "cyanheads/mcp-ts-core",
@@ -14905,28 +14927,6 @@
       "github_url": "https://github.com/cyanheads/mcp-ts-core",
       "updated_at": "2026-10-09T23:49:00Z",
       "created_at": "2025-03-20T05:07:04Z"
-    },
-    {
-      "id": 1370916260,
-      "name": "digikala-mcp",
-      "full_name": "mmdju/digikala-mcp",
-      "owner": "mmdju",
-      "description": "MCP server for Digikala: search, compare and price-check products on Iran's largest marketplace. Read-only, no API key. 19 tools, hosted on Cloudflare Workers.",
-      "stars": 152,
-      "language": "JavaScript",
-      "license": "NOASSERTION",
-      "topics": [
-        "cloudflare-workers",
-        "digikala",
-        "iran",
-        "mcp",
-        "model-context-protocol",
-        "persian"
-      ],
-      "category": "Search",
-      "github_url": "https://github.com/mmdju/digikala-mcp",
-      "updated_at": "2026-10-11T06:15:44Z",
-      "created_at": "2026-09-15T04:54:56Z"
     },
     {
       "id": 1263481027,
