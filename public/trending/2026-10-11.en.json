@@ -3,10 +3,10 @@
  "fetch_note": "Fetched at 2026-10-11 16:30 MST (UTC-7)",
  "foot_note": "Summaries and facts verified against repo READMEs and GitHub APIs (2026-10-11)",
  "insight": [
-  "**Today's trending chart has taken a decidedly hardcore turn**: The top three spots are held by a reverse-engineering MCP (morluto/rea, +25.6k today), a PS5 porting toolkit (AnyPS5, +4.0k today / +21.4k this week), and an AI creative IDE (ArtCraft). Spots four through six feature charting skills for coding agents, a satellite data 3D globe, and the 1969 Apollo AGC source code—hardly \"yet another agent framework\" in sight, just tools doing deep, specialized work in their respective domains.",
-  "**\"Understanding closed-source software\" has become the new battleground for AI agents**: REA consolidates Hopper, Ghidra, and IDA alongside Electron/asar and .NET static analysis into a single MCP, requiring every conclusion to provide supporting evidence and documented limitations. AnyPS5 goes even further: by relinking executables paired with custom PRX libraries—with strictly no emulation and no standalone runtime—it already runs a 2D platformer at a stable 60 fps on a GTX 1050 Ti.",
-  "**Running large models on low VRAM sees two generations sharing the spotlight**: The veteran AirLLM returned to the daily charts driven by its September 2026 addition of \"low-VRAM training\" (training 125B models on 6GB VRAM, ~2GB for 27B). Meanwhile, this month's colibri takes an entirely different approach: pure C, zero dependencies, and streaming experts directly from disk. Both reach the same conclusion: the bottleneck isn't the algorithm—it's how you manage the memory hierarchy.",
-  "**This month's chart remains a civil war over agent infrastructure**: Memory (hindsight +24.9k), orchestration and governance (paperclip +19.5k, ECC +22.4k), web access (Agent-Reach +16.7k), and Alibaba's battle-tested code review tool (open-code-review +23.9k) command six spots. In contrast, native creative tools claim only two entries: VoiceStudio (+35.2k) and gods-eye-view (+27.9k)—infrastructure solidifies first; vertical applications harvest later."
+  "**Today's trending chart took a distinctly hardcore turn**: The top three spots belong to a reverse engineering MCP (morluto/rea, +25.6k in a single day), a PS5 porting toolkit (AnyPS5, +4.0k daily / +21.4k weekly), and an AI creative IDE (ArtCraft). Spots four through six feature diagramming capabilities for coding agents, a satellite data globe, and the original 1969 Apollo AGC source code—hardly any of them are 'yet another agent framework'; every single one is a specialized tool that dives deep into a specific vertical to get the job done right.",
+  "**'Deciphering closed-source software' has become the new battleground for agents**: REA consolidates Hopper, Ghidra, and IDA alongside Electron/asar and .NET static analysis into a single MCP, requiring every conclusion to be backed by concrete evidence and acknowledged limitations. AnyPS5 pushes even further—reincarnating executables via a relinker paired with in-house PRX libraries, strictly avoiding emulation or standalone runtimes, and already running a 2D platformer at a rock-solid 60 fps on a GTX 1050 Ti.",
+  "**Two generations of low-VRAM LLM execution share the stage**: The veteran AirLLM surged back onto the daily charts thanks to its newly introduced 'low-VRAM training' (fine-tuning 125B models on 6GB, and 27B on ~2GB). Meanwhile, colibri on the monthly leaderboard takes a completely different path: pure C, zero dependencies, and streaming MoE experts straight from disk. Both arrive at the exact same conclusion: the bottleneck isn't the algorithm—it's how you treat the memory hierarchy.",
+  "**This month's leaderboard remains a civil war among agent substrates**: Memory (hindsight +24.9k), orchestration and governance (paperclip +19.5k, ECC +22.4k), web-browsing capabilities (Agent-Reach +16.7k), and production-proven code review from Alibaba (open-code-review +23.9k) dominate six spots. Meanwhile, end-user creative tools claimed only two: VoiceStudio (+35.2k) and gods-eye-view (+27.9k)—solidify the infrastructure first, harvest vertical applications later."
  ],
  "sections": [
   {
@@ -19,103 +19,103 @@
      "lang": "TypeScript",
      "delta": 25585,
      "tag": "Agent Skill",
-     "intro": "给编码代理用的「逆向工程 MCP」：让 agent 在没有源码的情况下看懂一个应用——从界面行为一路追到原生二进制，并顺手给你复刻一份实现。",
+     "intro": "A reverse engineering MCP server for coding agents: enables agents to understand an application without source code—tracing from UI behavior down to native binaries, and cloning an implementation along the way.",
      "facts": [
-      "一个 MCP 服务器 + 配套 workflow 技能：npx rea-agents setup 注册到 Claude Code / Codex / Cursor / Gemini CLI / Grok Build 等（改动配置前自动备份），也提供 rea CLI 直接用",
-      "覆盖面：原生二进制（伪代码、汇编、字符串、符号、调用与引用，可复用本机已装的 Hopper / Ghidra / IDA）、JavaScript 与 Electron 应用（含 asar，纯静态分析不需要反汇编器）、.NET 程序集、网站；另有 ELF 布局诊断、WASM、EVM 字节码等目标类型",
-      "分析全部本地运行，每条结论都要求附证据与已知局限（README 明确：agent 要给出代码、引用与 unknowns，而不是结论式断言），便于追问与验证",
-      "环境要求 Node.js 22.19+ / 24.11+ / 26+ 与 npm；MIT 协议，官网 rea.tools；2026-04 建仓，GitHub API 实测 10.27 万 star，本期单日 +25.6k 居今日榜第一"
+      "An MCP server plus companion workflow skills: run `npx rea-agents setup` to register with Claude Code, Codex, Cursor, Gemini CLI, Grok Build, etc. (with automatic config backups before changes), alongside a standalone `rea` CLI.",
+      "Broad target coverage: native binaries (decompiled pseudocode, assembly, strings, symbols, calls, and references; hooks into locally installed Hopper / Ghidra / IDA), JavaScript and Electron apps (including `.asar`, fully static without a disassembler), .NET assemblies, and websites; also covers ELF layout diagnosis, WASM, and EVM bytecode.",
+      "All analysis runs locally; every finding requires concrete evidence and known limitations (as the README states: agents must provide code, references, and unknowns rather than unsubstantiated claims) for easy follow-ups and verification.",
+      "Requires Node.js 22.19+ / 24.11+ / 26+ and npm; MIT licensed, official site at rea.tools; created in April 2026, holds 102.7k stars via GitHub API, ranked #1 on today's trending with a +25.6k daily surge."
      ]
     },
     {
      "repo": "boykopovar/AnyPS5",
      "lang": "C++",
      "delta": 3977,
-     "tag": "游戏移植",
-     "intro": "把 PS5 游戏自动移植到 PC 的工具链：不用模拟器、不起独立运行时进程，直接把 PlayStation 可执行文件「转生」成 Linux / Windows 原生程序。",
+     "tag": "Game Porting",
+     "intro": "A toolchain that ports PS5 games to PC without emulation or separate runtime processes, directly recompiling PlayStation executables into native Linux/Windows binaries.",
      "facts": [
-      "核心是 relinker——把可执行文件转成目标系统的原生格式，再配上项目自己实现的系统 prx 库做动态链接（README 原文：No emulation or separate runtime process）",
-      "着色器重编译器能产出 SPIR-V（构建时开启 ANYPS5_ENABLE_SPIRV_TOOLS 会用 Spirv-Tools 校验），图形走 Vulkan",
-      "兼容性清单在 docs/user/COMPATIBILITY.md：已验证游戏里 Dreaming Sarah（2D 平台跳跃）在 GTX 1050 Ti / i5-7500 上稳定 60fps；遇到未支持状态一律抛 std::runtime_error 终止，不静默降级",
-      "SDL 手柄（含摇杆与扳机）开箱即用，键盘鼠标可用 anyps5-input.ini 配置；GPL-2.0，2026-08 建仓；README 明确声明不含也不要求任何版权固件、密钥或专有库，仅供互操作、研究与保存用途"
+      "Powered by a relinker that converts executables into native target formats, dynamically linking against reimplemented system PRX libraries (README: \"No emulation or separate runtime process\").",
+      "A shader recompiler outputs SPIR-V (validated via Spirv-Tools when building with `ANYPS5_ENABLE_SPIRV_TOOLS`), rendering natively via Vulkan.",
+      "Compatibility tracker at `docs/user/COMPATIBILITY.md`: verified titles like Dreaming Sarah (2D platformer) hit a stable 60 fps on a GTX 1050 Ti / i5-7500; unsupported states fail-fast by throwing `std::runtime_error` rather than silently degrading.",
+      "Out-of-the-box SDL gamepad support (sticks & triggers), with keyboard/mouse mapped via `anyps5-input.ini`; GPL-2.0, created August 2026; README explicitly clarifies it contains and requires no copyrighted firmware, keys, or proprietary libraries—intended solely for interoperability, research, and preservation."
      ]
     },
     {
      "repo": "storytold/artcraft",
      "lang": "Rust",
      "delta": 2956,
-     "tag": "AIGC",
-     "intro": "自称「艺术家的 IDE」的桌面创作工具：先用 2D 合成与 3D 摆场把画面搭好，再挑模型生成——把 AI 生图从「抽卡」变成可复现的手艺活。",
+     "tag": "Generative AI",
+     "intro": "A desktop creative suite dubbed the 'IDE for artists': compose scenes via 2D layering and 3D set staging before generating with models—turning AI generation from a gacha roll into a controllable, reproducible craft.",
      "facts": [
-      "交互式图像/视频创作：2D 图层合成、3D 深度合成、角色姿态与相机预设、Character Identity Transfer（用摆好姿势的人偶引导角色位置与姿态）、kitbashing 拼装摆场、背景移除、蒙版 inpainting、图生视频",
-      "官方模型目录共 62 个：图像 16（Nano Banana / GPT Image / FLUX / Seedream）、视频 25（Seedance / Kling / Veo / Sora / Vidu / MiniMax）、外加音频与音乐、3D 网格、世界与高斯泼溅（Marble / TripoSplat）；也可接 Grok、Midjourney、Sora、World Labs 外部 provider",
-      "下载：getartcraft.com 提供 Windows 与 macOS 稳定版，GitHub Releases 有最新构建，Linux 需从源码构建；官网附两分钟演示视频与 Discord",
-      "MIT / Apache-2.0 双许可，Rust 编写，2022-03 建仓（近期重新发力迭代）；GitHub API 实测 1.78 万 star"
+      "Interactive image/video creation: 2D layer compositing, 3D depth compositing, character poses and camera presets, Character Identity Transfer (poseable mannequins driving character placement and stance), 3D kitbashing, background removal, masked inpainting, and image-to-video.",
+      "Built-in catalog of 62 models: 16 image models (Nano Banana, GPT Image, FLUX, Seedream), 25 video models (Seedance, Kling, Veo, Sora, Vidu, MiniMax), plus audio/music, 3D meshes, and world/Gaussian splatting (Marble, TripoSplat); external providers like Grok, Midjourney, Sora, and World Labs are also supported.",
+      "Downloads: stable builds for Windows and macOS at getartcraft.com, latest releases on GitHub Releases, with Linux built from source; site includes a 2-minute demo video and Discord community.",
+      "Dual-licensed under MIT / Apache-2.0, written in Rust, created in March 2022 (with recent active revamping); currently sits at 17.8k stars via GitHub API."
      ]
     },
     {
      "repo": "cathrynlavery/diagram-design",
      "lang": "HTML",
      "delta": 1083,
-     "tag": "图表生成",
-     "intro": "给 Claude Code / Codex / Pi 等编码代理用的「编辑部级」图表技能库：直接产出自包含 HTML+SVG 的 38+ 种图表，不产 Mermaid「辣鸡图」、不要阴影装饰。",
+     "tag": "Diagram Generation",
+     "intro": "An editorial-grade diagramming skill library for coding agents like Claude Code, Codex, and Pi: generates self-contained HTML+SVG diagrams across 38+ formats, ditching flimsy Mermaid charts and excessive drop shadows.",
      "facts": [
-      "官方自称覆盖 38/39 种图表类型：Sankey、鱼骨图、Wardley map、看板、用户旅程、部署图、依赖图、UML 类图、数据库 schema 等（README v2.5.10 更新说明）",
-      "语义模式与布局分离：队列、策略追踪、信任边界等行为可复用既有类型表达，避免类型无限膨胀",
-      "能读取 draw.io / Mermaid 源文件，按指定格式、尺寸与细节级别重绘；静态 HTML 为默认，可选无障碍动效",
-      "MIT 协议，2026-04 创建，附在线预览站；GitHub API 实测 3.6 万+ star"
+      "Covers 38–39 diagram types: Sankey, fishbone, Wardley maps, Kanban, user journeys, deployment and dependency graphs, UML class diagrams, database schemas, and more (per README v2.5.10 release notes).",
+      "Decouples semantic schemas from layouts: patterns like queues, strategy tracking, and trust boundaries map to existing primitives, preventing unbounded type bloat.",
+      "Parses draw.io and Mermaid source files to redraw them at custom formats, dimensions, and detail levels; defaults to static HTML with optional accessible animations.",
+      "MIT licensed, created in April 2026, includes an online preview site; currently over 36k stars on GitHub API."
      ]
     },
     {
      "repo": "bilawalsidhu/gods-eye-view",
      "lang": "JavaScript",
      "delta": 872,
-     "tag": "地理空间",
-     "intro": "浏览器里的「间谍卫星模拟器」——但数据全是真的：把航班应答机、船舶航标、在轨卫星、地震台站与公共摄像头汇到同一个写实 3D 地球仪上，本地运行、代码可审计可扩展。",
+     "tag": "Geospatial",
+     "intro": "An in-browser spy satellite simulator powered entirely by real-world data: fuses flight transponders, maritime beacons, satellites in orbit, seismic stations, and public webcams onto a photorealistic 3D globe—running locally with auditable, extensible code.",
      "facts": [
-      "作者 bilawalsidhu 来自 YouTube 热门系列 God's Eye View（原 WorldView，YouTube 播放 500 万+、社媒 2,500 万+），2026-08 曾登 GitHub Trending 日榜与周榜第一，Product Hunt 当日 #8（README 实述）",
-      "两条安装路径：Pinokio 桌面端一键装（Windows/macOS/Linux，需 Pinokio 8.2+），或终端/编码代理本地跑；无需账号与 API Key 即可用航班、军用与卫星、地震、公共摄像头、无线电、火箭发射等图层",
-      "写实 3D 地形需自备 Cesium ion token（个人非商用）或 Google Maps key，在应用内 POWER UP 面板添加；交通数据是沿真实道路的模拟，摄像头位姿与火箭轨迹为粗略估计",
-      "功能面：驾驶舱视角、250km 目标名册、点击追踪任意目标、语音白板、GLSL 传感器滤镜（CRT/NVG/FLIR/Noir）、军事 HUD、场景导演与可分享的追踪链接；每个图层都是独立模块，可自行替换数据源；2026-06 建，GitHub API 实测 3.18 万 star"
+      "Created by bilawalsidhu from the viral YouTube series God's Eye View (formerly WorldView, 5M+ YouTube views, 25M+ across socials); hit #1 on GitHub Trending daily and weekly in August 2026, and #8 on Product Hunt (per README).",
+      "Two install paths: 1-click Pinokio desktop setup (Windows/macOS/Linux, requires Pinokio 8.2+) or via terminal / coding agents; tracks flights, military/satellites, earthquakes, public webcams, radio feeds, and rocket launches without accounts or API keys.",
+      "Photorealistic 3D terrain requires an optional Cesium ion token (free personal/non-commercial) or Google Maps API key via the in-app POWER UP panel; traffic is simulated along actual roads, while camera poses and rocket trajectories are rough approximations.",
+      "Features: cockpit view, 250km target roster, click-to-track targets, voice whiteboard, GLSL sensor shaders (CRT/NVG/FLIR/Noir), military HUD, scene director, and shareable tracking links; modular architecture with swappable data sources per layer; created June 2026, 31.8k stars on GitHub API."
      ]
     },
     {
      "repo": "chrislgarry/Apollo-11",
      "lang": "Assembly",
      "delta": 581,
-     "tag": "历史档案",
-     "intro": "阿波罗 11 号制导计算机（AGC）的原始汇编源码档案：把 1969 年真正飞上月球的那份代码逐行数字化保存下来，供所有人查阅与比对。",
+     "tag": "Historical Archive",
+     "intro": "The original assembly source code archive for the Apollo 11 Guidance Computer (AGC): a line-by-line digital transcription of the actual code that flew to the Moon in 1969, open for study and verification.",
      "facts": [
-      "内容是两个程序：指令舱的 Comanche055（Colossus 2A）与登月舱的 Luminary099（Luminary 1A），由 Virtual AGC 与 MIT 博物馆合作完成数字化转录，版权属公有领域",
-      "汇编器是 yaYUL，编译与运行环境指向 Virtual AGC 项目（www.ibiblio.org/apollo）；仓库欢迎提交 PR 指出转录文本与 MIT 博物馆原始扫描件的差异",
-      "仓库内含 CONTRACT_AND_APPROVALS.agc 等原始文档，能看到 1969-04-01 与 1969-07-14 的汇编修订标记与 NASA 合同信息",
-      "README 提供 40+ 语种翻译（含简体与正体中文）；2014-04 建仓，GitHub API 实测 7.42 万 star，是 GitHub 上持续时间最长的「太空考古」项目之一"
+      "Contains two flight programs: Comanche055 (Colossus 2A) for the Command Module and Luminary099 (Luminary 1A) for the Lunar Module, digitized in partnership between Virtual AGC and the MIT Museum; dedicated to the public domain.",
+      "Uses the yaYUL assembler, targeting the Virtual AGC project (www.ibiblio.org/apollo) for compilation and emulation; PRs correcting transcription discrepancies against original MIT Museum scans are welcomed.",
+      "Includes original documents such as `CONTRACT_AND_APPROVALS.agc`, showing NASA contract details and assembly revision timestamps from 1969-04-01 and 1969-07-14.",
+      "README translated into 40+ languages (including Simplified and Traditional Chinese); created in April 2014, currently at 74.2k stars via GitHub API, standing as one of GitHub's most enduring space archaeology projects."
      ]
     },
     {
      "repo": "lyogavin/airllm",
      "lang": "Jupyter Notebook",
      "delta": 541,
-     "tag": "本地推理",
-     "intro": "让小显存跑大模型的推理框架：用「逐层流式加载 + 预取」把权重从显存挪到磁盘与内存，不做量化、蒸馏或剪枝，单张 4GB 卡就能跑 70B。",
+     "tag": "Local Inference",
+     "intro": "An inference framework that runs massive LLMs on minimal VRAM: leverages layer-wise streaming and prefetching to offload weights to disk and RAM—running 70B models on a single 4GB GPU without quantization, distillation, or pruning.",
      "facts": [
-      "官方实测（均标注卡型、端到端测量）：Kimi K3（2.8T）3.72GB / RTX 6000 Ada、Qwen3.8-Flash-Next（125B）5.95GB / RTX 4090、DeepSeek-V3（671B）约 12GB、Qwen3.8-27B 3.33GB / RTX 3090；K3 走 per-expert 流式，只加载 token 实际路由到的专家",
-      "2026-09 起支持训练：冻结权重逐层流式加载、adapter 常驻 GPU，Qwen3.8-Flash-Next（125B）在 6GB（RTX 3060 Ti）下可训，Qwen3.8-27B 在约 2GB、seq 512",
-      "用法极简：pip install airllm 后像普通 transformers 模型一样初始化推理，AutoModel 自动识别模型类型，可用 layer_shards_saving_path 指定分层权重缓存目录；支持 safetensors 与 8bit/4bit 量化、支持 macOS 跑 70B",
-      "覆盖 Qwen / Llama 3.x·4 / DeepSeek V2·V3 / Phi / Gemma / ChatGLM / Baichuan / Mistral 等；Apache-2.0，作者 Gavin Li，2023-06 建仓，GitHub API 实测 3.64 万 star，本期以老项目身份回归日榜"
+      "Official end-to-end benchmarks: Kimi K3 (2.8T) at 3.72GB on RTX 6000 Ada, Qwen3.8-Flash-Next (125B) at 5.95GB on RTX 4090, DeepSeek-V3 (671B) at ~12GB, and Qwen3.8-27B at 3.33GB on RTX 3090; K3 utilizes per-expert streaming to only load routed experts per token.",
+      "Supports training since September 2026: streams frozen weights layer-by-layer while keeping adapters resident in VRAM—training Qwen3.8-Flash-Next (125B) within 6GB (RTX 3060 Ti), and Qwen3.8-27B in ~2GB at sequence length 512.",
+      "Minimal setup: `pip install airllm` and run inference just like standard Hugging Face transformers; `AutoModel` auto-detects architecture, with `layer_shards_saving_path` for caching layer shards; supports safetensors, 8-bit/4-bit quantization, and macOS on 70B models.",
+      "Supports Qwen, Llama 3.x/4, DeepSeek V2/V3, Phi, Gemma, ChatGLM, Baichuan, Mistral, and more; Apache-2.0, by Gavin Li, created June 2023, with 36.4k stars via GitHub API, making a resurgence on the daily trending chart."
      ]
     },
     {
      "repo": "pytorch/pytorch",
      "lang": "Python",
      "delta": 314,
-     "tag": "深度学习框架",
-     "intro": "深度学习的事实标准框架：提供张量与动态计算图，让「定义模型—求梯度—上 GPU 训练」这套流程用 Python 就能写完。",
+     "tag": "Deep Learning Framework",
+     "intro": "The de facto standard deep learning framework: provides multidimensional tensors and dynamic computation graphs, making model definition, gradient computation, and GPU acceleration purely idiomatic Python.",
      "facts": [
-      "核心能力是 autograd 自动微分 + 动态图（define-by-run），张量操作与 NumPy 生态互通，模型训练与推理共用一套 API",
-      "后端覆盖 CPU、NVIDIA CUDA、AMD ROCm 与 Apple Metal（MPS）；torch.compile 做图级编译加速；并行与分布式有 DDP、FSDP 等方案，服务化有 TorchServe",
-      "配套生态：torchvision（视觉）、torchaudio（音频）、TorchScript / ONNX 导出，几乎所有主流大模型与训练框架（transformers、vLLM、Unsloth 等）都以其为底座",
-      "安装按平台到 pytorch.org 选择器生成 pip/conda 命令（如 pip3 install torch --index-url 指向对应 CUDA 版本）；2016-08 建仓，GitHub API 实测 10.45 万 star、3.21 万 fork，本期以小增量（+314）出现在日榜，属长期霸榜的基础设施常客"
+      "Core foundation: `autograd` reverse-mode automatic differentiation paired with dynamic computation graphs (define-by-run), seamless NumPy tensor interoperability, and unified APIs across training and inference.",
+      "Hardware backends cover CPU, NVIDIA CUDA, AMD ROCm, and Apple Metal (MPS); accelerates execution via graph compiler `torch.compile`; scales out with DDP and FSDP distributed primitives, with TorchServe for deployment.",
+      "Rich ecosystem: torchvision (vision), torchaudio (audio), TorchScript / ONNX exports; serves as the underlying backbone for virtually all flagship LLMs and frameworks (transformers, vLLM, Unsloth, etc.).",
+      "Platform-specific installation via pytorch.org selector matrix (generating pip/conda commands like `pip3 install torch --index-url` for matching CUDA releases); created August 2016, 104.5k stars and 32.1k forks on GitHub API, charting on the daily trending list as an enduring infrastructure staple."
      ]
     }
    ]
@@ -129,39 +129,39 @@
      "repo": "boykopovar/AnyPS5",
      "lang": "C++",
      "delta": 21365,
-     "tag": "游戏移植",
-     "intro": "把 PS5 游戏自动移植到 PC 的工具链：不用模拟器、不起独立运行时进程，直接把 PlayStation 可执行文件「转生」成 Linux / Windows 原生程序。",
+     "tag": "Game Porting",
+     "intro": "A toolchain for automatically porting PS5 games to PC: no emulators or separate runtime processes—it directly recompiles and relinks PlayStation executables into native Linux/Windows binaries.",
      "facts": [
-      "核心是 relinker——把可执行文件转成目标系统的原生格式，再配上项目自己实现的系统 prx 库做动态链接（README 原文：No emulation or separate runtime process）",
-      "着色器重编译器能产出 SPIR-V（构建时开启 ANYPS5_ENABLE_SPIRV_TOOLS 会用 Spirv-Tools 校验），图形走 Vulkan",
-      "兼容性清单在 docs/user/COMPATIBILITY.md：已验证游戏里 Dreaming Sarah（2D 平台跳跃）在 GTX 1050 Ti / i5-7500 上稳定 60fps；遇到未支持状态一律抛 std::runtime_error 终止，不静默降级",
-      "SDL 手柄（含摇杆与扳机）开箱即用，键盘鼠标可用 anyps5-input.ini 配置；GPL-2.0，2026-08 建仓；README 明确声明不含也不要求任何版权固件、密钥或专有库，仅供互操作、研究与保存用途"
+      "The core is a relinker that transforms executables into the target OS's native format, paired with custom-implemented system PRX libraries for dynamic linking (README quote: 'No emulation or separate runtime process').",
+      "The shader recompiler outputs SPIR-V (enabling `ANYPS5_ENABLE_SPIRV_TOOLS` validates output via Spirv-Tools at build time), with graphics running on Vulkan.",
+      "Compatibility list located at `docs/user/COMPATIBILITY.md`: verified titles include *Dreaming Sarah* (2D platformer) running at a stable 60 fps on a GTX 1050 Ti / i5-7500; unsupported states immediately terminate by throwing `std::runtime_error` rather than silently degrading.",
+      "Supports SDL gamepads (including thumbsticks and triggers) out of the box, with keyboard/mouse configurable via `anyps5-input.ini`; GPL-2.0, repository created in 2026-08; README explicitly states it neither includes nor requires copyrighted firmware, keys, or proprietary libraries, intended strictly for interoperability, research, and preservation."
      ]
     },
     {
      "repo": "mattpocock/skills",
      "lang": "Shell",
      "delta": 9179,
-     "tag": "Agent Skill",
-     "intro": "TypeScript 明星讲师 Matt Pocock 的「真工程师」技能包：把他自己每天写代码用的 .agents 目录直接开源，小而可改、可组合，不绑架你的工作流。",
+     "tag": "Agent Skills",
+     "intro": "A 'real engineer' skill pack by star TypeScript educator Matt Pocock: open-sourcing the exact `.agents` directory he uses daily for coding—small, hackable, composable, and without hijacking your workflow.",
      "facts": [
-      "作者明确与 GSD/BMAD/Spec-Kit 等重流程方案划清界限：不夺走控制权，skills 保持小型、易改、可组合，适配任何模型（README 原文）",
-      "30 秒安装二选一：Claude Code 插件（只读托管包、作者更新即自动跟进）或直接取自仓库",
-      "配套 aihero.dev 技能通讯，README 称约 6 万人订阅",
-      "MIT 协议，2026-02 创建；GitHub API 实测 25 万+ star，本周 +13.4k 居周榜第一"
+      "The author explicitly differentiates this from heavy workflow frameworks like GSD/BMAD/Spec-Kit: does not wrest away control, keeping skills small, hackable, composable, and compatible with any model (README quote).",
+      "30-second setup via two options: Claude Code plugin (read-only hosted bundle that automatically updates with upstream) or pulled directly from the repo.",
+      "Accompanied by the aihero.dev skills newsletter, with ~60,000 subscribers per the README.",
+      "MIT license, created in 2026-02; 250k+ stars via GitHub API, ranked #1 on weekly trending with +13.4k stars this week."
      ]
     },
     {
      "repo": "tester-army/e2e",
      "lang": "TypeScript",
      "delta": 6564,
-     "tag": "测试框架",
-     "intro": "面向 Web 与移动端的下一代端到端测试框架：用自然语言描述目标，AI agent 自己驱动应用走到那一步，同一条测试里再用定位器和断言校验结果。",
+     "tag": "Testing Framework",
+     "intro": "A next-generation E2E testing framework for web and mobile: describe objectives in natural language, let the AI agent drive the app to that state, and verify results with locators and assertions within the same test case.",
      "facts": [
-      "写法就是把自然语言和断言混在同一条用例里：await agent.act('把工作区升级到 Pro 套餐') 之后接 agent.assert(...) 或 expect(screen.getByRole('status')).toContainText('Pro')",
-      "带 agent 步骤且被后续断言验证过的测试会记录动作，下次运行直接回放、不再调模型（应用变了才重新走 AI）；完全没有 agent 步骤的测试零模型消耗",
-      "模型可自带：自己的订阅、API Key 或本地模型；npm 拆成 e2e（SDK/CLI）、@e2e-dev/web（Chromium/Firefox/WebKit via Playwright）、@e2e-dev/mobile（iOS/Android 模拟器）、@e2e-dev/github（把结果发成 PR 评论）等包",
-      "安装 npx e2e init（交互选引擎、web 或 mobile、模型 provider），遥测可用 npx e2e telemetry disable 关闭；Apache-2.0，2026-07 创建，官网 tester.army/e2e；GitHub API 实测 3,000+ star（2026-10 实抓）"
+      "Mixes natural language and assertions within the same test: e.g., `await agent.act('upgrade workspace to Pro')` followed by `agent.assert(...)` or `expect(screen.getByRole('status')).toContainText('Pro')`.",
+      "Tests containing agent steps validated by subsequent assertions record actions and replay them directly on subsequent runs without calling models (re-engaging AI only when the app changes); tests without agent steps incur zero model cost.",
+      "Bring-your-own-model support: use your own subscription, API key, or local models; modular npm packages include `e2e` (SDK/CLI), `@e2e-dev/web` (Chromium/Firefox/WebKit via Playwright), `@e2e-dev/mobile` (iOS/Android emulators), and `@e2e-dev/github` (posts results as PR comments).",
+      "Install via `npx e2e init` (interactive setup for engine, web/mobile, and model provider); telemetry can be disabled with `npx e2e telemetry disable`; Apache-2.0, created in 2026-07, official site tester.army/e2e; 3,000+ stars via GitHub API (retrieved 2026-10)."
      ]
     },
     {
@@ -169,64 +169,64 @@
      "lang": "TypeScript",
      "delta": 4081,
      "tag": "AIGC",
-     "intro": "HeyGen 开源的「写 HTML、渲染视频」框架：把 HTML/CSS/媒体与可 seek 的动画确定性地渲染成 MP4——既能本地 CLI 用，也能作为 skills 挂到 AI 编码代理上，是给 agent 用的视频生产管线。",
+     "intro": "HeyGen's open-source 'write HTML, render video' framework: deterministically renders HTML/CSS/media and seekable animations into MP4s—usable via local CLI or plugged into AI coding agents as skills, serving as an agentic video generation pipeline.",
      "facts": [
-      "两种用法：本地 CLI 直接渲染；或 npx skills add heygen-com/hyperframes 装上 20 个技能后对代理说「用 /hyperframes 做一个 10 秒产品片头」，支持 Claude Code、Cursor、Gemini CLI、Codex 等",
-      "入口 skill 是路由器 /hyperframes，下游含 product-launch-video、faceless-explainer、pr-to-video、embedded-captions、talking-head-recut、motion-graphics、music-to-video、slideshow、remotion-to-hyperframes 等工作流",
-      "确定性输出：面向 ffmpeg + puppeteer 的渲染栈，另有 MCP 主题标签；Playground（hyperframes.dev）与 Catalog（预设块）在线可用",
-      "Apache-2.0，要求 Node.js >= 22，npm 包名 hyperframes；2026-03 创建，GitHub API 实测 4.96 万 star"
+      "Two usage modes: direct local CLI rendering, or install 20 skills via `npx skills add heygen-com/hyperframes` and prompt agents like 'Use /hyperframes to make a 10s product teaser'; supports Claude Code, Cursor, Gemini CLI, Codex, etc.",
+      "The entry skill is the router `/hyperframes`, with downstream workflows including `product-launch-video`, `faceless-explainer`, `pr-to-video`, `embedded-captions`, `talking-head-recut`, `motion-graphics`, `music-to-video`, `slideshow`, and `remotion-to-hyperframes`.",
+      "Deterministic rendering stack built on FFmpeg + Puppeteer, along with MCP topic tags; online Playground (hyperframes.dev) and Catalog (preset blocks) available.",
+      "Apache-2.0, requires Node.js >= 22, npm package name `hyperframes`; created in 2026-03, 49.6k stars via GitHub API."
      ]
     },
     {
      "repo": "thedotmack/claude-mem",
      "lang": "TypeScript",
      "delta": 4035,
-     "tag": "Agent 记忆",
-     "intro": "跨会话的 Agent 记忆插件：把 agent 一次会话里干的事全记下来、用 AI 压缩，再把相关上下文回注到未来会话——Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等都能用。",
+     "tag": "Agent Memory",
+     "intro": "A cross-session agent memory plugin: records everything an agent does in a session, compresses it via AI, and injects relevant context into future sessions—compatible with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode, and more.",
      "facts": [
-      "一条命令装：npx claude-mem install（或 Claude Code 内 /plugin install claude-mem，OpenClaw 走 install.cmem.ai 脚本），可用 --ide opencode / grok-bot / antigravity / omp 指定宿主",
-      "记忆 provider 三选一：官方托管的 claude-mem observer（浏览器邮箱登录，免卡，免费 14 天且不占自家套餐额度）、自备 OpenRouter / Gemini Key、或直接用 Anthropic 套餐；也可 --provider host 走本地观察，CI 场景可跳过登录",
-      "注意 npm 上的 claude-mem 只是 SDK/库，装插件必须走 npx 或 /plugin，否则不会注册 plugin hooks 与 worker 服务（README 明示）",
-      "技术栈含 ChromaDB 等向量检索与 claude-agent-sdk（topics 实抓），Apache-2.0，2025-08 创建，官网 claude-mem.ai；GitHub API 实测 9.6 万+ star（2026-10 实抓）"
+      "One-line installation: `npx claude-mem install` (or `/plugin install claude-mem` inside Claude Code, or via the `install.cmem.ai` script for OpenClaw); supports targeting hosts via `--ide opencode / grok-bot / antigravity / omp`.",
+      "Three memory provider options: officially hosted claude-mem observer (email-based browser login, no credit card required, 14-day free trial without consuming your own plan quotas), bring-your-own OpenRouter/Gemini keys, or use your Anthropic plan directly; `--provider host` allows local observation, and CI environments can skip authentication.",
+      "Note that the `claude-mem` package on npm is only an SDK/library; plugin installation must use `npx` or `/plugin`, otherwise plugin hooks and worker services will not be registered (stated explicitly in the README).",
+      "Tech stack includes ChromaDB for vector retrieval and `claude-agent-sdk` (from repo topics); Apache-2.0, created in 2025-08, official site claude-mem.ai; 96k+ stars via GitHub API (retrieved 2026-10)."
      ]
     },
     {
      "repo": "earthtojake/text-to-cad",
      "lang": "Python",
      "delta": 2369,
-     "tag": "Agent Skill",
-     "intro": "给编码代理装上「CAD 超能力」的插件：一句话让 agent 在本地生成 STEP / GLB / STL / 3MF 三维模型，还能做制造可行性检查、出工程图并对接加工服务。",
+     "tag": "Agent Skills",
+     "intro": "A plugin equipping coding agents with 'CAD superpowers': generate STEP, GLB, STL, and 3MF 3D models locally from a single prompt, complete with DFM checks, engineering drawings, and manufacturing service integrations.",
      "facts": [
-      "核心链路：本地生成 3D 模型 → 面向制造的设计检查（DFM）→ 工程图 → 对接主流 3D 打印、钣金与 CNC 加工服务（README 原文）",
-      "安装一条消息即可：「Install text-to-cad from https://github.com/earthtojake/text-to-cad」，它会自己装好；Claude Code / Codex / Cursor / Gemini / Grok 都有各自官方 plugin 或 extension 安装方式，CAD 本身通过 uv 运行（cadgen mcp 本地服务 + 内置 viewer）",
-      "技术栈：Python 3.11+ / Node 20+，几何内核 build123d 0.11 + Open CASCADE 7.9，PyPI 包名 cadgen；模型以可旋转的 viewer 卡片出现在对话里，终端型宿主则给浏览器 CAD Viewer 链接",
-      "默认匿名上报使用与崩溃统计（随机 ID，不含文件、路径与提示词），可用 uvx cadgen telemetry off 关闭；MIT 协议，官网 texttocad.dev；2026-04 建仓，GitHub API 实测 1.92 万 star"
+      "Core pipeline: local 3D model generation → Design for Manufacturability (DFM) checks → engineering drawings → integration with mainstream 3D printing, sheet metal, and CNC machining services (README quote).",
+      "Install with a single prompt: 'Install text-to-cad from https://github.com/earthtojake/text-to-cad', and it self-installs; Claude Code, Codex, Cursor, Gemini, and Grok have dedicated official plugin/extension installation methods; the CAD engine runs via `uv` (`cadgen mcp` local service + built-in viewer).",
+      "Tech stack: Python 3.11+ / Node 20+, geometry kernel build123d 0.11 + Open CASCADE 7.9, PyPI package name `cadgen`; models appear as interactive rotatable viewer cards in chat, while CLI-based hosts output browser CAD Viewer links.",
+      "Anonymously reports usage and crash metrics by default (randomized ID, excludes files, paths, or prompts), toggleable off via `uvx cadgen telemetry off`; MIT license, official site texttocad.dev; created in 2026-04, 19.2k stars via GitHub API."
      ]
     },
     {
      "repo": "mvschwarz/openrig",
      "lang": "TypeScript",
      "delta": 2068,
-     "tag": "Agent 框架",
-     "intro": "给多 agent 团队用的「机架」：用 YAML 定义你的 agent 团队，一条命令把 Claude Code 和 Codex 装进同一个 rig，当成一个系统来管。",
+     "tag": "Agent Framework",
+     "intro": "A 'rig' for multi-agent teams: define your agent roster in YAML and assemble Claude Code and Codex into a unified rig with a single command to manage them as one coherent system.",
      "facts": [
-      "定位一句话：harness 包住模型，rig 包住你的 harness。它把散落的终端会话变成有岗位、有共享上下文、各自认领工作的常驻团队，你只需跟 lead agent 谈目标，它再协调各团队专家",
-      "环境要求 Node.js 22 或 24 + tmux，仅 macOS / Linux（原生 Windows 不支持、WSL2 未测）；安装 npm install -g @openrig/cli，建议先 rig setup --dry-run 预览会改哪些文件",
-      "复用你已有的账号：Claude Code、Codex 任选或都要，不需要再买订阅；launch 前会问一次是否允许 agent 免重复确认执行 rig 命令（可撤销），并会写入 provider hooks 与 workspace trust 设置",
-      "作者 mvschwarz 用它跑自己的「AI 文明」实验，配套 TUI 可视化（团队图 → agent 座位表 → 单座详情，含 runtime / 模型 / 上下文 / 状态）；Apache-2.0，2026-04 创建，官网 openrig.dev；GitHub API 实测约 5,000 star（2026-10 实抓）"
+      "Positioned simply: a harness wraps models; a rig wraps your harnesses. It transforms scattered terminal sessions into a standing team with designated roles, shared context, and task claiming—you communicate goals only with the lead agent, which coordinates specialized team members.",
+      "Requirements: Node.js 22 or 24 + tmux, macOS/Linux only (native Windows unsupported, WSL2 untested); install via `npm install -g @openrig/cli`; preview modifications first with `rig setup --dry-run`.",
+      "Reuses existing accounts: use Claude Code, Codex, or both without additional subscriptions; prompts once before launch for permission to execute rig commands without recurring confirmations (revocable), writing provider hooks and workspace trust settings.",
+      "Author mvschwarz uses it to run 'AI civilization' experiments; features a companion TUI visualization (team graph → agent seating chart → seat details including runtime, model, context, and status); Apache-2.0, created in 2026-04, official site openrig.dev; ~5,000 stars via GitHub API (retrieved 2026-10)."
      ]
     },
     {
      "repo": "cursor/plugins",
      "lang": "TypeScript",
      "delta": 1110,
-     "tag": "大厂开源",
-     "intro": "Cursor 官方的插件规范与插件市场仓库：一边定义 agent 插件长什么样（目录结构、清单、技能与 MCP 配置），一边把官方与第三方插件全都摊开给你抄。",
+     "tag": "Official Open Source",
+     "intro": "Cursor's official plugin specification and marketplace repository: defines agent plugin architecture (directory layout, manifests, skills, and MCP configs) while providing a full catalog of official and third-party plugins to reference.",
      "facts": [
-      "仓库根目录放 .cursor-plugin/marketplace.json 列出全部插件，每个插件是独立目录并带自己的 .cursor-plugin/plugin.json 清单；插件内部固定为 skills/（带 frontmatter 的 SKILL.md）+ rules/（.mdc）+ mcp.json",
-      "表内共 91 个插件，其中 73 个是 third_party 第三方集成：Semrush、Ahrefs、GoDaddy、Todoist、Calendly、Smartsheet、Teams、SharePoint、BigQuery，以及金融/交易类 Webull、Interactive Brokers、Robinhood、Coinbase、eToro、QuickBooks、Xero、Square 等",
-      "Cursor 官方自己做的工作流插件同样在库里：Thermos（分支级安全与正确性深审 + 并行子代理 + 可选的 PR 合并流）、Ralph Loop（Ralph Wiggum 式自我迭代循环）、cursor-team-kit（CI / 评审 / 发布 / 本地自动化）、pr-review-canvas、docs-canvas、cursor-sdk、create-plugin 等",
-      "MIT 协议，Cursor 官方组织账号维护，2026-01 建仓、持续高频更新；GitHub API 实测 1.09 万 star"
+      "Repository root houses `.cursor-plugin/marketplace.json` listing all plugins; each plugin resides in a standalone directory with its own `.cursor-plugin/plugin.json` manifest, structured into `skills/` (containing `SKILL.md` with frontmatter), `rules/` (`.mdc`), and `mcp.json`.",
+      "Lists 91 plugins total, 73 of which are `third_party` integrations: Semrush, Ahrefs, GoDaddy, Todoist, Calendly, Smartsheet, Teams, SharePoint, BigQuery, plus financial/trading services like Webull, Interactive Brokers, Robinhood, Coinbase, eToro, QuickBooks, Xero, Square, and more.",
+      "Includes Cursor's first-party workflow plugins: Thermos (branch-level security/correctness deep auditing + parallel subagents + optional PR merge flows), Ralph Loop (Ralph Wiggum-style iterative feedback loop), cursor-team-kit (CI, reviews, releases, and local automation), pr-review-canvas, docs-canvas, cursor-sdk, create-plugin, etc.",
+      "MIT license, maintained by Cursor's official GitHub organization, repository created in 2026-01 with frequent updates; 10.9k stars via GitHub API."
      ]
     }
    ]
@@ -240,104 +240,104 @@
      "repo": "debpalash/VoiceStudio",
      "lang": "Python",
      "delta": 35194,
-     "tag": "AIGC",
-     "intro": "完全本地运行的开源 ElevenLabs 替代品：声音克隆、音色设计、视频配音、听写转写与有声书制作一条龙，本地工作流不要账号、不要 API Key、不要订阅与用量计费。",
+     "tag": "Generative Audio",
+     "intro": "A fully local, open-source ElevenLabs alternative: an all-in-one suite for voice cloning, voice design, video dubbing, transcription, and audiobook generation—requiring no accounts, API keys, subscriptions, or usage-based billing.",
      "facts": [
-      "16 个 TTS 引擎 + 11 个 ASR 引擎，语言目录 646 种（实际覆盖与质量取决于所选引擎）；可在模型目录或 Ctrl/Cmd+E 里热切换引擎",
-      "平台覆盖 macOS 13.3+（Apple Silicon）、Windows 10/11 x64、Linux x86_64（需 glibc 2.39+），另有 Docker 镜像（linux/amd64）与 Colab 免安装试跑；算力可选 CUDA / Apple MPS·MLX / Linux ROCm / 纯 CPU，并支持远端 worker 卸载",
-      "除桌面应用外还暴露本地 REST/SSE/WebSocket、OpenAI 兼容音频 API 与 MCP Server；语音、项目、设置与产物默认全部留在本机",
-      "现名 VoiceStudio（原 OmniVoice-Studio），AGPL-3.0；README 顶部标注 Electron 重写进行中、当前为 active beta，建议用最新 Release 做正式工作；2026-04 创建，GitHub API 实测 2.67 万 star"
+      "Features 16 TTS engines and 11 ASR engines across 646 cataloged languages (actual coverage and quality depend on the chosen engine); engines can be hot-swapped in the model catalog or via Ctrl/Cmd+E.",
+      "Cross-platform support covers macOS 13.3+ (Apple Silicon), Windows 10/11 x64, and Linux x86_64 (requires glibc 2.39+), plus a Docker image (linux/amd64) and a zero-install Colab demo; hardware backends include CUDA, Apple MPS/MLX, Linux ROCm, or pure CPU, with support for offloading to remote workers.",
+      "Beyond the desktop app, it exposes local REST/SSE/WebSocket interfaces, an OpenAI-compatible audio API, and an MCP server; all voice models, projects, settings, and outputs remain strictly on-device by default.",
+      "Formerly OmniVoice-Studio, licensed under AGPL-3.0; the README notes an ongoing Electron rewrite and active beta status, recommending latest Releases for production work; created in 2026-04, currently at 26.7k stars via the GitHub API."
      ]
     },
     {
      "repo": "bilawalsidhu/gods-eye-view",
      "lang": "JavaScript",
      "delta": 27862,
-     "tag": "地理空间",
-     "intro": "浏览器里的「间谍卫星模拟器」——但数据全是真的：把航班应答机、船舶航标、在轨卫星、地震台站与公共摄像头汇到同一个写实 3D 地球仪上，本地运行、代码可审计可扩展。",
+     "tag": "Geospatial",
+     "intro": "An in-browser \"spy satellite simulator\" powered entirely by real data: aggregates flight transponders, maritime vessels, orbiting satellites, seismic stations, and public webcams onto a photorealistic 3D globe—runs locally, fully auditable, and extensible.",
      "facts": [
-      "作者 bilawalsidhu 来自 YouTube 热门系列 God's Eye View（原 WorldView，YouTube 播放 500 万+、社媒 2,500 万+），2026-08 曾登 GitHub Trending 日榜与周榜第一，Product Hunt 当日 #8（README 实述）",
-      "两条安装路径：Pinokio 桌面端一键装（Windows/macOS/Linux，需 Pinokio 8.2+），或终端/编码代理本地跑；无需账号与 API Key 即可用航班、军用与卫星、地震、公共摄像头、无线电、火箭发射等图层",
-      "写实 3D 地形需自备 Cesium ion token（个人非商用）或 Google Maps key，在应用内 POWER UP 面板添加；交通数据是沿真实道路的模拟，摄像头位姿与火箭轨迹为粗略估计",
-      "功能面：驾驶舱视角、250km 目标名册、点击追踪任意目标、语音白板、GLSL 传感器滤镜（CRT/NVG/FLIR/Noir）、军事 HUD、场景导演与可分享的追踪链接；每个图层都是独立模块，可自行替换数据源；2026-06 建，GitHub API 实测 3.18 万 star"
+      "Created by bilawalsidhu from the viral YouTube series God's Eye View (formerly WorldView; 5M+ YouTube views, 25M+ across social media); hit #1 on GitHub Trending Daily and Weekly in 2026-08, and #8 Product of the Day on Product Hunt (per the README).",
+      "Two setup paths: 1-click install via the Pinokio desktop app (Windows/macOS/Linux, requires Pinokio 8.2+) or local run via terminal/coding agents; layers for flights, military/satellites, earthquakes, public webcams, radio, and rocket launches work out of the box with no accounts or API keys required.",
+      "Photorealistic 3D terrain requires your own Cesium ion token (personal, non-commercial) or Google Maps API key, configured in the in-app POWER UP panel; road traffic is simulated along actual transit networks, while camera poses and rocket trajectories are rough approximations.",
+      "Features: cockpit POV, 250km target manifests, click-to-track on any entity, voice whiteboard, GLSL sensor filters (CRT/NVG/FLIR/Noir), military HUD, scene director, and shareable tracking links; each layer is an isolated module with swappable data sources; created in 2026-06, currently at 31.8k stars via the GitHub API."
      ]
     },
     {
      "repo": "vectorize-io/hindsight",
      "lang": "Python",
      "delta": 24928,
-     "tag": "Agent 记忆",
-     "intro": "给 AI Agent 用的长期记忆系统：不只把对话历史记下来，而是让 agent 从经验里「学会」——官方称在 LongMemEval 长期记忆基准上取得当前最优成绩。",
+     "tag": "Agent Memory",
+     "intro": "A long-term memory system for AI agents: goes beyond logging chat histories to help agents genuinely \"learn\" from experience—claims state-of-the-art results on the LongMemEval long-term memory benchmark.",
      "facts": [
-      "Vectorize 出品，MIT 协议，官网 hindsight.vectorize.io，配套论文 arXiv:2512.12818；2025-10 创建，GitHub API 实测 3.72 万 star，今日榜与本周榜双第一",
-      "README 称其 benchmark 数据由弗吉尼亚理工 Sanghani 人工智能与数据分析中心及《华盛顿邮报》独立复现（其他厂商成绩为自报），并在 benchmarks.hindsight.vectorize.io 持续公开准确率/延迟/成本",
-      "部署：Docker 一条命令起服务（API 8888 / UI 9999，数据持久在卷里），另有 pip/npm 客户端与 Python 嵌入式模式（不用起服务）；支持 25+ 家 LLM provider，含 ollama/lmstudio/llamacpp 本地推理、任意 OpenAI 兼容端点，甚至可直连 ChatGPT Plus/Pro、Claude Pro/Max、Cursor、GitHub Copilot 订阅",
-      "核心概念是 retain / recall / reflect 三个操作加 memory bank；既能两行代码包一层 LLM Wrapper 塞进现有 agent，也提供 MCP Server 与 Claude Code / Cursor 等编码代理集成（含 npx skills add 装文档技能）"
+      "Built by Vectorize under the MIT license; website: hindsight.vectorize.io, paper: arXiv:2512.12818; created in 2025-10, currently at 37.2k stars via the GitHub API, ranking #1 on both daily and weekly trending.",
+      "The README highlights that benchmark results were independently reproduced by Virginia Tech's Sanghani Center for AI and Data Analytics and The Washington Post (contrasting with self-reported vendor scores), with accuracy, latency, and cost continuously updated at benchmarks.hindsight.vectorize.io.",
+      "Deployment: single-command Docker launch (API on 8888, UI on 9999, volume-persisted data), alongside pip/npm clients and an embedded Python mode (no standalone server required); supports 25+ LLM providers including local runtimes (ollama/lmstudio/llamacpp), any OpenAI-compatible endpoint, and direct hooks into ChatGPT Plus/Pro, Claude Pro/Max, Cursor, and GitHub Copilot subscriptions.",
+      "Core primitives center on retain, recall, and reflect operations paired with a memory bank; integrates via a 2-line LLM wrapper into existing agents, or via an MCP server with coding agents like Claude Code and Cursor (including docs skills installed via `npx skills add`)."
      ]
     },
     {
      "repo": "alibaba/open-code-review",
      "lang": "Go",
      "delta": 23947,
-     "tag": "大厂开源",
-     "intro": "阿里把内部用了两年的 AI 代码评审助手开源了：确定性流水线 + 带工具能力的 LLM Agent 混合架构，读 Git diff 后给出精确到行的评审意见，官方称内部已服务数万开发者、识别数百万缺陷。",
+     "tag": "Enterprise Open Source",
+     "intro": "Alibaba has open-sourced its internal AI code review assistant battle-tested over two years: combines a deterministic pipeline with tool-augmented LLM agents to deliver line-precise reviews on Git diffs; officially reported to serve tens of thousands of internal engineers and detect millions of defects.",
      "facts": [
-      "Agent 不只看 diff：能读完整文件、检索整个代码库、交叉查看同批其他改动文件，因此意见有上下文深度；内置多语言规则集覆盖 NPE、线程安全、XSS、SQL 注入，模型端兼容 OpenAI 与 Anthropic",
-      "安装 npm install -g @alibaba-group/open-code-review 后得到 ocr 命令；先 ocr config provider / ocr config model 配模型（交互式测连通性），再 ocr review 评审工作区改动、--from --to 评审分支区间、--commit 评审单提交、ocr scan 整仓全文件扫描；支持 --format json 落盘与 session 续跑",
-      "另有 delegation 模式：OCR 只负责选文件与解析规则，让宿主编码代理自己完成评审，无需配置 LLM；提供 Claude Code / Codex / Cursor / Kimi Code 插件与 MCP Server",
-      "要求 Git ≥ 2.41；Go 编写，Apache-2.0，OpenSSF Best Practices 金标，官网 open-codereview.ai；2026-05 创建，GitHub API 实测 4.19 万 star，本周第六、本月第五"
+      "The agent analyzes beyond diffs: inspects full files, searches the codebase, and cross-references co-modified files in the same changeset for contextual depth; built-in multilingual rule sets cover NPEs, thread safety, XSS, and SQL injection, with model compatibility across OpenAI and Anthropic.",
+      "Install via `npm install -g @alibaba-group/open-code-review` to access the `ocr` CLI; configure models via `ocr config provider` and `ocr config model` (with interactive connectivity checks), then run `ocr review` for workspace diffs, `--from`/`--to` for branch ranges, `--commit` for single commits, and `ocr scan` for full-repo scans; supports `--format json` output and session resumption.",
+      "Features a delegation mode where OCR solely handles file selection and rule parsing, allowing the host coding agent to run reviews without separate LLM configuration; provides plugins for Claude Code, Codex, Cursor, and Kimi Code, as well as an MCP server.",
+      "Requires Git ≥ 2.41; written in Go under Apache-2.0, holds an OpenSSF Best Practices Gold badge; website: open-codereview.ai; created in 2026-05, currently at 41.9k stars via the GitHub API, ranking #6 this week and #5 this month."
      ]
     },
     {
      "repo": "affaan-m/ECC",
      "lang": "JavaScript",
      "delta": 22474,
-     "tag": "Agent 框架",
-     "intro": "面向编码代理的「harness 性能优化系统」：用 skills、instincts、记忆、安全与研究先行开发的组合，让 Claude Code / Codex / OpenCode / Cursor 等干得更快更稳。",
+     "tag": "Agent Framework",
+     "intro": "A performance-optimizing harness system for coding agents: combines skills, instincts, memory, security, and research-first development to help Claude Code, Codex, OpenCode, Cursor, and others run faster and more reliably.",
      "facts": [
-      "主页 ecc.tools，README 自称 agent harness 操作系统，核心覆盖 skills/instincts/memory/security/research-first 五大维度",
-      "明确支持 Claude Code、Codex、OpenCode、Cursor 等主流编码代理（官方描述原文）",
-      "文档提供中英日韩葡俄等多语言版本，MIT 协议，2026-01 创建",
-      "GitHub API 实测 25 万+ star；今日与本周双榜在列"
+      "Hosted at ecc.tools; self-described in the README as an agent harness operating system spanning five core pillars: skills, instincts, memory, security, and research-first workflows.",
+      "Explicitly supports leading coding agents including Claude Code, Codex, OpenCode, and Cursor (verbatim from the official description).",
+      "Documentation is available in English, Chinese, Japanese, Korean, Portuguese, Russian, and more; MIT licensed; created in 2026-01.",
+      "Over 250k stars recorded via the GitHub API; listed on both the daily and weekly trending leaderboards."
      ]
     },
     {
      "repo": "paperclipai/paperclip",
      "lang": "TypeScript",
      "delta": 19499,
-     "tag": "Agent 框架",
-     "intro": "开源的多 Agent「团队管理」应用：把一件事拆成企业目标，给不同 agent 分配岗位、预算与权限，在一个类似任务管理器的面板里盯进度和成本——官方原话「如果 OpenClaw 是员工，Paperclip 就是公司」。",
+     "tag": "Agent Framework",
+     "intro": "An open-source multi-agent team management application: breaks down business objectives into discrete goals, assigns roles, budgets, and permissions to different agents, and tracks progress and costs in a task-manager-style dashboard—as the project puts it: \"If OpenClaw is an employee, Paperclip is the company.\"",
      "facts": [
-      "形态是 Node.js 服务 + React UI，流程固定三步：写目标（如「把某产品做到 100 万美元 MRR」）→ 组队（CEO/CTO/工程/设计/市场，任意 bot、任意厂商）→ 审批并开跑，随时从面板插话或调整预算",
-      "接入面覆盖 OpenClaw、Claude Code、Codex、Cursor、Bash、HTTP（README 原话：只要能被 heartbeat 唤醒就能「入职」）",
-      "「四大支柱」= 组织架构、预算与治理、目标对齐、Agent 协调；明确面向同时开 20 个终端跑 agent、想无人值守 24/7 又要能审计的场景，支持拿手机管理",
-      "MIT 协议，官网 paperclip.ing、文档 docs.paperclip.ing；2026-03 创建，GitHub API 实测 8.97 万 star，今日榜第三、本周榜第五"
+      "Architected as a Node.js backend with a React UI; operates in three fixed steps: define goals (e.g., \"Scale a product to $1M MRR\") -> assemble the team (CEO/CTO/Engineering/Design/Marketing, using any bot or provider) -> approve and run, with options to intervene or adjust budgets directly from the dashboard.",
+      "Integrates with OpenClaw, Claude Code, Codex, Cursor, Bash, and HTTP (in the README's words: anything wakeable via heartbeat can be \"hired\").",
+      "Built on \"Four Pillars\": Org Chart, Budget & Governance, Goal Alignment, and Agent Coordination; designed for running 20+ agent terminals simultaneously for unattended 24/7 execution with full auditability, complete with mobile management support.",
+      "MIT licensed; website: paperclip.ing, docs: docs.paperclip.ing; created in 2026-03, currently at 89.7k stars via the GitHub API, ranked #3 on the daily and #5 on the weekly leaderboard."
      ]
     },
     {
      "repo": "Panniantong/Agent-Reach",
      "lang": "Python",
      "delta": 16725,
-     "tag": "Agent Skill",
-     "intro": "给 AI Agent 一键装上「互联网能力」的 CLI + Skill：让 Claude Code、Cursor、OpenClaw 等能读能搜 Twitter/X、Reddit、YouTube、GitHub、B 站、小红书，零 API 费用。",
+     "tag": "Agent Skills",
+     "intro": "A CLI + Skill package giving AI agents instant web-browsing capabilities: enables Claude Code, Cursor, OpenClaw, and others to read and search Twitter/X, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu with zero API fees.",
      "facts": [
-      "一个 CLI 加一份 SKILL.md，不用背命令、Agent 自己知道调什么；每个平台走「首选 + 备选」多后端路由，接入方式失效自动切换（README 举例：2026-06 B 站风控封死 yt-dlp 后切 bili-cli，用户零操作）",
-      "全部工具开源、API 免费，唯一可能花钱的是海外服务器代理（约 $1/月），本地电脑不用付费；已覆盖全网语义搜索（MCP 接入）、小红书、小宇宙播客转录（Whisper）等",
-      "需登录的平台必须由用户显式授权：Twitter 只接受 Cookie-Editor 手工导出，不代登录、不注入 Cookie；OpenClaw 用户要先开 exec 权限，否则 Agent 跑不了 pip install 这类命令",
-      "MIT 协议，Python 3.10+，README 有中/英/日/韩版；官方 badge 显示曾登 GitHub Trending 日榜第一，GitHub API 实测 9.0 万+ star（2026-10 实抓）"
+      "Comprises a CLI tool and a `SKILL.md` file—no manual commands to memorize, as the agent invokes them autonomously; features primary/fallback multi-backend routing per platform with automated failover (e.g., auto-switching from yt-dlp to bili-cli after Bilibili's 2026-06 anti-scraping crackdown, requiring zero user intervention).",
+      "All tools are open source and APIs are free, with the only potential expense being an overseas proxy server (~$1/mo), free on local machines; supports web-wide semantic search (via MCP), Xiaohongshu, and Xiaoyuzhou podcast transcription (Whisper).",
+      "Platforms requiring authentication demand explicit user authorization: Twitter/X strictly accepts manual exports from Cookie-Editor without automated login or cookie injection; OpenClaw users must enable `exec` permissions to allow the agent to run commands like `pip install`.",
+      "MIT licensed, requires Python 3.10+; README available in Chinese, English, Japanese, and Korean; official badge shows a #1 ranking on GitHub Trending Daily, currently at 90k+ stars via the GitHub API (fetched 2026-10)."
      ]
     },
     {
      "repo": "JustVugg/colibri",
      "lang": "C",
      "delta": 13894,
-     "tag": "本地推理",
-     "intro": "纯 C、零依赖的「小引擎跑大模型」推理引擎：把 NVMe、内存与显存当成一个统一的分层推理层级，让 744B～2.8T 参数的前沿 MoE 模型跑在你已有的消费级/异构硬件上——专家权重直接从磁盘流式读取。",
+     "tag": "Local Inference",
+     "intro": "A pure C, zero-dependency inference engine designed to run massive models on constrained hardware: unifies NVMe, system RAM, and VRAM into a tiered memory hierarchy, enabling frontier MoE models (744B to 2.8T parameters) to run on consumer-grade and heterogeneous hardware by streaming expert weights directly from disk.",
      "facts": [
-      "已支持 9 个模型家族：GLM-5.2/5.3（744B）、GLM-5.3-Flash（321B，带视觉）、Inkling（975B）、Kimi K3（2.8T）、DeepSeek V4 Flash（284B）与 V4.1 Flash（552B，带视觉）、Qwen3.8-Flash-Next、Qwen3.6（35B-A3B）、OLMoE（7B）——每族一个 C 文件，共用 coli chat / coli serve / coli web 入口",
-      "实测数据（README 截图）：GLM-5.2 744B int4 在 6×RTX 5090 上 4 tok/s、TTFT 1.6s、磁盘读取 0（专家全驻留）；Web 面板给出 VRAM/RAM/磁盘分层条与每轮耗时拆解，Brain / Atlas 页把 19,456 个专家按存储层级与实测路由亲和度可视化",
-      "设计立场明确：不给速度 SLA，但硬保证语义——默认策略绝不悄悄改模型精度或路由语义，快内存不足只降速、不换模型；用 token-exact 前向校验与 57× 压缩的 MLA KV 状态兜底正确性",
-      "Apache-2.0，官网 justvugg.github.io/colibri，README 有英/简中/繁中/意大语版本；2026-07 创建，GitHub API 实测 2.97 万 star"
+      "Supports 9 model families: GLM-5.2/5.3 (744B), GLM-5.3-Flash (321B, multimodal), Inkling (975B), Kimi K3 (2.8T), DeepSeek V4 Flash (284B) and V4.1 Flash (552B, multimodal), Qwen3.8-Flash-Next, Qwen3.6 (35B-A3B), and OLMoE (7B)—each implemented in a single C file, sharing unified `coli chat`, `coli serve`, and `coli web` entrypoints.",
+      "Benchmark metrics (README screenshot): GLM-5.2 744B int4 achieves 4 tok/s with a TTFT of 1.6s on 6× RTX 5090 with zero disk reads (all experts resident in memory); the web dashboard displays VRAM/RAM/disk tier breakdowns and turn latency profiles, with Brain/Atlas pages visualizing 19,456 experts by memory tier and observed routing affinity.",
+      "Clear design philosophy: no speed SLA, but hard semantic guarantees—default policy never silently alters precision or routing semantics, trading throughput for capacity rather than swapping models; ensures correctness via token-exact forward validation and 57× compressed MLA KV cache.",
+      "Apache-2.0 licensed; website: justvugg.github.io/colibri; README available in English, Simplified Chinese, Traditional Chinese, and Italian; created in 2026-07, currently at 29.7k stars via the GitHub API."
      ]
     }
    ]
