@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T08:32:07.635044+00:00",
+  "generated_at": "2026-11-01T08:51:45.489316+00:00",
   "count": 500,
   "servers": [
     {
@@ -80,7 +80,7 @@
       "full_name": "ahujasid/mcp-for-blender",
       "owner": "ahujasid",
       "description": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
-      "stars": 32944,
+      "stars": 32947,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -98,7 +98,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/ahujasid/mcp-for-blender",
-      "updated_at": "2026-11-01T09:11:22Z",
+      "updated_at": "2026-11-01T09:50:13Z",
       "created_at": "2025-03-07T09:58:58Z"
     },
     {
@@ -107,7 +107,7 @@
       "full_name": "PrefectHQ/fastmcp",
       "owner": "PrefectHQ",
       "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
-      "stars": 28253,
+      "stars": 28254,
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [
@@ -123,7 +123,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/PrefectHQ/fastmcp",
-      "updated_at": "2026-11-01T06:41:26Z",
+      "updated_at": "2026-11-01T09:35:48Z",
       "created_at": "2024-11-30T01:47:40Z"
     },
     {
@@ -300,7 +300,7 @@
       "full_name": "jub0t/Concat",
       "owner": "jub0t",
       "description": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP.",
-      "stars": 13334,
+      "stars": 13340,
       "language": "Rust",
       "license": "AGPL-3.0",
       "topics": [
@@ -322,7 +322,7 @@
       ],
       "category": "Productivity",
       "github_url": "https://github.com/jub0t/Concat",
-      "updated_at": "2026-11-01T09:29:51Z",
+      "updated_at": "2026-11-01T09:49:16Z",
       "created_at": "2026-08-25T18:34:47Z"
     },
     {
@@ -439,7 +439,7 @@
       "full_name": "maximhq/bifrost",
       "owner": "maximhq",
       "description": "Open-source, high-performance AI gateway that works as your LLM gateway, MCP gateway and agent gateway. One OpenAI-compatible API for 10,000+ models, with failover, load balancing, semantic caching, virtual keys, budgets and MCP Code Mode. Works with any SDK or agent and adds under 200µs of overhead at 5k RPS.",
-      "stars": 9259,
+      "stars": 9260,
       "language": "Go",
       "license": "Apache-2.0",
       "topics": [
@@ -466,7 +466,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/maximhq/bifrost",
-      "updated_at": "2026-11-01T09:28:32Z",
+      "updated_at": "2026-11-01T09:40:31Z",
       "created_at": "2025-03-19T07:21:26Z"
     },
     {
@@ -534,7 +534,7 @@
       "full_name": "WenyuChiou/awesome-agentic-ai-zh",
       "owner": "WenyuChiou",
       "description": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-      "stars": 8342,
+      "stars": 8343,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -560,7 +560,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "updated_at": "2026-11-01T09:24:34Z",
+      "updated_at": "2026-11-01T09:35:13Z",
       "created_at": "2026-05-04T22:18:51Z"
     },
     {
@@ -685,7 +685,7 @@
       "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
       "owner": "irinabuht12-oss",
       "description": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + Google Analytics MCP (GA4) + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: OAuth login, no API keys, approval-gated writes, 7-day free trial. By Ryze AI.",
-      "stars": 6679,
+      "stars": 6680,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -712,7 +712,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
-      "updated_at": "2026-11-01T09:28:49Z",
+      "updated_at": "2026-11-01T09:44:49Z",
       "created_at": "2026-04-06T04:41:14Z"
     },
     {
@@ -877,7 +877,7 @@
       "full_name": "beenuar/AiSOC",
       "owner": "beenuar",
       "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
-      "stars": 5776,
+      "stars": 5783,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -904,7 +904,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/beenuar/AiSOC",
-      "updated_at": "2026-11-01T09:26:38Z",
+      "updated_at": "2026-11-01T09:49:41Z",
       "created_at": "2026-05-02T03:30:19Z"
     },
     {
@@ -948,7 +948,7 @@
       "full_name": "54yyyu/zotero-mcp",
       "owner": "54yyyu",
       "description": "Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.",
-      "stars": 5669,
+      "stars": 5670,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -966,7 +966,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/54yyyu/zotero-mcp",
-      "updated_at": "2026-11-01T09:00:08Z",
+      "updated_at": "2026-11-01T09:37:52Z",
       "created_at": "2025-03-22T14:47:42Z"
     },
     {
@@ -1288,7 +1288,7 @@
       "full_name": "kajisho5/ffmpeg-skill",
       "owner": "kajisho5",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "stars": 4214,
+      "stars": 4216,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -1315,7 +1315,7 @@
       ],
       "category": "Cloud",
       "github_url": "https://github.com/kajisho5/ffmpeg-skill",
-      "updated_at": "2026-11-01T07:54:05Z",
+      "updated_at": "2026-11-01T09:41:38Z",
       "created_at": "2026-09-03T14:33:38Z"
     },
     {
@@ -1428,7 +1428,7 @@
       "full_name": "Appllama/appllama-skills",
       "owner": "Appllama",
       "description": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.",
-      "stars": 3911,
+      "stars": 3912,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -1454,7 +1454,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/Appllama/appllama-skills",
-      "updated_at": "2026-11-01T09:27:02Z",
+      "updated_at": "2026-11-01T09:49:58Z",
       "created_at": "2026-08-13T07:19:54Z"
     },
     {
@@ -1499,7 +1499,7 @@
       "full_name": "ahujasid/ableton-mcp",
       "owner": "ahujasid",
       "description": "Control Ableton Live with any LLM: create tracks, arrange clips & compose music via MCP",
-      "stars": 3281,
+      "stars": 3282,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -1516,7 +1516,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/ahujasid/ableton-mcp",
-      "updated_at": "2026-11-01T06:12:49Z",
+      "updated_at": "2026-11-01T09:46:04Z",
       "created_at": "2025-03-19T17:00:09Z"
     },
     {
@@ -2458,7 +2458,7 @@
       "full_name": "wzyn20051216/solidworks-automation-skill",
       "owner": "wzyn20051216",
       "description": "Reliable AI Skill + MCP toolkit for agent-driven desktop CAD automation.",
-      "stars": 1642,
+      "stars": 1643,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -2482,7 +2482,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/wzyn20051216/solidworks-automation-skill",
-      "updated_at": "2026-11-01T09:14:06Z",
+      "updated_at": "2026-11-01T09:49:37Z",
       "created_at": "2026-03-17T07:40:21Z"
     },
     {
@@ -2650,7 +2650,7 @@
       "full_name": "gyoridavid/short-video-maker",
       "owner": "gyoridavid",
       "description": "Creates short videos for TikTok, Instagram Reels, and YouTube Shorts using the Model Context Protocol (MCP) and a REST API.",
-      "stars": 1453,
+      "stars": 1454,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
@@ -2677,7 +2677,7 @@
       ],
       "category": "Media",
       "github_url": "https://github.com/gyoridavid/short-video-maker",
-      "updated_at": "2026-11-01T05:14:48Z",
+      "updated_at": "2026-11-01T09:35:09Z",
       "created_at": "2025-04-14T09:12:14Z"
     },
     {
@@ -2717,37 +2717,12 @@
       "created_at": "2026-03-07T22:55:23Z"
     },
     {
-      "id": 898128804,
-      "name": "mysql_mcp_server",
-      "full_name": "designcomputer/mysql_mcp_server",
-      "owner": "designcomputer",
-      "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
-      "stars": 1405,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "claude",
-        "claude-code",
-        "database",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "mysql"
-      ],
-      "category": "Database",
-      "github_url": "https://github.com/designcomputer/mysql_mcp_server",
-      "updated_at": "2026-10-30T14:40:59Z",
-      "created_at": "2024-12-03T20:53:52Z"
-    },
-    {
       "id": 1331882604,
       "name": "skills",
       "full_name": "scenario-labs/skills",
       "owner": "scenario-labs",
       "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
-      "stars": 1404,
+      "stars": 1407,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -2774,8 +2749,33 @@
       ],
       "category": "Media",
       "github_url": "https://github.com/scenario-labs/skills",
-      "updated_at": "2026-11-01T09:18:21Z",
+      "updated_at": "2026-11-01T09:44:26Z",
       "created_at": "2026-08-12T10:08:49Z"
+    },
+    {
+      "id": 898128804,
+      "name": "mysql_mcp_server",
+      "full_name": "designcomputer/mysql_mcp_server",
+      "owner": "designcomputer",
+      "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+      "stars": 1405,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "claude",
+        "claude-code",
+        "database",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "mysql"
+      ],
+      "category": "Database",
+      "github_url": "https://github.com/designcomputer/mysql_mcp_server",
+      "updated_at": "2026-10-30T14:40:59Z",
+      "created_at": "2024-12-03T20:53:52Z"
     },
     {
       "id": 1019972614,
@@ -2880,7 +2880,7 @@
       "full_name": "mcpjungle/MCPJungle",
       "owner": "mcpjungle",
       "description": "One place to manage & connect to all your MCP servers",
-      "stars": 1322,
+      "stars": 1324,
       "language": "Go",
       "license": "MPL-2.0",
       "topics": [
@@ -2895,7 +2895,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/mcpjungle/MCPJungle",
-      "updated_at": "2026-11-01T09:21:41Z",
+      "updated_at": "2026-11-01T09:37:18Z",
       "created_at": "2025-05-15T12:31:06Z"
     },
     {
@@ -3369,7 +3369,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/apify/mcpc",
-      "updated_at": "2026-10-30T14:14:51Z",
+      "updated_at": "2026-11-01T09:46:25Z",
       "created_at": "2025-12-09T03:00:11Z"
     },
     {
@@ -3540,7 +3540,7 @@
       "full_name": "marc-shade/world-intel-mcp",
       "owner": "marc-shade",
       "description": "160-tool MCP server for real-time global intelligence from free public APIs: markets, liquidity, prediction markets, SEC filings, conflict, military, aircraft-cohort early warning, migration and border flows, cyber, climate, news and more. Dated observation history, 29 research prompts, cited briefs, geofences, SSE dashboard. MIT, no paid API keys.",
-      "stars": 1055,
+      "stars": 1056,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -3567,7 +3567,7 @@
       ],
       "category": "Filesystem",
       "github_url": "https://github.com/marc-shade/world-intel-mcp",
-      "updated_at": "2026-11-01T05:36:41Z",
+      "updated_at": "2026-11-01T09:50:40Z",
       "created_at": "2025-11-29T16:49:53Z"
     },
     {
@@ -4811,7 +4811,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/HelpCode-ai/anythingmcp",
-      "updated_at": "2026-11-01T09:26:50Z",
+      "updated_at": "2026-11-01T09:38:23Z",
       "created_at": "2026-02-28T12:01:26Z"
     },
     {
@@ -5074,7 +5074,7 @@
       "full_name": "feimacode/open-design-agent-kit",
       "owner": "feimacode",
       "description": "Pro-grade UI design built into the coding agent you already use — GitHub Copilot Chat, Claude Code, Codex, Cursor. 270+ design skills, 150+ brand design systems, 160+ remixable examples. No desktop app, no daemon, no API keys — just files in your repo.",
-      "stars": 684,
+      "stars": 685,
       "language": "HTML",
       "license": "MIT",
       "topics": [
@@ -5101,7 +5101,7 @@
       ],
       "category": "Filesystem",
       "github_url": "https://github.com/feimacode/open-design-agent-kit",
-      "updated_at": "2026-11-01T09:24:46Z",
+      "updated_at": "2026-11-01T09:35:20Z",
       "created_at": "2026-09-19T23:36:29Z"
     },
     {
@@ -5971,7 +5971,7 @@
       "full_name": "reality-opened/openreality",
       "owner": "reality-opened",
       "description": "Open Reality: phone video to AI-queryable 3D scenes. MCP tools for Claude/Codex/Cursor (npm openreality-mcp), the self-hostable broker, and the VGGT-SLAM library, in one repo. BSD-2-Clause.",
-      "stars": 564,
+      "stars": 565,
       "language": "Python",
       "license": "BSD-2-Clause",
       "topics": [
@@ -5996,7 +5996,7 @@
       ],
       "category": "Media",
       "github_url": "https://github.com/reality-opened/openreality",
-      "updated_at": "2026-11-01T06:07:06Z",
+      "updated_at": "2026-11-01T09:40:58Z",
       "created_at": "2026-09-01T07:40:47Z"
     },
     {
@@ -6087,7 +6087,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/Sidiora-Labs/paxeer-monorepo",
-      "updated_at": "2026-11-01T09:23:38Z",
+      "updated_at": "2026-11-01T09:51:11Z",
       "created_at": "2026-08-14T19:56:00Z"
     },
     {
@@ -6516,7 +6516,7 @@
       "full_name": "harish-gaggar/mcp-server-gateway",
       "owner": "harish-gaggar",
       "description": "MCP gateway & OAuth MCP servers. LangGraph agent: memory, eval/tracking, PII guard, context trimming. Docker quick start for enterprise agents.",
-      "stars": 519,
+      "stars": 520,
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [
@@ -6533,7 +6533,7 @@
       ],
       "category": "Knowledge",
       "github_url": "https://github.com/harish-gaggar/mcp-server-gateway",
-      "updated_at": "2026-11-01T09:18:14Z",
+      "updated_at": "2026-11-01T09:40:12Z",
       "created_at": "2026-08-17T15:55:55Z"
     },
     {
@@ -7011,6 +7011,29 @@
       "created_at": "2026-08-13T10:41:33Z"
     },
     {
+      "id": 1182117531,
+      "name": "awesome-agent-native-services",
+      "full_name": "haoruilee/awesome-agent-native-services",
+      "owner": "haoruilee",
+      "description": "A curated list of agent-native services and infrastructure for AI agents: email, browsers, memory, sandboxes, payments, and MCP tools. Includes selection criteria and onboarding guides.",
+      "stars": 485,
+      "language": "Python",
+      "license": "Unknown",
+      "topics": [
+        "agent-infrastructure",
+        "agent-native",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "mcp",
+        "model-context-protocol"
+      ],
+      "category": "Database",
+      "github_url": "https://github.com/haoruilee/awesome-agent-native-services",
+      "updated_at": "2026-10-31T17:06:20Z",
+      "created_at": "2026-03-15T04:02:04Z"
+    },
+    {
       "id": 1418870464,
       "name": "graphicle",
       "full_name": "Graphicle-AI/graphicle",
@@ -7045,29 +7068,6 @@
       "github_url": "https://github.com/Graphicle-AI/graphicle",
       "updated_at": "2026-11-01T09:10:28Z",
       "created_at": "2026-10-14T12:25:36Z"
-    },
-    {
-      "id": 1182117531,
-      "name": "awesome-agent-native-services",
-      "full_name": "haoruilee/awesome-agent-native-services",
-      "owner": "haoruilee",
-      "description": "A curated list of agent-native services and infrastructure for AI agents: email, browsers, memory, sandboxes, payments, and MCP tools. Includes selection criteria and onboarding guides.",
-      "stars": 485,
-      "language": "Python",
-      "license": "Unknown",
-      "topics": [
-        "agent-infrastructure",
-        "agent-native",
-        "ai-agents",
-        "awesome",
-        "awesome-list",
-        "mcp",
-        "model-context-protocol"
-      ],
-      "category": "Database",
-      "github_url": "https://github.com/haoruilee/awesome-agent-native-services",
-      "updated_at": "2026-10-31T17:06:20Z",
-      "created_at": "2026-03-15T04:02:04Z"
     },
     {
       "id": 1225186502,
@@ -7134,6 +7134,42 @@
       "created_at": "2024-12-16T05:55:30Z"
     },
     {
+      "id": 1168228320,
+      "name": "premiere-pro-mcp",
+      "full_name": "leancoderkavy/premiere-pro-mcp",
+      "owner": "leancoderkavy",
+      "description": "Adobe Premiere Pro MCP — independent, local-first server for supported workflows. Connect Claude, Codex, or Cursor through a local CEP bridge.",
+      "stars": 469,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "adobe",
+        "adobe-premiere-pro",
+        "ai-video-editing",
+        "cep",
+        "claude",
+        "claude-desktop",
+        "codex",
+        "creative-cloud",
+        "cursor",
+        "extendscript",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "premiere-automation",
+        "premiere-pro",
+        "typescript",
+        "video-automation",
+        "video-editing",
+        "video-editing-automation"
+      ],
+      "category": "Cloud",
+      "github_url": "https://github.com/leancoderkavy/premiere-pro-mcp",
+      "updated_at": "2026-11-01T09:50:28Z",
+      "created_at": "2026-02-27T06:31:32Z"
+    },
+    {
       "id": 1206029526,
       "name": "openaccountants",
       "full_name": "openaccountants/openaccountants",
@@ -7168,42 +7204,6 @@
       "github_url": "https://github.com/openaccountants/openaccountants",
       "updated_at": "2026-10-31T21:26:07Z",
       "created_at": "2026-04-09T14:03:07Z"
-    },
-    {
-      "id": 1168228320,
-      "name": "premiere-pro-mcp",
-      "full_name": "leancoderkavy/premiere-pro-mcp",
-      "owner": "leancoderkavy",
-      "description": "Adobe Premiere Pro MCP — independent, local-first server for supported workflows. Connect Claude, Codex, or Cursor through a local CEP bridge.",
-      "stars": 468,
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "adobe",
-        "adobe-premiere-pro",
-        "ai-video-editing",
-        "cep",
-        "claude",
-        "claude-desktop",
-        "codex",
-        "creative-cloud",
-        "cursor",
-        "extendscript",
-        "local-first",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "premiere-automation",
-        "premiere-pro",
-        "typescript",
-        "video-automation",
-        "video-editing",
-        "video-editing-automation"
-      ],
-      "category": "Cloud",
-      "github_url": "https://github.com/leancoderkavy/premiere-pro-mcp",
-      "updated_at": "2026-11-01T05:46:25Z",
-      "created_at": "2026-02-27T06:31:32Z"
     },
     {
       "id": 1009729416,
@@ -7433,7 +7433,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/respanai/respan-gateway",
-      "updated_at": "2026-11-01T07:15:44Z",
+      "updated_at": "2026-11-01T09:50:34Z",
       "created_at": "2026-09-25T03:58:19Z"
     },
     {
@@ -7634,7 +7634,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/leeguooooo/iphone-use",
-      "updated_at": "2026-11-01T09:15:46Z",
+      "updated_at": "2026-11-01T09:46:22Z",
       "created_at": "2026-06-09T02:00:05Z"
     },
     {
@@ -8399,6 +8399,33 @@
       "created_at": "2025-03-01T08:02:03Z"
     },
     {
+      "id": 934358660,
+      "name": "MCPSharp",
+      "full_name": "afrise/MCPSharp",
+      "owner": "afrise",
+      "description": "MCPSharp is a .NET library that helps you build Model Context Protocol (MCP) servers and clients - the standardized API protocol used by AI assistants and models.",
+      "stars": 377,
+      "language": "C#",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "aifunctions",
+        "dotnet",
+        "dotnet-standard",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "microsoft-extensions-ai",
+        "model-context-protocol",
+        "sdk",
+        "semantic-kernel"
+      ],
+      "category": "DevTools",
+      "github_url": "https://github.com/afrise/MCPSharp",
+      "updated_at": "2026-09-24T15:04:10Z",
+      "created_at": "2025-02-17T17:39:43Z"
+    },
+    {
       "id": 1238301041,
       "name": "TIA_Portal_Openness_MCP",
       "full_name": "bulaofen0036-coder/TIA_Portal_Openness_MCP",
@@ -8429,33 +8456,6 @@
       "github_url": "https://github.com/bulaofen0036-coder/TIA_Portal_Openness_MCP",
       "updated_at": "2026-11-01T02:11:56Z",
       "created_at": "2026-05-14T02:09:06Z"
-    },
-    {
-      "id": 934358660,
-      "name": "MCPSharp",
-      "full_name": "afrise/MCPSharp",
-      "owner": "afrise",
-      "description": "MCPSharp is a .NET library that helps you build Model Context Protocol (MCP) servers and clients - the standardized API protocol used by AI assistants and models.",
-      "stars": 377,
-      "language": "C#",
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "aifunctions",
-        "dotnet",
-        "dotnet-standard",
-        "mcp",
-        "mcp-client",
-        "mcp-server",
-        "microsoft-extensions-ai",
-        "model-context-protocol",
-        "sdk",
-        "semantic-kernel"
-      ],
-      "category": "DevTools",
-      "github_url": "https://github.com/afrise/MCPSharp",
-      "updated_at": "2026-09-24T15:04:10Z",
-      "created_at": "2025-02-17T17:39:43Z"
     },
     {
       "id": 1256708592,
@@ -8490,7 +8490,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/Cotal-AI/Cotal",
-      "updated_at": "2026-11-01T09:11:14Z",
+      "updated_at": "2026-11-01T09:51:15Z",
       "created_at": "2026-06-02T02:52:25Z"
     },
     {
@@ -10460,6 +10460,42 @@
       "created_at": "2024-12-04T19:30:40Z"
     },
     {
+      "id": 1310971691,
+      "name": "superCMO-skills",
+      "full_name": "SupercmoHQ/superCMO-skills",
+      "owner": "SupercmoHQ",
+      "description": "Open-source skills that empower any AI agent (Claude, Cursor, Hermes, etc.) to generate end-to-end marketing campaigns - UGC videos, ad videos, product photography and more.",
+      "stars": 283,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "ad-creative",
+        "adcreative-alternative",
+        "agent-skills",
+        "ai-agents",
+        "ai-marketing",
+        "ai-video-ads",
+        "arcads-alternative",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "creatify-alternative",
+        "cursor",
+        "gemini-cli-extension",
+        "higgsfield-alternative",
+        "image-generation",
+        "mcp",
+        "model-context-protocol",
+        "text-to-speech",
+        "ugc-ads",
+        "video-generation"
+      ],
+      "category": "Finance",
+      "github_url": "https://github.com/SupercmoHQ/superCMO-skills",
+      "updated_at": "2026-11-01T09:42:30Z",
+      "created_at": "2026-07-24T11:38:27Z"
+    },
+    {
       "id": 1217603969,
       "name": "awesome-hermes-usecases",
       "full_name": "aliaihub/awesome-hermes-usecases",
@@ -10517,42 +10553,6 @@
       "github_url": "https://github.com/RamsesAguirre777/facebook-ads-library-mcp",
       "updated_at": "2026-10-29T16:59:33Z",
       "created_at": "2025-07-15T06:47:15Z"
-    },
-    {
-      "id": 1310971691,
-      "name": "superCMO-skills",
-      "full_name": "SupercmoHQ/superCMO-skills",
-      "owner": "SupercmoHQ",
-      "description": "Open-source skills that empower any AI agent (Claude, Cursor, Hermes, etc.) to generate end-to-end marketing campaigns - UGC videos, ad videos, product photography and more.",
-      "stars": 282,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "ad-creative",
-        "adcreative-alternative",
-        "agent-skills",
-        "ai-agents",
-        "ai-marketing",
-        "ai-video-ads",
-        "arcads-alternative",
-        "claude-code",
-        "claude-skills",
-        "codex",
-        "creatify-alternative",
-        "cursor",
-        "gemini-cli-extension",
-        "higgsfield-alternative",
-        "image-generation",
-        "mcp",
-        "model-context-protocol",
-        "text-to-speech",
-        "ugc-ads",
-        "video-generation"
-      ],
-      "category": "Finance",
-      "github_url": "https://github.com/SupercmoHQ/superCMO-skills",
-      "updated_at": "2026-11-01T09:15:22Z",
-      "created_at": "2026-07-24T11:38:27Z"
     },
     {
       "id": 1131021910,
@@ -10662,6 +10662,39 @@
       "github_url": "https://github.com/codespar/mcp-dev-latam",
       "updated_at": "2026-10-30T18:29:53Z",
       "created_at": "2026-03-30T23:44:31Z"
+    },
+    {
+      "id": 1433111563,
+      "name": "kanzo",
+      "full_name": "emanuele-em/kanzo",
+      "owner": "emanuele-em",
+      "description": "Self-hosted kanban for humans and agents. One 4 MB binary, starts in 2 ms, zero setup.",
+      "stars": 273,
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "kanban",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "productivity",
+        "project-management",
+        "raspberry-pi",
+        "rust",
+        "self-hosted",
+        "sqlite",
+        "task-manager"
+      ],
+      "category": "Database",
+      "github_url": "https://github.com/emanuele-em/kanzo",
+      "updated_at": "2026-11-01T09:50:25Z",
+      "created_at": "2026-10-25T11:14:03Z"
     },
     {
       "id": 1151752366,
@@ -10817,39 +10850,6 @@
       "github_url": "https://github.com/aartiq/servicenow-mcp",
       "updated_at": "2026-10-28T23:34:15Z",
       "created_at": "2026-02-12T22:38:38Z"
-    },
-    {
-      "id": 1433111563,
-      "name": "kanzo",
-      "full_name": "emanuele-em/kanzo",
-      "owner": "emanuele-em",
-      "description": "Self-hosted kanban for humans and agents. One 4 MB binary, starts in 2 ms, zero setup.",
-      "stars": 264,
-      "language": "Rust",
-      "license": "AGPL-3.0",
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "coding-agents",
-        "kanban",
-        "local-first",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "productivity",
-        "project-management",
-        "raspberry-pi",
-        "rust",
-        "self-hosted",
-        "sqlite",
-        "task-manager"
-      ],
-      "category": "Database",
-      "github_url": "https://github.com/emanuele-em/kanzo",
-      "updated_at": "2026-11-01T09:21:01Z",
-      "created_at": "2026-10-25T11:14:03Z"
     },
     {
       "id": 1130667066,
@@ -12147,6 +12147,42 @@
       "created_at": "2026-07-25T12:13:33Z"
     },
     {
+      "id": 1185552276,
+      "name": "safari-mcp",
+      "full_name": "achiya-automation/safari-mcp",
+      "owner": "achiya-automation",
+      "description": "Native Safari browser automation for AI agents. 98 tools via AppleScript — zero overhead, keeps logins, runs silently in background. Drop-in alternative to Chrome DevTools MCP with 40-60% less CPU/heat on Apple Silicon.",
+      "stars": 230,
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "apple-silicon",
+        "applescript",
+        "automation",
+        "browser-automation",
+        "claude",
+        "claude-code",
+        "cursor",
+        "devtools",
+        "llm-tools",
+        "macos",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "safari",
+        "safari-mcp",
+        "web-automation",
+        "webkit",
+        "windsurf"
+      ],
+      "category": "Browser",
+      "github_url": "https://github.com/achiya-automation/safari-mcp",
+      "updated_at": "2026-11-01T09:47:13Z",
+      "created_at": "2026-03-18T17:47:00Z"
+    },
+    {
       "id": 1249045671,
       "name": "homelab-monitor",
       "full_name": "SikamikanikoBG/homelab-monitor",
@@ -12181,42 +12217,6 @@
       "github_url": "https://github.com/SikamikanikoBG/homelab-monitor",
       "updated_at": "2026-11-01T07:39:28Z",
       "created_at": "2026-05-25T09:46:28Z"
-    },
-    {
-      "id": 1185552276,
-      "name": "safari-mcp",
-      "full_name": "achiya-automation/safari-mcp",
-      "owner": "achiya-automation",
-      "description": "Native Safari browser automation for AI agents. 98 tools via AppleScript — zero overhead, keeps logins, runs silently in background. Drop-in alternative to Chrome DevTools MCP with 40-60% less CPU/heat on Apple Silicon.",
-      "stars": 229,
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-tools",
-        "apple-silicon",
-        "applescript",
-        "automation",
-        "browser-automation",
-        "claude",
-        "claude-code",
-        "cursor",
-        "devtools",
-        "llm-tools",
-        "macos",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "safari",
-        "safari-mcp",
-        "web-automation",
-        "webkit",
-        "windsurf"
-      ],
-      "category": "Browser",
-      "github_url": "https://github.com/achiya-automation/safari-mcp",
-      "updated_at": "2026-11-01T06:01:53Z",
-      "created_at": "2026-03-18T17:47:00Z"
     },
     {
       "id": 1168595356,
@@ -14111,6 +14111,30 @@
       "created_at": "2026-01-27T11:39:53Z"
     },
     {
+      "id": 1387360993,
+      "name": "Roqer",
+      "full_name": "S4US/Roqer",
+      "owner": "S4US",
+      "description": "An open-source AI agent for Roblox Studio. Builds, scripts, and playtests in your place using your ChatGPT/Claude subscription or custom API.",
+      "stars": 185,
+      "language": "TypeScript",
+      "license": "AGPL-3.0",
+      "topics": [
+        "ai-agent",
+        "blender",
+        "electron",
+        "luau",
+        "mcp",
+        "model-context-protocol",
+        "roblox",
+        "roblox-studio"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/S4US/Roqer",
+      "updated_at": "2026-11-01T09:15:58Z",
+      "created_at": "2026-09-25T11:33:22Z"
+    },
+    {
       "id": 1237064025,
       "name": "sv-grid",
       "full_name": "sv-grid/sv-grid",
@@ -14145,30 +14169,6 @@
       "github_url": "https://github.com/sv-grid/sv-grid",
       "updated_at": "2026-10-31T01:00:41Z",
       "created_at": "2026-05-12T20:56:09Z"
-    },
-    {
-      "id": 1387360993,
-      "name": "Roqer",
-      "full_name": "S4US/Roqer",
-      "owner": "S4US",
-      "description": "An open-source AI agent for Roblox Studio. Builds, scripts, and playtests in your place using your ChatGPT/Claude subscription or custom API.",
-      "stars": 185,
-      "language": "TypeScript",
-      "license": "AGPL-3.0",
-      "topics": [
-        "ai-agent",
-        "blender",
-        "electron",
-        "luau",
-        "mcp",
-        "model-context-protocol",
-        "roblox",
-        "roblox-studio"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/S4US/Roqer",
-      "updated_at": "2026-11-01T09:15:58Z",
-      "created_at": "2026-09-25T11:33:22Z"
     },
     {
       "id": 1281133792,
