@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T08:41:55.777149+00:00",
+  "generated_at": "2026-11-15T08:54:43.590349+00:00",
   "count": 500,
   "servers": [
     {
@@ -44,7 +44,7 @@
       "full_name": "DeusData/codebase-memory-mcp",
       "owner": "DeusData",
       "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
-      "stars": 48653,
+      "stars": 48654,
       "language": "C",
       "license": "MIT",
       "topics": [
@@ -71,7 +71,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/DeusData/codebase-memory-mcp",
-      "updated_at": "2026-11-15T08:39:32Z",
+      "updated_at": "2026-11-15T08:44:54Z",
       "created_at": "2026-02-24T22:01:00Z"
     },
     {
@@ -204,7 +204,7 @@
       "full_name": "jub0t/Concat",
       "owner": "jub0t",
       "description": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC API & MCP.",
-      "stars": 17697,
+      "stars": 17699,
       "language": "Rust",
       "license": "AGPL-3.0",
       "topics": [
@@ -226,7 +226,7 @@
       ],
       "category": "Productivity",
       "github_url": "https://github.com/jub0t/Concat",
-      "updated_at": "2026-11-15T08:33:40Z",
+      "updated_at": "2026-11-15T08:52:55Z",
       "created_at": "2026-08-25T18:34:47Z"
     },
     {
@@ -657,7 +657,7 @@
       "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
       "owner": "irinabuht12-oss",
       "description": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + Google Analytics MCP (GA4) + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: OAuth login, no API keys, approval-gated writes, 7-day free trial. By Ryze AI.",
-      "stars": 7775,
+      "stars": 7776,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -684,7 +684,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
-      "updated_at": "2026-11-15T08:39:33Z",
+      "updated_at": "2026-11-15T08:51:49Z",
       "created_at": "2026-04-06T04:41:14Z"
     },
     {
@@ -693,7 +693,7 @@
       "full_name": "beenuar/AiSOC",
       "owner": "beenuar",
       "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
-      "stars": 7747,
+      "stars": 7748,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -720,7 +720,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/beenuar/AiSOC",
-      "updated_at": "2026-11-15T08:30:50Z",
+      "updated_at": "2026-11-15T08:42:18Z",
       "created_at": "2026-05-02T03:30:19Z"
     },
     {
@@ -806,7 +806,7 @@
       "full_name": "21st-dev/magic-mcp",
       "owner": "21st-dev",
       "description": "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st MCP; this package keeps old configs working. Setup: 21st.dev/mcp",
-      "stars": 6551,
+      "stars": 6553,
       "language": "TypeScript",
       "license": "ISC",
       "topics": [
@@ -821,7 +821,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/21st-dev/magic-mcp",
-      "updated_at": "2026-11-15T07:41:19Z",
+      "updated_at": "2026-11-15T08:49:46Z",
       "created_at": "2025-02-19T13:17:50Z"
     },
     {
@@ -830,7 +830,7 @@
       "full_name": "MinishLab/semble",
       "owner": "MinishLab",
       "description": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
-      "stars": 6424,
+      "stars": 6423,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -844,7 +844,7 @@
       ],
       "category": "Search",
       "github_url": "https://github.com/MinishLab/semble",
-      "updated_at": "2026-11-15T07:00:36Z",
+      "updated_at": "2026-11-15T08:52:44Z",
       "created_at": "2026-04-06T14:56:45Z"
     },
     {
@@ -1001,7 +1001,7 @@
       "full_name": "kajisho5/ffmpeg-skill",
       "owner": "kajisho5",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "stars": 5668,
+      "stars": 5671,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -1028,7 +1028,7 @@
       ],
       "category": "Cloud",
       "github_url": "https://github.com/kajisho5/ffmpeg-skill",
-      "updated_at": "2026-11-15T08:37:43Z",
+      "updated_at": "2026-11-15T08:54:06Z",
       "created_at": "2026-09-03T14:33:38Z"
     },
     {
@@ -3081,7 +3081,7 @@
       "full_name": "JosssphZhou/poki",
       "owner": "JosssphZhou",
       "description": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
-      "stars": 1299,
+      "stars": 1301,
       "language": "Swift",
       "license": "AGPL-3.0",
       "topics": [
@@ -3094,7 +3094,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/JosssphZhou/poki",
-      "updated_at": "2026-11-15T08:41:11Z",
+      "updated_at": "2026-11-15T08:51:54Z",
       "created_at": "2026-11-05T15:04:31Z"
     },
     {
@@ -4178,12 +4178,36 @@
       "created_at": "2024-11-30T10:01:30Z"
     },
     {
+      "id": 896594784,
+      "name": "MCP-Bridge",
+      "full_name": "SecretiveShell/MCP-Bridge",
+      "owner": "SecretiveShell",
+      "description": "A middleware to provide an openAI compatible endpoint that can call MCP tools",
+      "stars": 922,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "claude",
+        "mcp",
+        "mcp-server",
+        "mcp-servers",
+        "model-context-protocol",
+        "openai",
+        "openai-api"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/SecretiveShell/MCP-Bridge",
+      "updated_at": "2026-11-15T05:32:06Z",
+      "created_at": "2024-11-30T19:29:35Z"
+    },
+    {
       "id": 1230675195,
       "name": "iai-personal-memory-engine",
       "full_name": "CodeAbra/iai-personal-memory-engine",
       "owner": "CodeAbra",
       "description": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Cursor, Claude Code, Codex, OpenClaw, Hermes and more. MIT.",
-      "stars": 922,
+      "stars": 921,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -4209,32 +4233,8 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/CodeAbra/iai-personal-memory-engine",
-      "updated_at": "2026-11-14T21:57:11Z",
+      "updated_at": "2026-11-15T08:47:45Z",
       "created_at": "2026-05-06T08:04:52Z"
-    },
-    {
-      "id": 896594784,
-      "name": "MCP-Bridge",
-      "full_name": "SecretiveShell/MCP-Bridge",
-      "owner": "SecretiveShell",
-      "description": "A middleware to provide an openAI compatible endpoint that can call MCP tools",
-      "stars": 922,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "claude",
-        "mcp",
-        "mcp-server",
-        "mcp-servers",
-        "model-context-protocol",
-        "openai",
-        "openai-api"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/SecretiveShell/MCP-Bridge",
-      "updated_at": "2026-11-15T05:32:06Z",
-      "created_at": "2024-11-30T19:29:35Z"
     },
     {
       "id": 1056452116,
@@ -4647,7 +4647,7 @@
       "full_name": "respanai/respan-gateway",
       "owner": "respanai",
       "description": "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
-      "stars": 847,
+      "stars": 848,
       "language": "Rust",
       "license": "Apache-2.0",
       "topics": [
@@ -4674,7 +4674,7 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/respanai/respan-gateway",
-      "updated_at": "2026-11-15T07:39:32Z",
+      "updated_at": "2026-11-15T08:51:02Z",
       "created_at": "2026-09-25T03:58:19Z"
     },
     {
@@ -5842,7 +5842,7 @@
       "full_name": "sandbaseai/sandbase-harness",
       "owner": "sandbaseai",
       "description": "Local-first, self-hosted AI agent runtime and MCP bridge with sandboxed sessions, memory, credentials, audit/replay, and a local Console.",
-      "stars": 644,
+      "stars": 643,
       "language": "TypeScript",
       "license": "Apache-2.0",
       "topics": [
@@ -5869,7 +5869,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/sandbaseai/sandbase-harness",
-      "updated_at": "2026-11-13T23:13:37Z",
+      "updated_at": "2026-11-15T08:46:25Z",
       "created_at": "2026-07-11T08:48:07Z"
     },
     {
@@ -8094,6 +8094,78 @@
       "created_at": "2026-11-12T19:39:54Z"
     },
     {
+      "id": 1455750092,
+      "name": "blender-ai-copilot-flow",
+      "full_name": "tiobeharxi1987/blender-ai-copilot-flow",
+      "owner": "tiobeharxi1987",
+      "description": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
+      "stars": 433,
+      "language": "Unknown",
+      "license": "MIT",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
+      "updated_at": "2026-11-15T08:44:56Z",
+      "created_at": "2026-11-12T19:38:53Z"
+    },
+    {
+      "id": 1455740160,
+      "name": "Blender-AI-MCP-Studio",
+      "full_name": "racdeufindurch198812/Blender-AI-MCP-Studio",
+      "owner": "racdeufindurch198812",
+      "description": "Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual chat workspace, multi-agent teams and your choice of AI models. · blender ai mcp studio · mcp-for-blender · mcp for blender pro",
+      "stars": 432,
+      "language": "Unknown",
+      "license": "MIT",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ],
+      "category": "Filesystem",
+      "github_url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
+      "updated_at": "2026-11-15T08:46:53Z",
+      "created_at": "2026-11-12T19:28:20Z"
+    },
+    {
       "id": 1187349447,
       "name": "agent-bridge",
       "full_name": "raysonmeng/agent-bridge",
@@ -8125,78 +8197,6 @@
       "github_url": "https://github.com/raysonmeng/agent-bridge",
       "updated_at": "2026-11-12T08:28:49Z",
       "created_at": "2026-03-20T16:14:48Z"
-    },
-    {
-      "id": 1455750092,
-      "name": "blender-ai-copilot-flow",
-      "full_name": "tiobeharxi1987/blender-ai-copilot-flow",
-      "owner": "tiobeharxi1987",
-      "description": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
-      "stars": 431,
-      "language": "Unknown",
-      "license": "MIT",
-      "topics": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents",
-        "blender-ai",
-        "blender-assistant",
-        "blender-automation",
-        "blender-chatgpt",
-        "blender-copilot",
-        "blender-extension",
-        "blender-llm",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "blender3d",
-        "bpy",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
-      "updated_at": "2026-11-15T08:29:45Z",
-      "created_at": "2026-11-12T19:38:53Z"
-    },
-    {
-      "id": 1455740160,
-      "name": "Blender-AI-MCP-Studio",
-      "full_name": "racdeufindurch198812/Blender-AI-MCP-Studio",
-      "owner": "racdeufindurch198812",
-      "description": "Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual chat workspace, multi-agent teams and your choice of AI models. · blender ai mcp studio · mcp-for-blender · mcp for blender pro",
-      "stars": 431,
-      "language": "Unknown",
-      "license": "MIT",
-      "topics": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents",
-        "blender-ai",
-        "blender-assistant",
-        "blender-automation",
-        "blender-chatgpt",
-        "blender-copilot",
-        "blender-extension",
-        "blender-llm",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "blender3d",
-        "bpy",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol"
-      ],
-      "category": "Filesystem",
-      "github_url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
-      "updated_at": "2026-11-15T08:39:39Z",
-      "created_at": "2026-11-12T19:28:20Z"
     },
     {
       "id": 1087106485,
@@ -8233,7 +8233,7 @@
       "full_name": "credoksopho1984/blender-ai-copilot-studio",
       "owner": "credoksopho1984",
       "description": "An AI copilot and MCP server for Blender that turns plain-language briefs into scene operations—inside a visual chat studio with multi-agent teams, your choice of AI models, and 27 built-in scene tools. · blender-ai-copilot-studio · blender ai · ai for blender · blender copilot · blender ai copilot · blender ai assistant · blender mcp server",
-      "stars": 429,
+      "stars": 430,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -8260,7 +8260,7 @@
       ],
       "category": "Filesystem",
       "github_url": "https://github.com/credoksopho1984/blender-ai-copilot-studio",
-      "updated_at": "2026-11-15T08:41:31Z",
+      "updated_at": "2026-11-15T08:54:28Z",
       "created_at": "2026-11-12T19:30:32Z"
     },
     {
@@ -8269,7 +8269,7 @@
       "full_name": "Doug-218/blender-ai-copilot-forge",
       "owner": "Doug-218",
       "description": "A scene-forging AI copilot for Blender—describe the layout and watch primitives, cameras, lights, materials and parenting assemble in ordered steps, with approvals, named undo and a built-in MCP server. · blender-ai-copilot-forge · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
-      "stars": 429,
+      "stars": 430,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -8296,8 +8296,34 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/Doug-218/blender-ai-copilot-forge",
-      "updated_at": "2026-11-15T08:39:37Z",
+      "updated_at": "2026-11-15T08:47:08Z",
       "created_at": "2026-11-12T19:35:10Z"
+    },
+    {
+      "id": 1435635551,
+      "name": "opengeniemaster",
+      "full_name": "eust-w/opengeniemaster",
+      "owner": "eust-w",
+      "description": "Open-source embodied agent framework: execution, feedback, and continual improvement",
+      "stars": 426,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agent-harness",
+        "ai-agents",
+        "continual-learning",
+        "embodied-ai",
+        "mcp",
+        "model-context-protocol",
+        "multi-robot",
+        "robotics",
+        "simulation",
+        "vla"
+      ],
+      "category": "Database",
+      "github_url": "https://github.com/eust-w/opengeniemaster",
+      "updated_at": "2026-11-15T08:52:09Z",
+      "created_at": "2026-10-27T11:27:29Z"
     },
     {
       "id": 1455744040,
@@ -8366,32 +8392,6 @@
       "created_at": "2026-03-18T19:08:31Z"
     },
     {
-      "id": 1435635551,
-      "name": "opengeniemaster",
-      "full_name": "eust-w/opengeniemaster",
-      "owner": "eust-w",
-      "description": "Open-source embodied agent framework: execution, feedback, and continual improvement",
-      "stars": 425,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent-harness",
-        "ai-agents",
-        "continual-learning",
-        "embodied-ai",
-        "mcp",
-        "model-context-protocol",
-        "multi-robot",
-        "robotics",
-        "simulation",
-        "vla"
-      ],
-      "category": "Database",
-      "github_url": "https://github.com/eust-w/opengeniemaster",
-      "updated_at": "2026-11-15T08:38:56Z",
-      "created_at": "2026-10-27T11:27:29Z"
-    },
-    {
       "id": 1399413068,
       "name": "official-mcp-servers",
       "full_name": "VoltAgent/official-mcp-servers",
@@ -8416,6 +8416,42 @@
       "github_url": "https://github.com/VoltAgent/official-mcp-servers",
       "updated_at": "2026-11-14T23:49:00Z",
       "created_at": "2026-10-01T07:30:34Z"
+    },
+    {
+      "id": 1455744896,
+      "name": "blender-ai-copilot-lab",
+      "full_name": "precygtrucqui1981/blender-ai-copilot-lab",
+      "owner": "precygtrucqui1981",
+      "description": "An AI lab for Blender where manager–worker–reviewer agent teams run multi-step scene briefs as supervised experiments—a live task board, review findings, one correction attempt per blocked task, named undo, and a built-in MCP server. · blender-ai-copilot-lab · blender · blender 3d · blender addon · blender plugin · blender extension",
+      "stars": 424,
+      "language": "Unknown",
+      "license": "MIT",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ],
+      "category": "Filesystem",
+      "github_url": "https://github.com/precygtrucqui1981/blender-ai-copilot-lab",
+      "updated_at": "2026-11-15T08:43:26Z",
+      "created_at": "2026-11-12T19:33:16Z"
     },
     {
       "id": 1238301041,
@@ -8450,12 +8486,12 @@
       "created_at": "2026-05-14T02:09:06Z"
     },
     {
-      "id": 1455744896,
-      "name": "blender-ai-copilot-lab",
-      "full_name": "precygtrucqui1981/blender-ai-copilot-lab",
-      "owner": "precygtrucqui1981",
-      "description": "An AI lab for Blender where manager–worker–reviewer agent teams run multi-step scene briefs as supervised experiments—a live task board, review findings, one correction attempt per blocked task, named undo, and a built-in MCP server. · blender-ai-copilot-lab · blender · blender 3d · blender addon · blender plugin · blender extension",
-      "stars": 422,
+      "id": 1455738282,
+      "name": "Blender-AI-MCP-Suite",
+      "full_name": "findavoulot1973/Blender-AI-MCP-Suite",
+      "owner": "findavoulot1973",
+      "description": "Blender AI MCP Suite is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual Studio workspace, multi-agent teams, 21+ scene tools and your choice of AI models. · blender ai mcp suite · blender ai mcp · ai for blender",
+      "stars": 423,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -8481,9 +8517,9 @@
         "model-context-protocol"
       ],
       "category": "Filesystem",
-      "github_url": "https://github.com/precygtrucqui1981/blender-ai-copilot-lab",
-      "updated_at": "2026-11-15T08:37:47Z",
-      "created_at": "2026-11-12T19:33:16Z"
+      "github_url": "https://github.com/findavoulot1973/Blender-AI-MCP-Suite",
+      "updated_at": "2026-11-15T08:52:30Z",
+      "created_at": "2026-11-12T19:26:22Z"
     },
     {
       "id": 1220093652,
@@ -8558,84 +8594,12 @@
       "created_at": "2025-06-18T03:59:17Z"
     },
     {
-      "id": 1455738282,
-      "name": "Blender-AI-MCP-Suite",
-      "full_name": "findavoulot1973/Blender-AI-MCP-Suite",
-      "owner": "findavoulot1973",
-      "description": "Blender AI MCP Suite is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual Studio workspace, multi-agent teams, 21+ scene tools and your choice of AI models. · blender ai mcp suite · blender ai mcp · ai for blender",
-      "stars": 421,
-      "language": "Unknown",
-      "license": "MIT",
-      "topics": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents",
-        "blender-ai",
-        "blender-assistant",
-        "blender-automation",
-        "blender-chatgpt",
-        "blender-copilot",
-        "blender-extension",
-        "blender-llm",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "blender3d",
-        "bpy",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol"
-      ],
-      "category": "Filesystem",
-      "github_url": "https://github.com/findavoulot1973/Blender-AI-MCP-Suite",
-      "updated_at": "2026-11-15T08:31:36Z",
-      "created_at": "2026-11-12T19:26:22Z"
-    },
-    {
-      "id": 1455416555,
-      "name": "blender-ai-mcp-addon",
-      "full_name": "hitkeeen/blender-ai-mcp-addon",
-      "owner": "hitkeeen",
-      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-      "stars": 420,
-      "language": "Unknown",
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-assistant",
-        "blender",
-        "blender-addon",
-        "blender-ai",
-        "blender-automation",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "bpy",
-        "chatgpt",
-        "claude",
-        "gemini",
-        "llm",
-        "mcp",
-        "mcp-for-blender",
-        "mcp-server",
-        "model-context-protocol",
-        "ollama",
-        "opencode"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
-      "updated_at": "2026-11-15T08:41:13Z",
-      "created_at": "2026-11-12T14:32:15Z"
-    },
-    {
       "id": 1455748713,
       "name": "blender-ai-copilot-desk",
       "full_name": "fumbdendade19718/blender-ai-copilot-desk",
       "owner": "fumbdendade19718",
       "description": "A visual AI desk for Blender—chat, scene objects, viewport snapshots, approvals and a live task board in one companion window, backed by your choice of models and a built-in MCP server. · blender-ai-copilot-desk · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation · blender mcp",
-      "stars": 420,
+      "stars": 422,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -8662,8 +8626,44 @@
       ],
       "category": "Other",
       "github_url": "https://github.com/fumbdendade19718/blender-ai-copilot-desk",
-      "updated_at": "2026-11-15T08:33:30Z",
+      "updated_at": "2026-11-15T08:54:21Z",
       "created_at": "2026-11-12T19:37:25Z"
+    },
+    {
+      "id": 1455416555,
+      "name": "blender-ai-mcp-addon",
+      "full_name": "hitkeeen/blender-ai-mcp-addon",
+      "owner": "hitkeeen",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "stars": 421,
+      "language": "Unknown",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-assistant",
+        "blender",
+        "blender-addon",
+        "blender-ai",
+        "blender-automation",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "bpy",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "llm",
+        "mcp",
+        "mcp-for-blender",
+        "mcp-server",
+        "model-context-protocol",
+        "ollama",
+        "opencode"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "updated_at": "2026-11-15T08:48:59Z",
+      "created_at": "2026-11-12T14:32:15Z"
     },
     {
       "id": 1448217653,
@@ -8778,7 +8778,7 @@
       "full_name": "benzgasfuncring197110/blender-ai-copilot-bridge",
       "owner": "benzgasfuncring197110",
       "description": "An MCP bridge for Blender that exposes 27 supervised scene tools to OpenCode and any compatible client—authenticated Streamable HTTP on a local endpoint, with the visual chat studio and agent teams on the inside. · blender-ai-copilot-bridge · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting",
-      "stars": 413,
+      "stars": 414,
       "language": "Unknown",
       "license": "MIT",
       "topics": [
@@ -8805,7 +8805,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/benzgasfuncring197110/blender-ai-copilot-bridge",
-      "updated_at": "2026-11-15T08:29:38Z",
+      "updated_at": "2026-11-15T08:45:19Z",
       "created_at": "2026-11-12T19:36:26Z"
     },
     {
@@ -12006,7 +12006,7 @@
       "full_name": "lacs-project/sysknife",
       "owner": "lacs-project",
       "description": "An AI that administers Linux through typed, approval-gated, Ed25519-audited actions. The model selects the action; the daemon builds the command.",
-      "stars": 268,
+      "stars": 269,
       "language": "Rust",
       "license": "MIT",
       "topics": [
@@ -12033,7 +12033,7 @@
       ],
       "category": "DevTools",
       "github_url": "https://github.com/lacs-project/sysknife",
-      "updated_at": "2026-11-15T08:28:52Z",
+      "updated_at": "2026-11-15T08:44:53Z",
       "created_at": "2026-06-16T01:36:53Z"
     },
     {
@@ -12379,6 +12379,42 @@
       "created_at": "2026-02-12T07:39:46Z"
     },
     {
+      "id": 1414327429,
+      "name": "iran-mcp",
+      "full_name": "sepehr071/iran-mcp",
+      "owner": "sepehr071",
+      "description": "77 MCP servers (994 tools) that give AI agents the Iranian web: Digikala, Torob, Divar, Snappfood, Alibaba, Neshan, Paziresh24, Jobinja, Bama, Codal, brokers, insurance, company registry, laws, tax, crypto, stocks, news and more. Prices in Toman.",
+      "stars": 255,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code-plugin",
+        "cursor",
+        "digikala",
+        "divar",
+        "farsi",
+        "iran",
+        "jobs",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "mcp-servers",
+        "model-context-protocol",
+        "persian",
+        "price-comparison",
+        "snappfood",
+        "torob",
+        "unofficial-api"
+      ],
+      "category": "Cloud",
+      "github_url": "https://github.com/sepehr071/iran-mcp",
+      "updated_at": "2026-11-15T08:46:36Z",
+      "created_at": "2026-10-11T12:42:59Z"
+    },
+    {
       "id": 1174443757,
       "name": "mcp-1c",
       "full_name": "feenlace/mcp-1c",
@@ -12430,42 +12466,6 @@
       "github_url": "https://github.com/MCP-Defender/MCP-Defender",
       "updated_at": "2026-10-12T02:10:21Z",
       "created_at": "2025-05-28T13:52:30Z"
-    },
-    {
-      "id": 1414327429,
-      "name": "iran-mcp",
-      "full_name": "sepehr071/iran-mcp",
-      "owner": "sepehr071",
-      "description": "77 MCP servers (994 tools) that give AI agents the Iranian web: Digikala, Torob, Divar, Snappfood, Alibaba, Neshan, Paziresh24, Jobinja, Bama, Codal, brokers, insurance, company registry, laws, tax, crypto, stocks, news and more. Prices in Toman.",
-      "stars": 254,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-code-plugin",
-        "cursor",
-        "digikala",
-        "divar",
-        "farsi",
-        "iran",
-        "jobs",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "mcp-servers",
-        "model-context-protocol",
-        "persian",
-        "price-comparison",
-        "snappfood",
-        "torob",
-        "unofficial-api"
-      ],
-      "category": "Cloud",
-      "github_url": "https://github.com/sepehr071/iran-mcp",
-      "updated_at": "2026-11-14T07:57:22Z",
-      "created_at": "2026-10-11T12:42:59Z"
     },
     {
       "id": 1157740258,
@@ -12627,7 +12627,7 @@
       ],
       "category": "Database",
       "github_url": "https://github.com/meta-quest/agentic-tools",
-      "updated_at": "2026-11-13T22:53:51Z",
+      "updated_at": "2026-11-15T08:48:40Z",
       "created_at": "2026-02-09T19:31:12Z"
     },
     {
@@ -12772,42 +12772,6 @@
       "created_at": "2026-02-10T19:01:32Z"
     },
     {
-      "id": 1458202860,
-      "name": "microsoft-outlook-desktop",
-      "full_name": "andy-wells-73/microsoft-outlook-desktop",
-      "owner": "andy-wells-73",
-      "description": "Microsoft Outlook 2026 desktop setup with unified inbox, calendar sync, contact store and offline profile support for Windows 11",
-      "stars": 247,
-      "language": "C++",
-      "license": "MIT",
-      "topics": [
-        "arch-linux",
-        "automation",
-        "debian",
-        "electron",
-        "email",
-        "how-to-install-microsoft-visio",
-        "microsoft",
-        "microsoft-copilot",
-        "microsoft-outlook",
-        "microsoft-power-apps",
-        "microsoft-power-automate",
-        "microsoft-visio-2026",
-        "microsoft365",
-        "microsoftexcel",
-        "microsoftgraph",
-        "model-context-protocol",
-        "outlook",
-        "productivity",
-        "screenshot",
-        "ubuntu"
-      ],
-      "category": "Filesystem",
-      "github_url": "https://github.com/andy-wells-73/microsoft-outlook-desktop",
-      "updated_at": "2026-11-15T06:23:28Z",
-      "created_at": "2026-11-14T21:36:14Z"
-    },
-    {
       "id": 1458203404,
       "name": "serum-2-desktop",
       "full_name": "azure-fossil-maker/serum-2-desktop",
@@ -12842,6 +12806,42 @@
       "github_url": "https://github.com/azure-fossil-maker/serum-2-desktop",
       "updated_at": "2026-11-15T06:23:49Z",
       "created_at": "2026-11-14T21:36:54Z"
+    },
+    {
+      "id": 1458202860,
+      "name": "microsoft-outlook-desktop",
+      "full_name": "andy-wells-73/microsoft-outlook-desktop",
+      "owner": "andy-wells-73",
+      "description": "Microsoft Outlook 2026 desktop setup with unified inbox, calendar sync, contact store and offline profile support for Windows 11",
+      "stars": 247,
+      "language": "C++",
+      "license": "MIT",
+      "topics": [
+        "arch-linux",
+        "automation",
+        "debian",
+        "electron",
+        "email",
+        "how-to-install-microsoft-visio",
+        "microsoft",
+        "microsoft-copilot",
+        "microsoft-outlook",
+        "microsoft-power-apps",
+        "microsoft-power-automate",
+        "microsoft-visio-2026",
+        "microsoft365",
+        "microsoftexcel",
+        "microsoftgraph",
+        "model-context-protocol",
+        "outlook",
+        "productivity",
+        "screenshot",
+        "ubuntu"
+      ],
+      "category": "Filesystem",
+      "github_url": "https://github.com/andy-wells-73/microsoft-outlook-desktop",
+      "updated_at": "2026-11-15T06:23:28Z",
+      "created_at": "2026-11-14T21:36:14Z"
     },
     {
       "id": 1346634537,
@@ -13274,6 +13274,42 @@
       "created_at": "2024-12-01T15:42:21Z"
     },
     {
+      "id": 1446390889,
+      "name": "best-agent-memory-mcp",
+      "full_name": "Glen-Web-App/best-agent-memory-mcp",
+      "owner": "Glen-Web-App",
+      "description": "Best Agent Memory MCP servers, ranked and compared: long-term memory for Claude Code, Codex, Cursor and any MCP client. Glen, Mem0, Supermemory, Zep, Hindsight, Basic Memory, claude-mem, Graphiti, Cognee, the official memory server and more, with storage, capture model, team sharing, license and live stars.",
+      "stars": 240,
+      "language": "Unknown",
+      "license": "CC0-1.0",
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "ai-memory",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "cursor",
+        "llm-memory",
+        "long-term-memory",
+        "mcp",
+        "mcp-memory",
+        "mcp-memory-server",
+        "mcp-server",
+        "mcp-servers",
+        "mem0",
+        "memory-mcp",
+        "model-context-protocol",
+        "persistent-memory"
+      ],
+      "category": "Knowledge",
+      "github_url": "https://github.com/Glen-Web-App/best-agent-memory-mcp",
+      "updated_at": "2026-11-15T08:42:12Z",
+      "created_at": "2026-11-05T01:23:58Z"
+    },
+    {
       "id": 1123397717,
       "name": "ZotSeek",
       "full_name": "introfini/ZotSeek",
@@ -13308,42 +13344,6 @@
       "github_url": "https://github.com/introfini/ZotSeek",
       "updated_at": "2026-11-06T10:32:23Z",
       "created_at": "2025-12-26T19:37:29Z"
-    },
-    {
-      "id": 1446390889,
-      "name": "best-agent-memory-mcp",
-      "full_name": "Glen-Web-App/best-agent-memory-mcp",
-      "owner": "Glen-Web-App",
-      "description": "Best Agent Memory MCP servers, ranked and compared: long-term memory for Claude Code, Codex, Cursor and any MCP client. Glen, Mem0, Supermemory, Zep, Hindsight, Basic Memory, claude-mem, Graphiti, Cognee, the official memory server and more, with storage, capture model, team sharing, license and live stars.",
-      "stars": 239,
-      "language": "Unknown",
-      "license": "CC0-1.0",
-      "topics": [
-        "agent-memory",
-        "ai-agents",
-        "ai-memory",
-        "awesome",
-        "awesome-list",
-        "claude-code",
-        "codex",
-        "coding-agents",
-        "cursor",
-        "llm-memory",
-        "long-term-memory",
-        "mcp",
-        "mcp-memory",
-        "mcp-memory-server",
-        "mcp-server",
-        "mcp-servers",
-        "mem0",
-        "memory-mcp",
-        "model-context-protocol",
-        "persistent-memory"
-      ],
-      "category": "Knowledge",
-      "github_url": "https://github.com/Glen-Web-App/best-agent-memory-mcp",
-      "updated_at": "2026-11-13T18:14:38Z",
-      "created_at": "2026-11-05T01:23:58Z"
     },
     {
       "id": 1156657180,
@@ -14950,28 +14950,6 @@
       "created_at": "2024-07-25T09:20:24Z"
     },
     {
-      "id": 901328207,
-      "name": "mcp-shell-server",
-      "full_name": "tumf/mcp-shell-server",
-      "owner": "tumf",
-      "description": "Secure MCP server for whitelisted shell command execution with stdin, argv pipelines, timeouts, and structured audit logging.",
-      "stars": 202,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "audit-log",
-        "command-whitelist",
-        "mcp",
-        "model-context-protocol",
-        "security",
-        "shell"
-      ],
-      "category": "Other",
-      "github_url": "https://github.com/tumf/mcp-shell-server",
-      "updated_at": "2026-11-13T02:41:24Z",
-      "created_at": "2024-12-10T13:09:04Z"
-    },
-    {
       "id": 901788405,
       "name": "mcp-text-editor",
       "full_name": "tumf/mcp-text-editor",
@@ -14992,6 +14970,28 @@
       "github_url": "https://github.com/tumf/mcp-text-editor",
       "updated_at": "2026-10-14T06:41:33Z",
       "created_at": "2024-12-11T10:12:28Z"
+    },
+    {
+      "id": 901328207,
+      "name": "mcp-shell-server",
+      "full_name": "tumf/mcp-shell-server",
+      "owner": "tumf",
+      "description": "Secure MCP server for whitelisted shell command execution with stdin, argv pipelines, timeouts, and structured audit logging.",
+      "stars": 202,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "audit-log",
+        "command-whitelist",
+        "mcp",
+        "model-context-protocol",
+        "security",
+        "shell"
+      ],
+      "category": "Other",
+      "github_url": "https://github.com/tumf/mcp-shell-server",
+      "updated_at": "2026-11-13T02:41:24Z",
+      "created_at": "2024-12-10T13:09:04Z"
     },
     {
       "id": 929591639,
